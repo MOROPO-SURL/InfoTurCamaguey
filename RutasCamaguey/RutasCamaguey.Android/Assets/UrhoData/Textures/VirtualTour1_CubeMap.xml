@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cubemap>
+	<face name="VirtualTour1_px.png" />
+	<face name="VirtualTour1_nx.png" />
+	<face name="VirtualTour1_py.png" />
+	<face name="VirtualTour1_ny.png" />
+	<face name="VirtualTour1_pz.png" />
+	<face name="VirtualTour1_nz.png" />
+	<quality low="0" />
+</cubemap>

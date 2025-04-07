@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:root="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas"
+    xmlns:ui_views="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas.UI.Views"
+    x:Class="MOROPO.InfoTur.Camaguey.Rutas.UI.Pages.MapPage"
+    Title="{Static root:AppResources.CommonRoutes}">
+    <ContentPage.Content>
+        <Grid>
+            <ui_views:BusyView />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
