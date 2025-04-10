@@ -121,7 +121,7 @@
     <value>About</value>
   </data>
   <data name="CommonCatalog" xml:space="preserve">
-    <value>Catalog</value>
+    <value>City Catalog</value>
   </data>
   <data name="CommonConfiguration" xml:space="preserve">
     <value>Configuration</value>
@@ -130,7 +130,7 @@
     <value>Rich Guide</value>
   </data>
   <data name="CommonRoutes" xml:space="preserve">
-    <value>Routes</value>
+    <value>Touristic Routes</value>
   </data>
   <data name="CommonStart" xml:space="preserve">
     <value>Home</value>

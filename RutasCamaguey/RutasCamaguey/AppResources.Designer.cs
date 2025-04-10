@@ -70,7 +70,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Catálogo.
+        ///   Busca una cadena traducida similar a Catálogo de la Ciudad.
         /// </summary>
         internal static string CommonCatalog {
             get {
@@ -97,7 +97,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Rutas.
+        ///   Busca una cadena traducida similar a Rutas Turísticas.
         /// </summary>
         internal static string CommonRoutes {
             get {

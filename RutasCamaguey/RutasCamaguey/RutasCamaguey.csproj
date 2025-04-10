@@ -24,6 +24,7 @@
 		<PackageReference Include="BruTile.MbTiles" Version="5.0.6" />
 		<PackageReference Include="Mapsui.Forms" Version="4.1.9" />
 		<PackageReference Include="SSCXFToolKit.Mvvm" Version="0.4.10-alpha" />
+		<PackageReference Include="SSCXFToolKit.Presentation" Version="0.6.4" />
 		<PackageReference Include="UrhoSharp.Forms" Version="1.9.67" />
 		<PackageReference Include="Xamarin.Forms" Version="5.0.0.2662" />
 		<PackageReference Include="Xamarin.Essentials" Version="1.8.1" />

@@ -3,10 +3,64 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:root="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas"
+    xmlns:ui_views="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas.UI.Views"
+    xmlns:sscxftoolkit_presentation_converters="clr-namespace:SmartSolucionesCuba.XFToolKit.Presentation.Converters;assembly=SmartSolucionesCuba.XFToolKit.Presentation"
     x:Class="MOROPO.InfoTur.Camaguey.Rutas.UI.Pages.GuideARPage"
     Title="{Static root:AppResources.CommonGuideAR}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <sscxftoolkit_presentation_converters:FactorConverter x:Key="FactorConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <Grid>
+            <ui_views:BusyView />
+            <Grid 
+                VerticalOptions="End"
+                HeightRequest="{Binding Source={Reference RotableSquareBoxView}, Path=Width}"
+                ColumnSpacing="0"
+                IsClippedToBounds="True">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="8*" />
+                </Grid.ColumnDefinitions>
+                <BoxView
+                    Grid.Column="0"
+                    VerticalOptions="End"
+                    HeightRequest="{Binding Source={Reference RotableSquareBoxView}, Path=Width, Converter={StaticResource FactorConverter}, ConverterParameter=0.5}"
+                    TranslationY="{Binding Source={Reference RotableSquareBoxView}, Path=Width, Converter={StaticResource FactorConverter}, ConverterParameter=0.075}"
+                    TranslationX="{Binding Source={Reference RotableSquareBoxView}, Path=Width, Converter={StaticResource FactorConverter}, ConverterParameter=-0.075}"
+                    Rotation="45"
+                    Color="{StaticResource Secoundary}" />
+                <BoxView
+                    Grid.Column="2"
+                    Rotation="-45"
+                    TranslationY="{Binding Source={Reference RotableSquareBoxView}, Path=Width, Converter={StaticResource FactorConverter}, ConverterParameter=0.5}"
+                    Color="{StaticResource Secoundary}" />
+                <BoxView
+                    x:Name="RotableSquareBoxView"
+                    Grid.Column="2" Grid.ColumnSpan="4"
+                    Rotation="45"
+                    TranslationX="{Binding Source={RelativeSource Mode=Self}, Path=Width, Converter={StaticResource FactorConverter}, ConverterParameter=0.35}"
+                    Color="{StaticResource Primary}" />
+                <BoxView
+                    Grid.Column="6"
+                    Color="{StaticResource Primary}" />
+                <Grid
+                    Grid.Column="4" Grid.ColumnSpan="3"
+                    Margin="{Binding Source={Reference RotableSquareBoxView}, Path=Width, Converter={StaticResource FactorConverter}, ConverterParameter=0.15}">
+                    <Label 
+                        VerticalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        TextColor="White"
+                        Text="Esta sección le brindará una experiencia extendida al interactuar con mapas en carteles y guías de Infotur sobre la ciudad de Camagüey. Enfoque la cámara hacia el mapa para ampliar la información." />
+                </Grid>
+            </Grid>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

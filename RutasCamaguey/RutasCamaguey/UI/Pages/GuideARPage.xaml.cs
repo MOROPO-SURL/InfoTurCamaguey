@@ -8,30 +8,48 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
         public GuideARPage()
         {
             InitializeComponent();
+
+            BindingContext = new SmartSolucionesCuba.XFToolKit.Mvvm.Models.Page.BasePageModel();
         }
 
-        protected override async void OnAppearing()
+        private SmartSolucionesCuba.XFToolKit.Mvvm.Models.Page.BasePageModel ConcreteBindingContext => BindingContext as SmartSolucionesCuba.XFToolKit.Mvvm.Models.Page.BasePageModel;
+
+        protected override void OnAppearing()
         {
-            var permissionStatus = await GetPermissions();
-
-            if (!permissionStatus)
+            GetPermissions().ContinueWith(task =>
             {
-                await DisplayAlert("Aviso", "Es necesario brindar permisos de uso de la cámara a esta aplicación par asu correcto funcionamiento.", "Aceptar");
+                Dispatcher.BeginInvokeOnMainThread(() =>
+                {
+                    if (!task.Result)
+                    {
+                        DisplayAlert("Aviso", "Es necesario brindar permisos de uso de la cámara a esta aplicación par asu correcto funcionamiento.", "Aceptar");
+                    }
+                    else
+                    {
+                        ConcreteBindingContext.IsBusy = true;
 
-                return;
-            }
+                        System.Threading.Tasks.Task.Delay(500).ContinueWith(_ =>
+                        {
+                            Dispatcher.BeginInvokeOnMainThread(() =>
+                            {
+                                ConcreteBindingContext.IsBusy = false;
 
-            var urhoSurface = new Urho.Forms.UrhoSurface();
+                                var urhoSurface = new Urho.Forms.UrhoSurface();
 
-            var urhoApplicationOptions = new ApplicationOptions()
-            {
-                ResourcePaths = new[] { "UrhoData" },
-                Orientation = ApplicationOptions.OrientationType.LandscapeAndPortrait
-            };
+                                var urhoApplicationOptions = new ApplicationOptions()
+                                {
+                                    ResourcePaths = new[] { "UrhoData" },
+                                    Orientation = ApplicationOptions.OrientationType.LandscapeAndPortrait
+                                };
 
-            (Content as Xamarin.Forms.Grid).Children.Insert(0, urhoSurface);
+                                (Content as Xamarin.Forms.Grid).Children.Insert(0, urhoSurface);
 
-            await urhoSurface.Show<Env3D.Presenters.GuideARPresenter>(urhoApplicationOptions);
+                                urhoSurface.Show<Env3D.Presenters.GuideARPresenter>(urhoApplicationOptions);
+                            });
+                        });
+                    }
+                });
+            });
         }
 
         protected override void OnDisappearing()
