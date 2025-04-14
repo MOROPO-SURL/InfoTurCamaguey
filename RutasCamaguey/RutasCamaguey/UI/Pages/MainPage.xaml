@@ -4,10 +4,85 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:root="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas"
     xmlns:ui_views="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas.UI.Views"
+    xmlns:ffimageloading_forms_svg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
     x:Class="MOROPO.InfoTur.Camaguey.Rutas.UI.Pages.MainPage"
     Title="{Static root:AppResources.CommonStart}">
     <ContentPage.Content>
         <Grid>
+            <ScrollView Orientation="Vertical">
+                <StackLayout Orientation="Vertical">
+                    <ffimageloading_forms_svg:SvgCachedImage
+                        Margin="0,30,0,0"
+                        Source="resource://MOROPO.InfoTur.Camaguey.Rutas.Resources.Vectors.header.svg" />
+                    <StackLayout 
+                        Orientation="Vertical"
+                        Margin="20"
+                        Spacing="20">
+                        <Label
+                            FontSize="36"
+                            FontAttributes="Bold"
+                            HorizontalTextAlignment="Center"
+                            TextColor="{StaticResource Primary}"
+                            Text="Rutas Camagüey" />
+                        <Label
+                            FontSize="Medium"
+                            HorizontalTextAlignment="Center"
+                            Text="{Static root:AppResources.AppSummary}" />
+                        <Button
+                            HorizontalOptions="Center"
+                            Text="Ver más ..." />
+                        <Label
+                            Margin="0,48,0,0"
+                            FontSize="Large"
+                            FontAttributes="Bold"
+                            HorizontalTextAlignment="Center"
+                            Text="{Static root:AppResources.CommonFeaturedSections}" />
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <StackLayout Grid.Column="0">
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="PrimaryRecomendation_Tapped" />
+                                </StackLayout.GestureRecognizers>
+                                <Label
+                                    HorizontalOptions="Center"
+                                    Text="&#xF8EF;"
+                                    TextColor="{StaticResource Primary}"
+                                    FontFamily="Material Design Icons"
+                                    FontSize="72" />
+                                <Label
+                                    HorizontalOptions="Center"
+                                    FontSize="Medium"
+                                    Text="{Static root:AppResources.CommonRoutes}"
+                                    TextColor="{StaticResource Primary}" />
+                            </StackLayout>
+                            <StackLayout Grid.Column="1">
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="SecoundaryRecommendation_Tapped" />
+                                </StackLayout.GestureRecognizers>
+                                <Label
+                                    HorizontalOptions="Center"
+                                    Text="&#xF982;"
+                                    TextColor="{StaticResource Primary}"
+                                    FontFamily="Material Design Icons"
+                                    FontSize="72" />
+                                <Label
+                                    HorizontalOptions="Center"
+                                    FontSize="Medium"
+                                    Text="{Static root:AppResources.CommonGuideAR}"
+                                    TextColor="{StaticResource Primary}" />
+                            </StackLayout>
+                        </Grid>
+                        <ffimageloading_forms_svg:SvgCachedImage
+                            HorizontalOptions="Center"
+                            Margin="0,30,0,0"
+                            WidthRequest="240"
+                            Source="resource://MOROPO.InfoTur.Camaguey.Rutas.Resources.Vectors.footer.svg" />
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
             <ui_views:BusyView />
         </Grid>
     </ContentPage.Content>

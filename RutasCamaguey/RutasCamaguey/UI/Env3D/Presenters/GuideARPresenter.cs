@@ -296,19 +296,9 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
 
         private void RotateNodeRelativeToCamera(Node objectNode)
         {
-            //var rotation = Quaternion.FromAxisAngle(Vector3.Up, 45);
-
-            if (urhoCameraComponent != null && objectNode != null)
-            {
-                // Get the camera's world rotation
-                Quaternion cameraRotation = urhoCameraComponent.Node.WorldRotation;
-
-                // Combine the camera's rotation with the desired rotation
-                Quaternion newRotation = cameraRotation;
-
-                // Apply the new rotation to the object node
-                objectNode.Rotation = newRotation;
-            }
+            if (urhoCameraComponent == null || objectNode == null) return;
+            
+            objectNode.Rotation = urhoCameraComponent.Node.Rotation * new Quaternion(1, 0, 0, 0);
         }
     }
 }

@@ -57,8 +57,10 @@
                     <Label 
                         VerticalOptions="Center"
                         HorizontalTextAlignment="Center"
+                        LineBreakMode="TailTruncation"
+                        MaxLines="6"
                         TextColor="White"
-                        Text="Esta sección le brindará una experiencia extendida al interactuar con mapas en carteles y guías de Infotur sobre la ciudad de Camagüey. Enfoque la cámara hacia el mapa para ampliar la información." />
+                        Text="{Static root:AppResources.ARIntro}" />
                 </Grid>
             </Grid>
         </Grid>

@@ -10,6 +10,9 @@
         <ResourceDictionary>
             <Color x:Key="Primary">#1D184B</Color>
             <Color x:Key="Secoundary">#FDE443</Color>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="Black" />
+            </Style>
             <Style TargetType="Button">
                 <Setter Property="TextColor" Value="White"></Setter>
                 <Setter Property="VisualStateManager.VisualStateGroups">

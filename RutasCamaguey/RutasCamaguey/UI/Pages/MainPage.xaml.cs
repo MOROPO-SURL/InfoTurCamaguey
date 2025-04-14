@@ -44,5 +44,15 @@
                 });
             }
         }
+
+        private void PrimaryRecomendation_Tapped(object sender, System.EventArgs eventArgs)
+        {
+            Xamarin.Forms.Shell.Current.GoToAsync("//MapPage");
+        }
+
+        private void SecoundaryRecommendation_Tapped(object sender, System.EventArgs eventArgs) 
+        {
+            Xamarin.Forms.Shell.Current.GoToAsync("//GuideARPage");
+        }
     }
 }

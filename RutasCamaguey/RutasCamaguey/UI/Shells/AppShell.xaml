@@ -90,19 +90,19 @@
         <FlyoutItem.FlyoutIcon>
             <FontImageSource FontFamily="Material Design Icons" Glyph="&#xF8EF;" Color="Black" />
         </FlyoutItem.FlyoutIcon>
-        <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate ui_pages:MapPage}" />
+        <ShellContent Route="MapPage" ContentTemplate="{DataTemplate ui_pages:MapPage}" />
     </FlyoutItem>
     <FlyoutItem Title="{Static root:AppResources.CommonGuideAR}">
         <FlyoutItem.FlyoutIcon>
             <FontImageSource FontFamily="Material Design Icons" Glyph="&#xF982;" Color="Black" />
         </FlyoutItem.FlyoutIcon>
-        <ShellContent Route="StartPage" ContentTemplate="{DataTemplate ui_pages:GuideARPage}" />
+        <ShellContent Route="GuideARPage" ContentTemplate="{DataTemplate ui_pages:GuideARPage}" />
     </FlyoutItem>
     <FlyoutItem Title="{Static root:AppResources.CommonCatalog}">
         <FlyoutItem.FlyoutIcon>
             <FontImageSource FontFamily="Material Design Icons" Glyph="&#xF638;" Color="Black" />
         </FlyoutItem.FlyoutIcon>
-        <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate ui_pages:CatalogPage}" />
+        <ShellContent Route="CatalogPage" ContentTemplate="{DataTemplate ui_pages:CatalogPage}" />
     </FlyoutItem>
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->

@@ -61,6 +61,33 @@ namespace MOROPO.InfoTur.Camaguey.Rutas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat..
+        /// </summary>
+        internal static string AppSummary {
+            get {
+                return ResourceManager.GetString("AppSummary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Esta sección le brindará una experiencia extendida al interactuar con mapas en carteles y guías de Infotur sobre la ciudad de Camagüey. Enfoque la cámara hacia el mapa para ampliar la información..
+        /// </summary>
+        internal static string ARIntro {
+            get {
+                return ResourceManager.GetString("ARIntro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ver más ....
+        /// </summary>
+        internal static string ButtonShowMore {
+            get {
+                return ResourceManager.GetString("ButtonShowMore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Acerca de.
         /// </summary>
         internal static string CommonAbout {
@@ -88,7 +115,16 @@ namespace MOROPO.InfoTur.Camaguey.Rutas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Guía Enriquecida.
+        ///   Busca una cadena traducida similar a Secciones recomendadas.
+        /// </summary>
+        internal static string CommonFeaturedSections {
+            get {
+                return ResourceManager.GetString("CommonFeaturedSections", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Mapa Extendido.
         /// </summary>
         internal static string CommonGuideAR {
             get {

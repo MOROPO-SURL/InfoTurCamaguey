@@ -117,6 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AppSummary" xml:space="preserve">
+    <value>Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat.</value>
+  </data>
+  <data name="ARIntro" xml:space="preserve">
+    <value>Esta sección le brindará una experiencia extendida al interactuar con mapas en carteles y guías de Infotur sobre la ciudad de Camagüey. Enfoque la cámara hacia el mapa para ampliar la información.</value>
+  </data>
+  <data name="ButtonShowMore" xml:space="preserve">
+    <value>Ver más ...</value>
+  </data>
   <data name="CommonAbout" xml:space="preserve">
     <value>Acerca de</value>
   </data>
@@ -126,8 +135,11 @@
   <data name="CommonConfiguration" xml:space="preserve">
     <value>Configuración</value>
   </data>
+  <data name="CommonFeaturedSections" xml:space="preserve">
+    <value>Secciones recomendadas</value>
+  </data>
   <data name="CommonGuideAR" xml:space="preserve">
-    <value>Guía Enriquecida</value>
+    <value>Mapa Extendido</value>
   </data>
   <data name="CommonRoutes" xml:space="preserve">
     <value>Rutas Turísticas</value>

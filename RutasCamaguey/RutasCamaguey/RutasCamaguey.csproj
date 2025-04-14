@@ -12,11 +12,17 @@
 	<ItemGroup>
 		<None Remove="Resources\DBs\map.mbtiles" />
 		<None Remove="Resources\Fonts\materialdesignicons-webfont.ttf" />
+		<None Remove="Resources\Vectors\footer.svg" />
+		<None Remove="Resources\Vectors\header.svg" />
+		<None Remove="Resources\Vectors\logo.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<EmbeddedResource Include="Resources\DBs\map.mbtiles" />
 		<EmbeddedResource Include="Resources\Fonts\materialdesignicons-webfont.ttf" />
+		<EmbeddedResource Include="Resources\Vectors\footer.svg" />
+		<EmbeddedResource Include="Resources\Vectors\logo.svg" />
+		<EmbeddedResource Include="Resources\Vectors\header.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -26,6 +32,7 @@
 		<PackageReference Include="SSCXFToolKit.Mvvm" Version="0.4.10-alpha" />
 		<PackageReference Include="SSCXFToolKit.Presentation" Version="0.6.4" />
 		<PackageReference Include="UrhoSharp.Forms" Version="1.9.67" />
+		<PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.11.982" />
 		<PackageReference Include="Xamarin.Forms" Version="5.0.0.2662" />
 		<PackageReference Include="Xamarin.Essentials" Version="1.8.1" />
 	</ItemGroup>
