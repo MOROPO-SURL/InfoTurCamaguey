@@ -2,6 +2,8 @@
 using Mapsui.Extensions;
 using Mapsui.Limiting;
 using Mapsui.Projections;
+using Mapsui.Utilities;
+using System.Linq;
 
 namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
 {
@@ -33,8 +35,11 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
                 
                 var mapView = new Mapsui.UI.Forms.MapView();
 
+                mapView.Info += MapView_Info;
+
                 mapView.Map.Layers.Add(new Mapsui.Tiling.Layers.TileLayer(new BruTile.MbTiles.MbTilesTileSource(new SQLite.SQLiteConnectionString(System.IO.Path.Combine(Xamarin.Essentials.FileSystem.AppDataDirectory, "map.mbtiles"), true))));
-                
+                mapView.Map.Layers.Add(BuildPlacesLayer());
+
                 mapView.Map.Navigator.Limiter = new ViewportLimiterKeepWithinExtent();
                 mapView.Map.Navigator.OverridePanBounds = new MRect(minX, minY, maxX, maxY);
                 
@@ -56,6 +61,68 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
             });
 
             IsEnabled = true;
+        }
+
+        private void MapView_Info(object sender, MapInfoEventArgs e)
+        {
+            var model = e.MapInfo.Feature[nameof(Models.Data.PlaceDataModel)] as Models.Data.PlaceDataModel;
+
+            Navigation.PushModalAsync(new PlaceDetailPage(model));
+        }
+
+        protected override bool OnBackButtonPressed()
+        {
+            if (Xamarin.Forms.Shell.Current.FlyoutIsPresented)
+            {
+                Xamarin.Forms.Shell.Current.FlyoutIsPresented = false;
+            }
+            else
+            {
+                Xamarin.Forms.Shell.Current.GoToAsync("//StartPage");
+            }
+
+            return true;
+        }
+
+        private Mapsui.Layers.MemoryLayer BuildPlacesLayer()
+        {
+            return new Mapsui.Layers.MemoryLayer
+            {
+                Name = "Lugares",
+                IsMapInfoLayer = true,
+                Style = null,
+                Features = Providers.DataModelProvider.Places.Select(model =>
+                {
+                    var result = new Mapsui.Layers.PointFeature(SphericalMercator.FromLonLat(model.Long, model.Lat).ToMPoint());
+
+                    result[nameof(Models.Data.PlaceDataModel)] = model;
+
+                    result.Styles.Add(BuildStyleByPlaceKind(model.Kind));
+
+                    return result;
+                }).ToArray(),
+            };
+        }
+
+        private Mapsui.Styles.SymbolStyle BuildStyleByPlaceKind(Enumerations.PlaceKind kind)
+        {
+            int bitmapId = -1;
+
+            switch (kind)
+            {
+                case Enumerations.PlaceKind.InfoturOffice:
+                    bitmapId = GetType().LoadSvgId("Resources.Vectors.symbol-infotur.svg");
+
+                    break;
+                case Enumerations.PlaceKind.Museum:
+                    bitmapId = GetType().LoadSvgId("Resources.Vectors.symbol-museum.svg");
+
+                    break;
+                default:
+                    break;  
+            }
+
+            return new Mapsui.Styles.SymbolStyle { BitmapId = bitmapId, SymbolScale = 0.36 };
         }
     }
 }

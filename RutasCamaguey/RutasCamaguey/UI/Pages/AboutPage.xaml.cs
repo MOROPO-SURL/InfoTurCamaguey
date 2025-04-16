@@ -1,20 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
+﻿namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AboutPage : ContentPage
+    public partial class AboutPage : Xamarin.Forms.ContentPage
     {
         public AboutPage()
         {
             InitializeComponent();
+        }
+
+        protected override bool OnBackButtonPressed()
+        {
+            if (Xamarin.Forms.Shell.Current.FlyoutIsPresented)
+            {
+                Xamarin.Forms.Shell.Current.FlyoutIsPresented = false;
+            }
+            else
+            {
+                Xamarin.Forms.Shell.Current.GoToAsync("//StartPage");
+            }
+
+            return true;
         }
     }
 }

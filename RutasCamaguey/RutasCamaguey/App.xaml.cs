@@ -11,6 +11,8 @@
 
             AppResources.Culture = System.Threading.Thread.CurrentThread.CurrentUICulture;
 
+            Providers.DataModelProvider.ReInitialize();
+
             MainPage = new UI.Shells.AppShell();
         }
 

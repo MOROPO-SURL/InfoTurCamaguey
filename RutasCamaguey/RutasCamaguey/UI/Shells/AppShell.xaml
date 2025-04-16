@@ -3,7 +3,8 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:root="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas"
-    xmlns:ui_pages="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas.UI.Pages"
+    xmlns:ui_pages="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas.UI.Pages"    
+    xmlns:ffimageloading_forms_svg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
     Title="RutasCamaguey"
     x:Class="MOROPO.InfoTur.Camaguey.Rutas.UI.Shells.AppShell">
 
@@ -104,10 +105,22 @@
         </FlyoutItem.FlyoutIcon>
         <ShellContent Route="CatalogPage" ContentTemplate="{DataTemplate ui_pages:CatalogPage}" />
     </FlyoutItem>
+    <FlyoutItem Title="{Static root:AppResources.CommonAbout}">
+        <FlyoutItem.FlyoutIcon>
+            <FontImageSource FontFamily="Material Design Icons" Glyph="&#xF2FD;" Color="Black" />
+        </FlyoutItem.FlyoutIcon>
+        <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate ui_pages:AboutPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="{Static root:AppResources.CommonConfiguration}">
+        <FlyoutItem.FlyoutIcon>
+            <FontImageSource FontFamily="Material Design Icons" Glyph="&#xF8BA;" Color="Black" />
+        </FlyoutItem.FlyoutIcon>
+        <ShellContent Route="ConfigPage" ContentTemplate="{DataTemplate ui_pages:ConfigurationPage}" />
+    </FlyoutItem>
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
-    <MenuItem Text="Visita virtual ..." StyleClass="MenuItemLayoutStyle" Clicked="MenuItem_Clicked">
-    </MenuItem>
+    <!--<MenuItem Text="Visita virtual ..." StyleClass="MenuItemLayoutStyle" Clicked="MenuItem_Clicked">
+    </MenuItem>-->
 
     <!--
         TabBar lets you define content that won't show up in a flyout menu. When this content is active
@@ -120,37 +133,61 @@
         <ShellContent Route="VirtualTour1" ContentTemplate="{DataTemplate ui_pages:VirtualTour1Page}" />
     </TabBar>-->
 
-    <!-- Optional Templates 
+     <!--Optional Templates 
     // These may be provided inline as below or as separate classes.
 
     // This header appears at the top of the Flyout.
-    // https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/flyout#flyout-header
+    // https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/flyout#flyout-header-->
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>
-            <Grid>ContentHere</Grid>
+            <Grid 
+                Margin="0,0,0,30"
+                HeightRequest="201">
+                <ffimageloading_forms_svg:SvgCachedImage
+                    Source="resource://MOROPO.InfoTur.Camaguey.Rutas.Resources.Vectors.header.svg" />
+            </Grid>
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
 
-    // ItemTemplate is for ShellItems as displayed in a Flyout
-    // https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/flyout#define-flyoutitem-appearance
+    <!--// ItemTemplate is for ShellItems as displayed in a Flyout
+    // https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/flyout#define-flyoutitem-appearance-->
     <Shell.ItemTemplate>
         <DataTemplate>
-            <ContentView>
-                Bindable Properties: Title, Icon
-            </ContentView>
+            <Grid
+                x:Name="FlyoutItemLayout"
+                x:DataType="FlyoutItem"
+                StyleClass="FlyoutItemLayoutStyle"
+                Padding="12" ColumnSpacing="12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="28" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Image
+                    Grid.Column="0"
+                    WidthRequest="36" HeightRequest="36"
+                    Source="{Binding FlyoutIcon}" />
+                <Label
+                    x:Name="FlyoutItemLabel"
+                    StyleClass="FlyoutItemLabelStyle"
+                    Grid.Column="1"
+                    FontSize="Medium"
+                    Text="{Binding Title}"
+                    VerticalTextAlignment="Center">
+                </Label>
+            </Grid>
         </DataTemplate>
     </Shell.ItemTemplate>
 
-    // MenuItemTemplate is for MenuItems as displayed in a Flyout
-    // https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/flyout#define-menuitem-appearance
-    <Shell.MenuItemTemplate>
+    <!--// MenuItemTemplate is for MenuItems as displayed in a Flyout
+    // https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/flyout#define-menuitem-appearance-->
+    <!--<Shell.MenuItemTemplate>
         <DataTemplate>
             <ContentView>
                 Bindable Properties: Text, Icon
             </ContentView>
         </DataTemplate>
-    </Shell.MenuItemTemplate>
+    </Shell.MenuItemTemplate>-->
 
-    -->
+    
 
 </Shell>

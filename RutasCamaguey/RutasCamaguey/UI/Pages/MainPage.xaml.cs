@@ -45,6 +45,51 @@
             }
         }
 
+
+
+        protected override bool OnBackButtonPressed()
+        {
+            if (Xamarin.Forms.Shell.Current.FlyoutIsPresented)
+            {
+                Xamarin.Forms.Shell.Current.FlyoutIsPresented = false;
+
+                return true;
+            }
+
+            return false;
+        }
+
+        private void LanguageToolbarItem_Clicked(object sender, System.EventArgs eventArgs)
+        {
+            DisplayActionSheet(AppResources.PickLanguageHeader, AppResources.CancelText, null, AppResources.LanguageNameSpanish, AppResources.LanguageNameEnglish).ContinueWith(task =>
+            {
+                if (string.IsNullOrEmpty(task.Result) || task.Result.Equals(AppResources.CancelText)) return;
+
+                if (task.Result.Equals(AppResources.LanguageNameSpanish))
+                {
+                    System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("es");
+                }
+                else if (task.Result.Equals(AppResources.LanguageNameEnglish))
+                {
+                    System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+                }
+
+                AppResources.Culture = System.Threading.Thread.CurrentThread.CurrentUICulture;
+
+                Dispatcher.BeginInvokeOnMainThread(() =>
+                {
+                    ConcreteBindingContext.IsBusy = true;
+
+                    System.Threading.Tasks.Task.Delay(200).ContinueWith(_ => Dispatcher.BeginInvokeOnMainThread(() =>
+                    {
+                        Providers.DataModelProvider.ReInitialize();
+
+                        Xamarin.Forms.Application.Current.MainPage = new Shells.AppShell();
+                    }));                  
+                });
+            });
+        }
+
         private void PrimaryRecomendation_Tapped(object sender, System.EventArgs eventArgs)
         {
             Xamarin.Forms.Shell.Current.GoToAsync("//MapPage");
@@ -53,6 +98,11 @@
         private void SecoundaryRecommendation_Tapped(object sender, System.EventArgs eventArgs) 
         {
             Xamarin.Forms.Shell.Current.GoToAsync("//GuideARPage");
+        }
+
+        private void AboutButton_Clicked(object sender, System.EventArgs e)
+        {
+            Xamarin.Forms.Shell.Current.GoToAsync("//AboutPage");
         }
     }
 }

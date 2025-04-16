@@ -123,8 +123,14 @@
   <data name="ARIntro" xml:space="preserve">
     <value>This section will give you an extended experience when interacting with Infotur maps on posters and guides about the city of Camagüey. Focus your camera on the map to expand the information.</value>
   </data>
+  <data name="ButtonPickLanguage" xml:space="preserve">
+    <value>Language</value>
+  </data>
   <data name="ButtonShowMore" xml:space="preserve">
-    <value>Show me more ...</value>
+    <value>See more ...</value>
+  </data>
+  <data name="CancelText" xml:space="preserve">
+    <value>Cancel</value>
   </data>
   <data name="CommonAbout" xml:space="preserve">
     <value>About</value>
@@ -146,5 +152,14 @@
   </data>
   <data name="CommonStart" xml:space="preserve">
     <value>Home</value>
+  </data>
+  <data name="LanguageNameEnglish" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="LanguageNameSpanish" xml:space="preserve">
+    <value>Spanish</value>
+  </data>
+  <data name="PickLanguageHeader" xml:space="preserve">
+    <value>Select language</value>
   </data>
 </root>

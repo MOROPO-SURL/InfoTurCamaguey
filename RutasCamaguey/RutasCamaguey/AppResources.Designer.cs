@@ -79,11 +79,29 @@ namespace MOROPO.InfoTur.Camaguey.Rutas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Lenguaje.
+        /// </summary>
+        internal static string ButtonPickLanguage {
+            get {
+                return ResourceManager.GetString("ButtonPickLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Ver más ....
         /// </summary>
         internal static string ButtonShowMore {
             get {
                 return ResourceManager.GetString("ButtonShowMore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cancelar.
+        /// </summary>
+        internal static string CancelText {
+            get {
+                return ResourceManager.GetString("CancelText", resourceCulture);
             }
         }
         
@@ -147,6 +165,33 @@ namespace MOROPO.InfoTur.Camaguey.Rutas {
         internal static string CommonStart {
             get {
                 return ResourceManager.GetString("CommonStart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Inglés.
+        /// </summary>
+        internal static string LanguageNameEnglish {
+            get {
+                return ResourceManager.GetString("LanguageNameEnglish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Español.
+        /// </summary>
+        internal static string LanguageNameSpanish {
+            get {
+                return ResourceManager.GetString("LanguageNameSpanish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Seleccionar lenguaje.
+        /// </summary>
+        internal static string PickLanguageHeader {
+            get {
+                return ResourceManager.GetString("PickLanguageHeader", resourceCulture);
             }
         }
     }

@@ -59,6 +59,20 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
             base.OnDisappearing();
         }
 
+        protected override bool OnBackButtonPressed()
+        {
+            if (Xamarin.Forms.Shell.Current.FlyoutIsPresented)
+            {
+                Xamarin.Forms.Shell.Current.FlyoutIsPresented = false;
+            }
+            else
+            {
+                Xamarin.Forms.Shell.Current.GoToAsync("//StartPage");
+            }
+
+            return true;
+        }
+
         private async System.Threading.Tasks.Task<bool> GetPermissions()
         {
             var status = await Permissions.CheckStatusAsync<Permissions.Camera>();

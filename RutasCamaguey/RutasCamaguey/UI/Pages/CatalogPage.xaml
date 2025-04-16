@@ -3,13 +3,65 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:root="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas"
+    xmlns:ui_views="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas.UI.Views"
     x:Class="MOROPO.InfoTur.Camaguey.Rutas.UI.Pages.CatalogPage"
     Title="{Static root:AppResources.CommonCatalog}">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <CollectionView
+                ItemsSource="{Binding Path=Items}">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout ItemSpacing="0" Orientation="Vertical" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.Header>
+                    <BoxView Color="Transparent" HeightRequest="8" />
+                </CollectionView.Header>
+                <CollectionView.Footer>
+                    <BoxView Color="Transparent" HeightRequest="8" />
+                </CollectionView.Footer>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <ContentView>
+                            <Frame
+                                Margin="16,8"
+                                Padding="0"
+                                HeightRequest="140"
+                                BackgroundColor="WhiteSmoke">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="PlaceFrameTapGestureRecognizer_Tapped" />
+                                </Frame.GestureRecognizers>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition Width="2*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Image
+                                        Grid.Column="0"
+                                        BackgroundColor="DimGray"
+                                        Aspect="AspectFill"
+                                        Source="{Binding Path=FeatureImageSource}" />
+                                    <StackLayout
+                                        Grid.Column="1"
+                                        Padding="8">
+                                        <Label 
+                                            FontAttributes="Bold"
+                                            LineBreakMode="TailTruncation"
+                                            MaxLines="2"
+                                            FontSize="Medium"
+                                            TextColor="{StaticResource Primary}"
+                                            Text="{Binding Path=Title}" />
+                                        <Label
+                                            LineBreakMode="TailTruncation"
+                                            MaxLines="4"
+                                            Text="{Binding Path=Summary}" />
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                        </ContentView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <ui_views:BusyView />
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

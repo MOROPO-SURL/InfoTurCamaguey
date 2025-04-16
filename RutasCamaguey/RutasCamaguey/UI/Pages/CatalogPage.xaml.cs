@@ -1,20 +1,61 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
+﻿namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CatalogPage : ContentPage
+    public partial class CatalogPage : Xamarin.Forms.ContentPage
     {
         public CatalogPage()
         {
             InitializeComponent();
+
+            BindingContext = new Models.Page.CatalogPageModel();
+
+            IsEnabled = false;
+        }
+
+        private Models.Page.CatalogPageModel ConcreteBindingContext => BindingContext as Models.Page.CatalogPageModel;
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (IsEnabled) return;
+
+            ConcreteBindingContext.IsBusy = true;
+
+            System.Threading.Tasks.Task.Delay(200).ContinueWith(_ => 
+            {
+                Dispatcher.BeginInvokeOnMainThread(() =>
+                {
+                    foreach (var item in Providers.DataModelProvider.Places)
+                    {
+                        ConcreteBindingContext.Items.Add(item);
+                    }
+
+                    ConcreteBindingContext.IsBusy = false;
+                });
+            });
+
+            IsEnabled = true;
+        }
+
+        protected override bool OnBackButtonPressed()
+        {
+            if (Xamarin.Forms.Shell.Current.FlyoutIsPresented)
+            {
+                Xamarin.Forms.Shell.Current.FlyoutIsPresented = false;
+            }
+            else
+            {
+                Xamarin.Forms.Shell.Current.GoToAsync("//StartPage");
+            }
+
+            return true;
+        }
+
+        private void PlaceFrameTapGestureRecognizer_Tapped(object sender, System.EventArgs e)
+        {
+            var model = (sender as Xamarin.Forms.BindableObject).BindingContext as Models.Data.PlaceDataModel;
+
+            Navigation.PushModalAsync(new PlaceDetailPage(model));
         }
     }
 }

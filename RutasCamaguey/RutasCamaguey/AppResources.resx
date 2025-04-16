@@ -123,8 +123,14 @@
   <data name="ARIntro" xml:space="preserve">
     <value>Esta sección le brindará una experiencia extendida al interactuar con mapas en carteles y guías de Infotur sobre la ciudad de Camagüey. Enfoque la cámara hacia el mapa para ampliar la información.</value>
   </data>
+  <data name="ButtonPickLanguage" xml:space="preserve">
+    <value>Lenguaje</value>
+  </data>
   <data name="ButtonShowMore" xml:space="preserve">
     <value>Ver más ...</value>
+  </data>
+  <data name="CancelText" xml:space="preserve">
+    <value>Cancelar</value>
   </data>
   <data name="CommonAbout" xml:space="preserve">
     <value>Acerca de</value>
@@ -146,5 +152,14 @@
   </data>
   <data name="CommonStart" xml:space="preserve">
     <value>Inicio</value>
+  </data>
+  <data name="LanguageNameEnglish" xml:space="preserve">
+    <value>Inglés</value>
+  </data>
+  <data name="LanguageNameSpanish" xml:space="preserve">
+    <value>Español</value>
+  </data>
+  <data name="PickLanguageHeader" xml:space="preserve">
+    <value>Seleccionar lenguaje</value>
   </data>
 </root>

@@ -12,17 +12,35 @@
 	<ItemGroup>
 		<None Remove="Resources\DBs\map.mbtiles" />
 		<None Remove="Resources\Fonts\materialdesignicons-webfont.ttf" />
+		<None Remove="Resources\Images\0f76b63b-8659-4587-bf54-1cb136f03fda.jpg" />
+		<None Remove="Resources\Images\6c7ad3d7-2ef6-4a0a-a3d3-7572877cff42.jpg" />
+		<None Remove="Resources\Images\76fc82ec-468e-4209-a483-4a873a0e1703.jpg" />
+		<None Remove="Resources\Images\76ff2435-636b-4f8f-b829-ee8dd4ab6cb3.jpg" />
+		<None Remove="Resources\Images\museo-san-juan-de-dios.jpg" />
+		<None Remove="Resources\Images\plaza-carmen.jpg" />
+		<None Remove="Resources\Images\plaza-gallo.jpg" />
+		<None Remove="Resources\Images\plaza-trabajadores.jpg" />
+		<None Remove="Resources\Vectors\banner.svg" />
 		<None Remove="Resources\Vectors\footer.svg" />
 		<None Remove="Resources\Vectors\header.svg" />
 		<None Remove="Resources\Vectors\logo.svg" />
+		<None Remove="Resources\Vectors\symbol-infotur.svg" />
+		<None Remove="Resources\Vectors\symbol-museum.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<EmbeddedResource Include="Resources\DBs\map.mbtiles" />
 		<EmbeddedResource Include="Resources\Fonts\materialdesignicons-webfont.ttf" />
+		<EmbeddedResource Include="Resources\Images\museo-san-juan-de-dios.jpg" />
+		<EmbeddedResource Include="Resources\Images\plaza-carmen.jpg" />
+		<EmbeddedResource Include="Resources\Images\plaza-gallo.jpg" />
+		<EmbeddedResource Include="Resources\Images\plaza-trabajadores.jpg" />
 		<EmbeddedResource Include="Resources\Vectors\footer.svg" />
-		<EmbeddedResource Include="Resources\Vectors\logo.svg" />
 		<EmbeddedResource Include="Resources\Vectors\header.svg" />
+		<EmbeddedResource Include="Resources\Vectors\logo.svg" />
+		<EmbeddedResource Include="Resources\Vectors\banner.svg" />
+		<EmbeddedResource Include="Resources\Vectors\symbol-infotur.svg" />
+		<EmbeddedResource Include="Resources\Vectors\symbol-museum.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -71,6 +89,9 @@
 		</EmbeddedResource>
 		<EmbeddedResource Update="UI\Pages\MapPage.xaml">
 			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="UI\Pages\PlaceDetailPage.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 		</EmbeddedResource>
 		<EmbeddedResource Update="UI\Pages\VirtualTour1Page.xaml">
 		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>

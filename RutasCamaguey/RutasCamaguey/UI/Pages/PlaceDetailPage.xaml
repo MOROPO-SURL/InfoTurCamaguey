@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MOROPO.InfoTur.Camaguey.Rutas.UI.Pages.PlaceDetailPage"
+    BackgroundColor="#77000000">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <BoxView Color="Transparent" HeightRequest="240" />
+                <BoxView Color="Transparent" VerticalOptions="FillAndExpand" />
+                <Frame
+                    Margin="16,0" Padding="16">
+                    <StackLayout Spacing="8">
+                        <Image
+                            Grid.Column="0"
+                            Margin="0,0,0,8"
+                            BackgroundColor="DimGray"
+                            Aspect="AspectFill"
+                            Source="{Binding Path=FeatureImageSource}" />
+                        <Label 
+                            FontAttributes="Bold"
+                            FontSize="Medium"
+                            TextColor="{StaticResource Primary}"
+                            Text="{Binding Path=Title}" />
+                        <Label Text="{Binding Path=Summary}" />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
