@@ -114,11 +114,46 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
                     bitmapId = GetType().LoadSvgId("Resources.Vectors.symbol-infotur.svg");
 
                     break;
+
                 case Enumerations.PlaceKind.Museum:
                     bitmapId = GetType().LoadSvgId("Resources.Vectors.symbol-museum.svg");
 
                     break;
+
+                case Enumerations.PlaceKind.Church:
+                    bitmapId = GetType().LoadSvgId("Resources.Vectors.symbol-church.svg");
+
+                    break;
+
+                case Enumerations.PlaceKind.ArtGallery:
+                    bitmapId = GetType().LoadSvgId("Resources.Vectors.symbol-gallery.svg");
+
+                    break;
+
+                case Enumerations.PlaceKind.Zoo:
+                    bitmapId = GetType().LoadSvgId("Resources.Vectors.symbol-zoo.svg");
+
+                    break;
+
+                case Enumerations.PlaceKind.SportCenter:
+                    bitmapId = GetType().LoadSvgId("Resources.Vectors.symbol-sportcenter.svg");
+
+                    break;
+
+                case Enumerations.PlaceKind.Library:
+                    bitmapId = GetType().LoadSvgId("Resources.Vectors.symbol-library.svg");
+
+                    break;
+
+                case Enumerations.PlaceKind.Monument:
+                    bitmapId = GetType().LoadSvgId("Resources.Vectors.symbol-monumnet.svg");
+
+                    break;
+
+                case Enumerations.PlaceKind.Distinguished:
                 default:
+                    bitmapId = GetType().LoadSvgId("Resources.Vectors.symbol-distinguished.svg");
+
                     break;  
             }
 

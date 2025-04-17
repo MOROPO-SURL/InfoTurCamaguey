@@ -3,6 +3,13 @@
     public enum PlaceKind
     {
         InfoturOffice,
-        Museum
+        Museum,
+        Church,
+        ArtGallery,
+        Zoo,
+        SportCenter,
+        Distinguished,
+        Library,
+        Monument
     }
 }

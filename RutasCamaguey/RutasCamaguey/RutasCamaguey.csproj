@@ -24,8 +24,15 @@
 		<None Remove="Resources\Vectors\footer.svg" />
 		<None Remove="Resources\Vectors\header.svg" />
 		<None Remove="Resources\Vectors\logo.svg" />
+		<None Remove="Resources\Vectors\symbol-church.svg" />
+		<None Remove="Resources\Vectors\symbol-distinguished.svg" />
+		<None Remove="Resources\Vectors\symbol-gallery.svg" />
 		<None Remove="Resources\Vectors\symbol-infotur.svg" />
+		<None Remove="Resources\Vectors\symbol-library.svg" />
+		<None Remove="Resources\Vectors\symbol-monument.svg" />
 		<None Remove="Resources\Vectors\symbol-museum.svg" />
+		<None Remove="Resources\Vectors\symbol-sportcenter.svg" />
+		<None Remove="Resources\Vectors\symbol-zoo.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -39,8 +46,15 @@
 		<EmbeddedResource Include="Resources\Vectors\header.svg" />
 		<EmbeddedResource Include="Resources\Vectors\logo.svg" />
 		<EmbeddedResource Include="Resources\Vectors\banner.svg" />
+		<EmbeddedResource Include="Resources\Vectors\symbol-church.svg" />
+		<EmbeddedResource Include="Resources\Vectors\symbol-distinguished.svg" />
+		<EmbeddedResource Include="Resources\Vectors\symbol-gallery.svg" />
 		<EmbeddedResource Include="Resources\Vectors\symbol-infotur.svg" />
+		<EmbeddedResource Include="Resources\Vectors\symbol-library.svg" />
+		<EmbeddedResource Include="Resources\Vectors\symbol-monument.svg" />
 		<EmbeddedResource Include="Resources\Vectors\symbol-museum.svg" />
+		<EmbeddedResource Include="Resources\Vectors\symbol-sportcenter.svg" />
+		<EmbeddedResource Include="Resources\Vectors\symbol-zoo.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
