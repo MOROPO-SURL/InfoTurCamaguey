@@ -8,6 +8,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
     public class GuideARPresenter : Application
     {
         private Scene foregroundScene;
+        private Octree foregroundOctree;
         private Camera urhoCameraComponent;
         private EasyARUrhoComponent easyARUrhoComponent;
 
@@ -18,6 +19,8 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
         {
             targetIdentitficationNodes = new System.Collections.Generic.List<Node>();
         }
+
+        public System.EventHandler<GuideARPresenterPlaceTargetEventArg> PlaceTarget;
 
         protected override void Start()
         {
@@ -32,6 +35,10 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
         {
             base.Stop();
 
+            Input.TouchEnd -= Input_TouchEnd;
+
+            easyARUrhoComponent.ARFrameUpdated -= OnARFrameUpdated;
+
             easyARUrhoComponent.Dispose();
         }
 
@@ -39,7 +46,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
         {
             foregroundScene = new Scene();
 
-            foregroundScene.CreateComponent<Octree>();
+            foregroundOctree = foregroundScene.CreateComponent<Octree>();
 
             var zoneComponent = foregroundScene.CreateComponent<Zone>();
 
@@ -48,6 +55,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
             var cameraNode = foregroundScene.CreateChild();
 
             cameraNode.Position = new Vector3(0, 0, 0);
+
             cameraNode.LookAt(new Vector3(0, 0, 1), new Vector3(0, 1, 0));
 
             urhoCameraComponent = cameraNode.CreateComponent<Camera>();
@@ -72,7 +80,29 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
 
             easyARUrhoComponent.ARFrameUpdated += OnARFrameUpdated;
 
+            Input.TouchEnd += Input_TouchEnd;
+
             Renderer.SetViewport(1, foregroundViewport);
+        }
+
+        public void Input_TouchEnd(TouchEndEventArgs eventArgs)
+        {
+            var cameraRay = urhoCameraComponent.GetScreenRay((float)eventArgs.X / Application.Current.Graphics.Width, (float)eventArgs.Y / Application.Current.Graphics.Height);
+
+            var result = foregroundOctree.RaycastSingle(cameraRay);
+
+            if (result != null)
+            {
+                var target = result.Value.Drawable as Place3DModel;
+
+                if (target != null && PlaceTarget != null)
+                {
+                    Xamarin.Forms.Device.BeginInvokeOnMainThread(delegate
+                    {
+                        PlaceTarget.Invoke(this, new GuideARPresenterPlaceTargetEventArg { Place = target.Place });
+                    });
+                }
+            }
         }
 
         protected void OnARFrameUpdated(OutputFrame oFrame, CameraParameters cameraParameters, float aspectRatio, int rotation)
@@ -108,9 +138,9 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
                                     {
                                         var images = imageTarget.images();
 
-                                        Image targetImage = images[0];
+                                        var targetImage = images[0];
 
-                                        Matrix4 urhoCameraProjection = easyARCameraProjection.ToUrhoMatrix();
+                                        var urhoCameraProjection = easyARCameraProjection.ToUrhoMatrix();
 
                                         urhoCameraProjection.M34 /= 2f;
                                         urhoCameraProjection.M33 = far / (far - near);
@@ -118,9 +148,9 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
 
                                         urhoCameraComponent.SetProjection(urhoCameraProjection);
 
-                                        Matrix4 convertedPoseMatrix = targetInstance.pose().ToUrhoMatrix();
+                                        var convertedPoseMatrix = targetInstance.pose().ToUrhoMatrix();
 
-                                        Vector3 scale = new Vector3(imageTarget.scale(), imageTarget.scale() * targetImage.height() / targetImage.width(), 1);
+                                        var scale = new Vector3(imageTarget.scale(), imageTarget.scale() * targetImage.height() / targetImage.width(), 1);
 
                                         UpdateARScene(target, targetIndex, convertedPoseMatrix, scale);
 
@@ -181,7 +211,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
 
                         var infoTourPlaceNode = targetNode.CreateChild();
 
-                        calloutNodes.Add(ConfigureMarkerNode(infoTourPlaceNode, 0.275f, 0.1f, false));
+                        calloutNodes.Add(ConfigureMarkerNode(infoTourPlaceNode, Providers.DataModelProvider.Places[0], 0.275f, 0.1f, false));
 
                         //infoTourPlaceNode.Position = new Vector3(0.275f, 0.1f, 0.0f);
                         //infoTourPlaceNode.Scale = new Vector3(0.025f, 1.0f, 0.025f);                        
@@ -193,7 +223,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
 
                         var natalHouseMuseumPlaceNode = targetNode.CreateChild();
 
-                        calloutNodes.Add(ConfigureMarkerNode(natalHouseMuseumPlaceNode, -0.1f, -0.2f, true));
+                        calloutNodes.Add(ConfigureMarkerNode(natalHouseMuseumPlaceNode, Providers.DataModelProvider.Places[1], -0.1f, -0.2f, true));
 
                         //natalHouseMuseumPlaceNode.Position = new Vector3(-0.1f, -0.2f, 0.0f);
                         //natalHouseMuseumPlaceNode.Scale = new Vector3(0.025f, 1.0f, 0.025f);
@@ -230,27 +260,30 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
             //}
         }
 
-        private Node ConfigureMarkerNode(Node markerNode, float traslationX, float traslationY, bool calloutLeftSide)
+        private Node ConfigureMarkerNode(Node markerNode, Models.Data.PlaceDataModel dataModel, float traslationX, float traslationY, bool calloutLeftSide)
         {
-            markerNode.Position = new Vector3(traslationX, traslationY, 0.0f);            
+            var primaryColor = Color.FromHex("1D184B");
+            var secoundarColor = Color.FromHex("FDE443");
+
+            markerNode.Position = new Vector3(traslationX, traslationY, 0.0f);
 
             var pinBodyNode = markerNode.CreateChild();
 
             pinBodyNode.Scale = new Vector3(0.05f, 1.0f, 0.05f);
             pinBodyNode.Rotation = new Quaternion(90.0f, 0.0f, 0.0f);
 
-            var pinBodyModel = pinBodyNode.CreateComponent<Urho.Shapes.Cylinder>();
+            var pinBodyComponent = pinBodyNode.CreateComponent<Urho.Shapes.Cylinder>();
 
-            pinBodyModel.Color = Color.FromHex("FDE443");
+            pinBodyComponent.Color = secoundarColor;
 
             var pinHeadNode = markerNode.CreateChild();
 
             pinHeadNode.Position = new Vector3(0, 0, -0.5f);
             pinHeadNode.Scale = new Vector3(0.125f, 0.125f, 0.125f);
 
-            var pinHeadModel = pinHeadNode.CreateComponent<Urho.Shapes.Sphere>();
+            var pinHeadComponent = pinHeadNode.CreateComponent<Urho.Shapes.Sphere>();
 
-            pinHeadModel.Color = Color.FromHex("1D184B");
+            pinHeadComponent.Color = primaryColor;
 
             var calloutBodyHeight = 0.4f;
             var calloutBodyWidth = 0.75f;
@@ -273,9 +306,11 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
             calloutBodyNode.Position = new Vector3(calloutBodyNodePositionX, 0, 0);
             calloutBodyNode.Scale = new Vector3(calloutBodyWidth, 0.025f, calloutBodyHeight);
 
-            var calloutBodyModel = calloutBodyNode.CreateComponent<Urho.Shapes.Box>();
+            var calloutBodyComponent = calloutBodyNode.CreateComponent<Place3DModel>();
 
-            calloutBodyModel.Color = Color.FromHex("1D184B");
+            calloutBodyComponent.Place = dataModel;
+            calloutBodyComponent.Model = CoreAssets.Models.Box;
+            calloutBodyComponent.Material = Material.FromColor(primaryColor);
 
             var calloutChevronNode = calloutNode.CreateChild();
 
@@ -287,9 +322,9 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
             calloutChevronNode.Scale = new Vector3(calloutBodyHeight * 0.25f, 0.025f, calloutBodyHeight * 0.25f);
             calloutChevronNode.Rotation = new Quaternion(0, 45.0f, 0);
 
-            var calloutChevronModel = calloutChevronNode.CreateComponent<Urho.Shapes.Box>();
+            var calloutChevronComponent = calloutChevronNode.CreateComponent<Urho.Shapes.Box>();
 
-            calloutChevronModel.Color = Color.FromHex("1D184B");
+            calloutChevronComponent.Color = primaryColor;
 
             return calloutNode;
         }
@@ -297,8 +332,18 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
         private void RotateNodeRelativeToCamera(Node objectNode)
         {
             if (urhoCameraComponent == null || objectNode == null) return;
-            
+
             objectNode.Rotation = urhoCameraComponent.Node.Rotation * new Quaternion(1, 0, 0, 0);
         }
+
+        private class Place3DModel : StaticModel
+        {
+            public Models.Data.PlaceDataModel Place { get; set; }
+        }
+    }
+
+    public class GuideARPresenterPlaceTargetEventArg : System.EventArgs
+    {
+        public Models.Data.PlaceDataModel Place { get; set; }
     }
 }

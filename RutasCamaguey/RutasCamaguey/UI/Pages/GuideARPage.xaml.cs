@@ -1,10 +1,11 @@
-﻿using Urho;
-using Xamarin.Essentials;
+﻿using Xamarin.Essentials;
 
 namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
 {
     public partial class GuideARPage : Xamarin.Forms.ContentPage
     {
+        private Env3D.Presenters.GuideARPresenter env3DPresenter;
+
         public GuideARPage()
         {
             InitializeComponent();
@@ -16,6 +17,8 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
 
         protected override void OnAppearing()
         {
+            Content.BackgroundColor = Xamarin.Forms.Color.White;
+
             GetPermissions().ContinueWith(task =>
             {
                 Dispatcher.BeginInvokeOnMainThread(() =>
@@ -36,15 +39,20 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
 
                                 var urhoSurface = new Urho.Forms.UrhoSurface();
 
-                                var urhoApplicationOptions = new ApplicationOptions()
+                                var urhoApplicationOptions = new Urho.ApplicationOptions()
                                 {
                                     ResourcePaths = new[] { "UrhoData" },
-                                    Orientation = ApplicationOptions.OrientationType.LandscapeAndPortrait
+                                    Orientation = Urho.ApplicationOptions.OrientationType.LandscapeAndPortrait
                                 };
 
                                 (Content as Xamarin.Forms.Grid).Children.Insert(0, urhoSurface);
 
-                                urhoSurface.Show<Env3D.Presenters.GuideARPresenter>(urhoApplicationOptions);
+                                urhoSurface.Show<Env3D.Presenters.GuideARPresenter>(urhoApplicationOptions).ContinueWith(task =>
+                                {
+                                    env3DPresenter = task.Result;
+
+                                    env3DPresenter.PlaceTarget += GuideARPresenter_PlaceTarget;
+                                });
                             });
                         });
                     }
@@ -54,6 +62,12 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
 
         protected override void OnDisappearing()
         {
+            env3DPresenter.PlaceTarget -= GuideARPresenter_PlaceTarget;
+
+            env3DPresenter = null;
+
+            (Content as Xamarin.Forms.Grid).Children.RemoveAt(0);
+
             Urho.Forms.UrhoSurface.OnDestroy();
 
             base.OnDisappearing();
@@ -71,6 +85,13 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
             }
 
             return true;
+        }
+
+        private void GuideARPresenter_PlaceTarget(object sender, Env3D.Presenters.GuideARPresenterPlaceTargetEventArg eventArg)
+        {
+            Content.BackgroundColor = Xamarin.Forms.Color.Black;
+
+            Navigation.PushModalAsync(new PlaceDetailPage(eventArg.Place));
         }
 
         private async System.Threading.Tasks.Task<bool> GetPermissions()
