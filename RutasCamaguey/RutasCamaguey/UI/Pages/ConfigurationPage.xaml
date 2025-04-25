@@ -7,7 +7,7 @@
     Title="{Static root:AppResources.CommonConfiguration}">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Aplicación Rutas Camagüey v0.1-alfa (En construcción)"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

@@ -33,7 +33,23 @@
                     Long = -77.917155,
                     Title = "Oficina Infotur Camagüey",
                     FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-gallo.jpg"),
-                    Summary = "Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat."
+                    Summary = "Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat. Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat."
+                        },
+                        new Models.Data.Content.VirtualVisitContentDataModel
+                        {
+                            PreviewImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-gallo.jpg"),
+                            VirtualVisitContentPage = new UI.Pages.VirtualTour1Page()
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat."
+                        }
+                    }
                 },
                 new Models.Data.PlaceDataModel
                 {
@@ -42,7 +58,23 @@
                     Long = -77.918301,
                     Title = "Museo Casa Natal Ignacio Agramonte",
                     FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-carmen.jpg"),
-                    Summary = "Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat."
+                    Summary = "Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat. Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat."
+                        },
+                        new Models.Data.Content.VirtualVisitContentDataModel
+                        {
+                            PreviewImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-gallo.jpg"),
+                            VirtualVisitContentPage = new UI.Pages.VirtualTour1Page()
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat."
+                        }
+                    }
                 }
             };
         }
@@ -58,7 +90,23 @@
                     Long = -77.917155,
                     Title = "Infotur Camagüey Office",
                     FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-trabajadores.jpg"),
-                    Summary = "Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat."
+                    Summary = "Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat. Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat."
+                        },
+                        new Models.Data.Content.VirtualVisitContentDataModel
+                        {
+                            PreviewImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-gallo.jpg"),
+                            VirtualVisitContentPage = new UI.Pages.VirtualTour1Page()
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat."
+                        }
+                    }
                 },
                 new Models.Data.PlaceDataModel
                 {
@@ -67,7 +115,23 @@
                     Long = -77.918301,
                     Title = "Casa Natal Ignacio Agramonte Museum",
                     FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.museo-san-juan-de-dios.jpg"),
-                    Summary = "Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat."
+                    Summary = "Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat. Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat."
+                        },
+                        new Models.Data.Content.VirtualVisitContentDataModel
+                        {
+                            PreviewImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-gallo.jpg"),
+                            VirtualVisitContentPage = new UI.Pages.VirtualTour1Page()
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat."
+                        }
+                    }
                 }
             };
         }   

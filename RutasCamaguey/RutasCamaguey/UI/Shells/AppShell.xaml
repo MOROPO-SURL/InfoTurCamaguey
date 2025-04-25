@@ -138,16 +138,40 @@
 
     // This header appears at the top of the Flyout.
     // https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/flyout#flyout-header-->
-    <Shell.FlyoutHeaderTemplate>
-        <DataTemplate>
-            <Grid 
-                Margin="0,0,0,30"
-                HeightRequest="201">
-                <ffimageloading_forms_svg:SvgCachedImage
-                    Source="resource://MOROPO.InfoTur.Camaguey.Rutas.Resources.Vectors.header.svg" />
-            </Grid>
-        </DataTemplate>
-    </Shell.FlyoutHeaderTemplate>
+    <Shell.FlyoutHeader>
+        <Grid 
+            Margin="0,0,0,30"
+            HeightRequest="201">
+            <ffimageloading_forms_svg:SvgCachedImage
+                Aspect="AspectFill"
+                Source="resource://MOROPO.InfoTur.Camaguey.Rutas.Resources.Vectors.header.svg" />
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <Shell.FlyoutFooter>
+        <StackLayout 
+            Orientation="Vertical"
+            Padding="12,24,12,12"
+            Spacing="0">
+            <Label
+                FontFamily="Default"
+                FontSize="Small"
+                HorizontalTextAlignment="Center"
+                Text="Delegación Territorial MINTUR Camagüey" />
+            <Label 
+                FontFamily="Default"
+                FontSize="Micro" 
+                HorizontalTextAlignment="Center"
+                Text="Desarrollado por MOROPO S.U.R.L."
+                TextColor="DimGray" />
+            <Label 
+                FontFamily="Default"
+                FontSize="Micro" 
+                HorizontalTextAlignment="Center"
+                Text="2025"
+                TextColor="Gray" />
+        </StackLayout>
+    </Shell.FlyoutFooter>
 
     <!--// ItemTemplate is for ShellItems as displayed in a Flyout
     // https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/flyout#define-flyoutitem-appearance-->
