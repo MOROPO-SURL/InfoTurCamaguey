@@ -93,7 +93,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
 
             if (result != null)
             {
-                var target = result.Value.Drawable as Place3DModel;
+                var target = result.Value.Drawable as IPlaceDataBindable;
 
                 if (target != null && PlaceTarget != null)
                 {
@@ -201,7 +201,6 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
 
                 var targetNode = rootNode.CreateChild();
 
-                // The box is a unit cube cenered a (0,0) we need to shift it a little or cube will be partially behind the target and look wrong.
                 var targetName = target.name();
 
                 switch (targetName)
@@ -213,25 +212,9 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
 
                         calloutNodes.Add(ConfigureMarkerNode(infoTourPlaceNode, Providers.DataModelProvider.Places[0], 0.275f, 0.1f, false));
 
-                        //infoTourPlaceNode.Position = new Vector3(0.275f, 0.1f, 0.0f);
-                        //infoTourPlaceNode.Scale = new Vector3(0.025f, 1.0f, 0.025f);                        
-                        //infoTourPlaceNode.Rotation = new Quaternion(90.0f, 0.0f, 0.0f);
-
-                        //var infoTurPlaceModel = infoTourPlaceNode.CreateComponent<Urho.Shapes.Cylinder>();
-
-                        //infoTurPlaceModel.Color = Color.Yellow;
-
                         var natalHouseMuseumPlaceNode = targetNode.CreateChild();
 
                         calloutNodes.Add(ConfigureMarkerNode(natalHouseMuseumPlaceNode, Providers.DataModelProvider.Places[1], -0.1f, -0.2f, true));
-
-                        //natalHouseMuseumPlaceNode.Position = new Vector3(-0.1f, -0.2f, 0.0f);
-                        //natalHouseMuseumPlaceNode.Scale = new Vector3(0.025f, 1.0f, 0.025f);
-                        //natalHouseMuseumPlaceNode.Rotation = new Quaternion(90.0f, 0.0f, 0.0f);
-
-                        //var natalHouseMuseumPlaceModel = natalHouseMuseumPlaceNode.CreateComponent<Urho.Shapes.Cylinder>();
-
-                        //natalHouseMuseumPlaceModel.Color = Color.Yellow;
 
                         break;
                 }
@@ -286,7 +269,8 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
             pinHeadComponent.Color = primaryColor;
 
             var calloutBodyHeight = 0.4f;
-            var calloutBodyWidth = 0.75f;
+            var calloutBodyWidth = 1.2f;
+            var calloutBodyWeight = 0.025f;
 
             var calloutNode = markerNode.CreateChild();
 
@@ -295,7 +279,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
             if (calloutLeftSide) calloutNodePositionX *= -1;
 
             calloutNode.Position = new Vector3(calloutNodePositionX, 0, pinHeadNode.Position.Z);
-            calloutNode.Rotation = new Quaternion(45.0f, 0.0f, 0.0f);
+            calloutNode.Rotation = new Quaternion(65.0f, 0.0f, 0.0f);
 
             var calloutBodyNode = calloutNode.CreateChild();
 
@@ -304,7 +288,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
             if (calloutLeftSide) calloutBodyNodePositionX *= -1;
 
             calloutBodyNode.Position = new Vector3(calloutBodyNodePositionX, 0, 0);
-            calloutBodyNode.Scale = new Vector3(calloutBodyWidth, 0.025f, calloutBodyHeight);
+            calloutBodyNode.Scale = new Vector3(calloutBodyWidth, calloutBodyWeight, calloutBodyHeight);
 
             var calloutBodyComponent = calloutBodyNode.CreateComponent<Place3DModel>();
 
@@ -326,17 +310,60 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
 
             calloutChevronComponent.Color = primaryColor;
 
+            var calloutFeatureImageSpriteNode = calloutNode.CreateChild();
+
+            calloutFeatureImageSpriteNode.Position = new Vector3(calloutBodyNode.Position.X - calloutBodyWidth / 2.0f + calloutBodyHeight / 2.0f, calloutBodyNode.Position.Y - calloutBodyWeight, calloutBodyNode.Position.Z);
+            calloutFeatureImageSpriteNode.Scale = new Vector3(0.05f, 0.05f, 1.0f);
+            calloutFeatureImageSpriteNode.Rotation = new Quaternion(90.0f, 0, 180.0f);
+
+            var calloutFeatureImageSpriteComponent = calloutFeatureImageSpriteNode.CreateComponent<PlaceFeatureImageSprite>();
+
+            calloutFeatureImageSpriteComponent.Place = dataModel;
+            calloutFeatureImageSpriteComponent.Sprite = Current.ResourceCache.GetSprite2D($"Sprites/{dataModel.Id.ToString().ToUpperInvariant()}.jpg");
+
+            var calloutTextNode = calloutNode.CreateChild();
+
+            calloutTextNode.Position = new Vector3(calloutBodyNode.Position.X - calloutBodyWidth / 6.0f, calloutBodyNode.Position.Y - calloutBodyWeight, calloutBodyNode.Position.Z);
+            calloutTextNode.Rotation = new Quaternion(-90.0f, 0, 0);
+
+            var calloutTextComponent = calloutTextNode.CreateComponent<PlaceName3DText>();
+
+            calloutTextComponent.Place = dataModel;
+            calloutTextComponent.Text = dataModel.Title;
+            calloutTextComponent.Wordwrap = true;
+            calloutTextComponent.Width = 100;
+            calloutTextComponent.HorizontalAlignment = Urho.Gui.HorizontalAlignment.Left;
+            calloutTextComponent.VerticalAlignment = Urho.Gui.VerticalAlignment.Center;
+
+            calloutTextComponent.SetFont(ResourceCache.GetFont("Fonts/OpenSans-Regular.ttf"), 8);
+            calloutTextComponent.SetColor(Color.White);
+
             return calloutNode;
         }
 
-        private void RotateNodeRelativeToCamera(Node objectNode)
-        {
-            if (urhoCameraComponent == null || objectNode == null) return;
+        //private void RotateNodeRelativeToCamera(Node objectNode)
+        //{
+        //    if (urhoCameraComponent == null || objectNode == null) return;
 
-            objectNode.Rotation = urhoCameraComponent.Node.Rotation * new Quaternion(1, 0, 0, 0);
+        //    objectNode.Rotation = urhoCameraComponent.Node.Rotation * new Quaternion(1, 0, 0, 0);
+        //}
+
+        private interface IPlaceDataBindable
+        {
+            public Models.Data.PlaceDataModel Place { get; }
         }
 
-        private class Place3DModel : StaticModel
+        private class Place3DModel : StaticModel, IPlaceDataBindable
+        {
+            public Models.Data.PlaceDataModel Place { get; set; }
+        }
+
+        private class PlaceName3DText : Urho.Gui.Text3D, IPlaceDataBindable
+        {
+            public Models.Data.PlaceDataModel Place { get; set; }
+        }
+
+        private class PlaceFeatureImageSprite : Urho.Urho2D.StaticSprite2D, IPlaceDataBindable
         {
             public Models.Data.PlaceDataModel Place { get; set; }
         }

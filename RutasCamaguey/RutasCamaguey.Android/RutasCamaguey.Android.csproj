@@ -88,6 +88,7 @@
   <ItemGroup>
     <AndroidAsset Include="Assets\UrhoData\Shaders\GLSL\YUVNV12.glsl" />
     <AndroidAsset Include="Assets\UrhoData\Shaders\GLSL\YUVNV21.glsl" />
+    <AndroidAsset Include="Assets\UrhoData\Fonts\OpenSans-Regular.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
@@ -117,7 +118,9 @@
       <Name>RutasCamaguey</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UrhoData\Sprites\C0CE5B94-9B41-46E9-B752-1DC4A208B793.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\UrhoData\Textures\VirtualTour1_CubeMap.xml" />
     <AndroidAsset Include="Assets\UrhoData\Textures\VirtualTour1_nx.png" />
@@ -132,6 +135,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\AR\Targets\guide-target-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UrhoData\Sprites\219C0EF3-B075-4D76-B348-610B560CCA13.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

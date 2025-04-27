@@ -2,6 +2,8 @@
 {
     public class PlaceDataModel
     {
+        public System.Guid Id { get; set; }
+
         public Enumerations.PlaceKind Kind { get; set; }
 
         public Xamarin.Forms.ImageSource FeatureImageSource { get; set; }
