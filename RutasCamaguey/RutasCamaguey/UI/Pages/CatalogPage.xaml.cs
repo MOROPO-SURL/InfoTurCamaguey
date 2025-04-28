@@ -55,7 +55,7 @@
         {
             var model = (sender as Xamarin.Forms.BindableObject).BindingContext as Models.Data.PlaceDataModel;
 
-            Navigation.PushModalAsync(new PlaceDetailPage(model));
+            Navigation.PushModalAsync(new Xamarin.Forms.NavigationPage(new PlaceDetailPage(model)) { BackgroundColor = Xamarin.Forms.Color.Transparent });
         }
     }
 }

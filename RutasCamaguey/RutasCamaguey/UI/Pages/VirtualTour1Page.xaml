@@ -2,7 +2,19 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:urho="clr-namespace:Urho.Forms;assembly=UrhoSharp.Forms"
     x:Class="MOROPO.InfoTur.Camaguey.Rutas.UI.Pages.VirtualTour1Page"
-    Title="Visita virtual 1">
+    Title="Vista en 360°"
+    NavigationPage.HasBackButton="True">
+    <ContentPage.Content>
+        <Grid>
+            <Label
+                VerticalOptions="Start"
+                BackgroundColor="{StaticResource Secoundary}"
+                Padding="16"
+                Opacity="0.85"
+                TextColor="{StaticResource Primary}"
+                FontSize="16"
+                Text="Museo Casa Natal Ignacio Agramonte" />
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

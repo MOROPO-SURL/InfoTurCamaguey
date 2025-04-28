@@ -35,7 +35,7 @@
                             TextColor="{StaticResource Primary}"
                             Text="Rutas Camagüey" />
                         <Label
-                            FontSize="Medium"
+                            FontSize="16"
                             HorizontalTextAlignment="Center"
                             Text="{Static root:AppResources.AppSummary}" />
                         <Button

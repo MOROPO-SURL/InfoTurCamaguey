@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local_content_data_model="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas.Models.Data.Content"
+    x:Class="MOROPO.InfoTur.Camaguey.Rutas.UI.Views.Template.PictureGalleryContentDataModelTemplateView"
+    x:DataType="local_content_data_model:PictureGalleryContentDataModel">
+    <ContentView.Content>
+        <Grid>
+            <CarouselView
+                ItemsSource="{Binding Items}"
+                IndicatorView="IndicatorView">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate x:DataType="ImageSource">
+                        <Image Source="{Binding .}" Aspect="AspectFill" />
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <IndicatorView 
+                x:Name="IndicatorView"
+                HorizontalOptions="Center"
+                VerticalOptions="End" 
+                Margin="0,0,0,20"
+                IndicatorSize="7"
+                IndicatorsShape="Circle"
+                IndicatorColor="LightGray"
+                SelectedIndicatorColor="{StaticResource Secoundary}">
+            </IndicatorView>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

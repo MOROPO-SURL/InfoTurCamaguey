@@ -61,7 +61,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat..
+        ///   Busca una cadena traducida similar a La ciudad de Camagüey, con su Centro Histórico reconocido por la UNESCO como &quot;Patrimonio Cultural de la Humanidad&quot;, es un tesoro lleno de historia, cultura y tradición. Para acercar a los visitantes a los valores patrimoniales, históricos y culturales más emblemáticos del mencionado Centro Histórico, Infotur les facilita la aplicación móvil “Rutas Camagüey”, una herramienta diseñada para explorar y disfrutar de manera virtual esta ciudad única..
         /// </summary>
         internal static string AppSummary {
             get {

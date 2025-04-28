@@ -1,7 +1,4 @@
-﻿using Urho;
-using Xamarin.Forms;
-
-namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
+﻿namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
 {
     public partial class VirtualTour1Page : Xamarin.Forms.ContentPage
     {
@@ -14,13 +11,13 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
         {
             var urhoSurface = new Urho.Forms.UrhoSurface();
 
-            var urhoApplicationOptions = new ApplicationOptions()
+            var urhoApplicationOptions = new Urho.ApplicationOptions()
             {
                 ResourcePaths = new[] { "UrhoData" },
-                Orientation = ApplicationOptions.OrientationType.LandscapeAndPortrait
+                Orientation = Urho.ApplicationOptions.OrientationType.LandscapeAndPortrait
             };
 
-            Content = urhoSurface;
+            (Content as Xamarin.Forms.Grid).Children.Insert(0, urhoSurface);
 
             await urhoSurface.Show<Env3D.Presenters.VirtualTourPresenter>(urhoApplicationOptions);
         }
@@ -30,6 +27,11 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
             Urho.Forms.UrhoSurface.OnDestroy();
 
             base.OnDisappearing();
+        }
+
+        private void CloseButton_Clicked(object sender, System.EventArgs e)
+        {
+            Navigation.PopModalAsync();
         }
     }
 }

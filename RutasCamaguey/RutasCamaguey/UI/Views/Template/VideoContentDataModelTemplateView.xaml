@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local_content_data_model="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas.Models.Data.Content"
+    xmlns:communitytoolkit_views="http://xamarin.com/schemas/2020/toolkit"
+    xmlns:sscxftoolkit_presentation_converters="clr-namespace:SmartSolucionesCuba.XFToolKit.Presentation.Converters;assembly=SmartSolucionesCuba.XFToolKit.Presentation"
+    x:Class="MOROPO.InfoTur.Camaguey.Rutas.UI.Views.Template.VideoContentDataModelTemplateView"
+    x:DataType="local_content_data_model:VideoContentDataModel"
+    Margin="0,8">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <sscxftoolkit_presentation_converters:FactorConverter x:Key="FactorConverter" />
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <Grid>
+        <communitytoolkit_views:MediaElement 
+            x:Name="MainMediaElement"
+            ShowsPlaybackControls="True"
+            AutoPlay="True"
+            MediaEnded="MainMediaElement_MediaEnded" />
+        <Grid x:Name="ArtworkLayout">
+            <Image 
+                Source="{Binding ArtWorkImageSource}"
+                Aspect="AspectFill" />
+            <Grid BackgroundColor="#7E000000">
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OverlayTapGestureRecognizer_Tapped" />
+                </Grid.GestureRecognizers>
+                <Label
+                    HorizontalOptions="Center" VerticalOptions="Center"
+                    FontFamily="Material Design Icons"
+                    FontSize="80"
+                    TextColor="White"
+                    Text="&#xF40D;" />
+            </Grid>
+        </Grid>
+    </Grid>
+</ContentView>

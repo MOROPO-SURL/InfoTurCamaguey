@@ -67,7 +67,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
         {
             var model = e.MapInfo.Feature[nameof(Models.Data.PlaceDataModel)] as Models.Data.PlaceDataModel;
 
-            Navigation.PushModalAsync(new PlaceDetailPage(model));
+            Navigation.PushModalAsync(new Xamarin.Forms.NavigationPage(new PlaceDetailPage(model)) { BackgroundColor = Xamarin.Forms.Color.Transparent });
         }
 
         protected override bool OnBackButtonPressed()

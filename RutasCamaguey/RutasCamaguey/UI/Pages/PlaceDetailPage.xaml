@@ -2,8 +2,22 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local_data_model="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas.Models.Data"
+    xmlns:local_selector="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas.UI.Views.Template.Selector"
+    xmlns:local_template_views="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas.UI.Views.Template"
     x:Class="MOROPO.InfoTur.Camaguey.Rutas.UI.Pages.PlaceDetailPage"
+    x:DataType="local_data_model:PlaceDataModel"
+    NavigationPage.HasNavigationBar="False"
     BackgroundColor="#77000000">
+    <ContentPage.Resources>
+        <local_selector:PlaceDetailContentDataTemplateSelector 
+            x:Key="PlaceDetailContentDataTemplateSelector"
+            TextContentDataTemplate="{DataTemplate local_template_views:TextContentDataModelTemplateView}"
+            ContactInformationGroupContentDataTemplate="{DataTemplate local_template_views:ContactInformationGroupContentDataModelTemplateView}"
+            VideoContentDataTemplate="{DataTemplate local_template_views:VideoContentDataModelTemplateView}"
+            VirtualVisitContentDataTemplate="{DataTemplate local_template_views:VirtualVisitContentDataModelTemplateView}"
+            PictureGalleryContentDataTemplate="{DataTemplate local_template_views:PictureGalleryContentDataModelTemplateView}" />
+    </ContentPage.Resources>
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
@@ -17,13 +31,20 @@
                             Margin="0,0,0,8"
                             BackgroundColor="DimGray"
                             Aspect="AspectFill"
-                            Source="{Binding Path=FeatureImageSource}" />
+                            Source="{Binding FeatureImageSource}" />
                         <Label 
                             FontAttributes="Bold"
-                            FontSize="Medium"
+                            FontSize="24"
                             TextColor="{StaticResource Primary}"
-                            Text="{Binding Path=Title}" />
-                        <Label Text="{Binding Path=Summary}" />
+                            Text="{Binding Title}" />
+                        <Label 
+                            FontSize="16"
+                            Text="{Binding Summary}" />
+                        <StackLayout 
+                            Orientation="Vertical" 
+                            Spacing="8"
+                            BindableLayout.ItemTemplateSelector="{StaticResource PlaceDetailContentDataTemplateSelector}"
+                            BindableLayout.ItemsSource="{Binding Content}" />
                     </StackLayout>
                 </Frame>
             </StackLayout>

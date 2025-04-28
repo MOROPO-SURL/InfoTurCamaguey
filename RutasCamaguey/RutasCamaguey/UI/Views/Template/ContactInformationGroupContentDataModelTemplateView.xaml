@@ -1,0 +1,30 @@
+﻿<StackLayout 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local_converters="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas.Converters"
+    x:Class="MOROPO.InfoTur.Camaguey.Rutas.UI.Views.Template.ContactInformationGroupContentDataModelTemplateView"
+    Orientation="Vertical"
+    Spacing="8"
+    Margin="0,16,0,0">
+    <StackLayout.Resources>
+        <ResourceDictionary>
+            <local_converters:ContactInformationItemContentDataModelToFormattedStringConverter x:Key="ContactInformationItemContentDataModelToFormattedStringConverter" />
+        </ResourceDictionary>
+    </StackLayout.Resources>
+    <Label
+        FontAttributes="Bold"
+        FontSize="16"
+        Text="{Binding Header}" />
+    <StackLayout
+        Orientation="Vertical"
+        Spacing="8"
+        BindableLayout.ItemsSource="{Binding Items}">
+        <BindableLayout.ItemTemplate>
+            <DataTemplate>
+                <Label 
+                    FontSize="16"
+                    FormattedText="{Binding Converter={StaticResource ContactInformationItemContentDataModelToFormattedStringConverter}}" />
+            </DataTemplate>
+        </BindableLayout.ItemTemplate>
+    </StackLayout>
+</StackLayout>

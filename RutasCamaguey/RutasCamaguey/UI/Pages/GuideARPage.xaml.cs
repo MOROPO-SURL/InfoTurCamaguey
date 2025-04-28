@@ -1,4 +1,5 @@
-﻿using Xamarin.Essentials;
+﻿using Urho;
+using Xamarin.Essentials;
 
 namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
 {
@@ -91,7 +92,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
         {
             Content.BackgroundColor = Xamarin.Forms.Color.Black;
 
-            Navigation.PushModalAsync(new PlaceDetailPage(eventArg.Place));
+            Navigation.PushModalAsync(new Xamarin.Forms.NavigationPage(new PlaceDetailPage(eventArg.Place)) { BackgroundColor = Xamarin.Forms.Color.Transparent });
         }
 
         private async System.Threading.Tasks.Task<bool> GetPermissions()

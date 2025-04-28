@@ -5,11 +5,71 @@
     xmlns:root="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas"
     x:Class="MOROPO.InfoTur.Camaguey.Rutas.UI.Pages.AboutPage"
     Title="{Static root:AppResources.CommonAbout}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="16" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout Padding="16" Spacing="16">
-            <Label Text="Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos." />
-            <Label Text="Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos." />
-            <Label Text="Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos." />
-        </StackLayout>
+        <ScrollView Orientation="Vertical">
+            <StackLayout Padding="16" Spacing="16">
+                <Label Text="“Rutas Camagüey” es más que una guía turística; es un puente hacia la riqueza cultural y los servicios locales que encontrará en esta ciudad patrimonial que sobrepasa los 500 años y que en su pasado fuera conocida como la Villa de Santa María del Puerto Príncipe." />
+                <Label Text="En el menú de la aplicación podrá encontrar varias secciones:" />
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="-" />
+                    <Label Text="“Rutas turísticas” es una sección que identifica en el mapa digital los espacios e instituciones patrimoniales ubicados en el recorrido y, a su vez, los principales servicios que el visitante puede disfrutar a su paso por la ruta. De igual manera se resaltan los lugares y servicios próximos a la ruta." />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="-" />
+                    <Label Text="Los usuarios de la aplicación podrán explorar, en la sección “Mapa extendido”, experiencias informativas con el uso de realidad aumentada. Al activar la mencionada sección, y con la ayuda de la cámara de su dispositivo inteligente superpuesta sobre los puntos escogidos en un mapa impreso, se levantará la información relacionada con el lugar o instalación." />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="-" />
+                    <Label Text="En su sección “Catálogo” se les brinda información ampliada sobre los diferentes lugares e instituciones patrimoniales y culturales marcados en el mapa digital. Cuna de escritores, artistas de la plástica, de las artes escénicas y músicos, Camagüey muestra todo su potencial a través de una red instituciones culturales como museos, galerías de artes, casas de la cultura y el desarrollo de eventos que trascienden hasta el ámbito internacional." />
+                </StackLayout>
+                <Label Text="Con herramientas avanzadas, información detallada y una experiencia visual innovadora, la aplicación promete ser un amigo digital para conocer y disfrutar del Camagüey." />
+                <StackLayout Orientation="Vertical" Spacing="8">
+                    <Label 
+                        Text="Un producto de:" 
+                        FontAttributes="Bold" />
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="-" />
+                        <Label Text="Delegación provincial del Ministerio del Turismo en Camagüey." />
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Spacing="8">
+                    <Label 
+                        Text="Desarrollado por:" 
+                        FontAttributes="Bold" />
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="-" />
+                        <Label Text="MOROPO S.U.R.L., soluciones e inovaciones en tecnologías de la informática y las comunicaciones:" />
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Spacing="8">
+                    <Label 
+                        Text="Colaboración de:" 
+                        FontAttributes="Bold" />
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="-" />
+                        <Label Text="Oficina de Infortur Camagüey." />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="-" />
+                        <Label Text="Proyecto de Desarrollo Local Co-Lab Camagüey." />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="-" />
+                        <Label Text="Centro Provincial de Patrimonio Cultural." />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="-" />
+                        <Label Text="Agencia “Paradiso”." />
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

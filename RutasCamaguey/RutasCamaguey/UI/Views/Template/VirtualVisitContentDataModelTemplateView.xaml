@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local_content_data_model="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas.Models.Data.Content"
+    x:Class="MOROPO.InfoTur.Camaguey.Rutas.UI.Views.Template.VirtualVisitContentDataModelTemplateView"
+    x:DataType="local_content_data_model:VirtualVisitContentDataModel">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <Grid>
+            <Image 
+                Source="{Binding PreviewImageSource}" />
+            <Grid
+                BackgroundColor="#7E000000">
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OverlayTapGestureRecognizer_Tapped" />
+                </Grid.GestureRecognizers>
+                <StackLayout 
+                    VerticalOptions="Center"
+                    Orientation="Vertical"
+                    Spacing="4">
+                    <Label
+                        HorizontalOptions="Center"
+                        FontFamily="Material Design Icons"
+                        FontSize="64"
+                        Text="&#xFB60;" />
+                    <Label
+                        HorizontalOptions="Center"
+                        FontSize="Medium"
+                        Text="Vista 360°" />
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="Toque para comenzar ..." />
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

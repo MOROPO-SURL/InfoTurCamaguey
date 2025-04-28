@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Label 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local_content_data_model="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas.Models.Data.Content"
+    x:Class="MOROPO.InfoTur.Camaguey.Rutas.UI.Views.Template.TextContentDataModelTemplateView"
+    x:DataType="local_content_data_model:TextContentDataModel"
+    FontSize="16"
+    Text="{Binding Text}" />
