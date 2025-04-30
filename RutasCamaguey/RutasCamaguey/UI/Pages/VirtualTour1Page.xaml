@@ -2,8 +2,9 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:root="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas"
     x:Class="MOROPO.InfoTur.Camaguey.Rutas.UI.Pages.VirtualTour1Page"
-    Title="Vista en 360°"
+    Title="{Static root:AppResources.Content360VisititCaption}"
     NavigationPage.HasBackButton="True">
     <ContentPage.Content>
         <Grid>

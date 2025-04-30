@@ -117,11 +117,56 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AboutAuthorCaption" xml:space="preserve">
+    <value>Developed by:</value>
+  </data>
+  <data name="AboutAuthorName" xml:space="preserve">
+    <value>MOROPO S.U.R.L., solutions and innovations in information and communications technologies.</value>
+  </data>
+  <data name="AboutCollaborationCaption" xml:space="preserve">
+    <value>Collaboration of:</value>
+  </data>
+  <data name="AboutCollaborator1" xml:space="preserve">
+    <value>Infortur Camagüey Office.</value>
+  </data>
+  <data name="AboutCollaborator2" xml:space="preserve">
+    <value>Co-Lab Camagüey Local Development Project.</value>
+  </data>
+  <data name="AboutCollaborator3" xml:space="preserve">
+    <value>Provincial Center for Cultural Heritage.</value>
+  </data>
+  <data name="AboutCollaborator4" xml:space="preserve">
+    <value>“Paradiso” Agency.</value>
+  </data>
+  <data name="AboutDescriptionParagraph1" xml:space="preserve">
+    <value>With advanced tools, detailed information, and an innovative visual experience, the app promises to be a digital friend for exploring and enjoying Camagüey.</value>
+  </data>
+  <data name="AboutFeature1" xml:space="preserve">
+    <value>"Tourist Routes" is a section that identifies on the digital map the heritage sites and institutions located along the route and, in turn, the main services that visitors can enjoy along the route. Nearby sites and services are also highlighted.</value>
+  </data>
+  <data name="AboutFeature2" xml:space="preserve">
+    <value>App users will be able to explore informative experiences using augmented reality in the "Extended Map" section. By activating this section, information related to the location or facility will be displayed over the selected points on a printed map using their smart device's camera.</value>
+  </data>
+  <data name="AboutFeature3" xml:space="preserve">
+    <value>The "Catalog" section provides detailed information on the various heritage and cultural sites and institutions marked on the digital map. A birthplace of writers, visual and performing artists, and musicians, Camagüey showcases its full potential through a network of cultural institutions such as museums, art galleries, cultural centers, and the development of events that transcend the international stage.</value>
+  </data>
+  <data name="AboutFeaturesCaption" xml:space="preserve">
+    <value>In the application menu you can find several sections:</value>
+  </data>
+  <data name="AboutIntro" xml:space="preserve">
+    <value>“Rutas Camagüey” is more than a tourist guide; it's a bridge to the cultural richness and local services you'll find in this heritage city, which dates back more than 500 years and was once known as the Villa de Santa María del Puerto Príncipe.</value>
+  </data>
+  <data name="AboutTitularCaption" xml:space="preserve">
+    <value>A product of:</value>
+  </data>
+  <data name="AboutTitularName" xml:space="preserve">
+    <value>Provincial Delegation of the Ministry of Tourism in Camagüey.</value>
+  </data>
   <data name="AppSummary" xml:space="preserve">
-    <value>Lorem ipsum dolor sit ameticle consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat.</value>
+    <value>The city of Camagüey, with its Historic Center recognized by UNESCO as a "World Cultural Heritage Site," is a treasure filled with history, culture, and tradition. To bring visitors closer to the most emblematic heritage, history, and culture of the Historic Center, Infotur offers the mobile app "Rutas Camagüey," a tool designed to virtually explore and enjoy this unique city.</value>
   </data>
   <data name="ARIntro" xml:space="preserve">
-    <value>This section will give you an extended experience when interacting with Infotur maps on posters and guides about the city of Camagüey. Focus your camera on the map to expand the information.</value>
+    <value>Focus your camera on the map to expand the information. This section will give you an extended experience when interacting with Infotur maps on posters and guides about the city of Camagüey.</value>
   </data>
   <data name="ButtonPickLanguage" xml:space="preserve">
     <value>Language</value>
@@ -134,6 +179,9 @@
   </data>
   <data name="CommonAbout" xml:space="preserve">
     <value>About</value>
+  </data>
+  <data name="CommonActionCall" xml:space="preserve">
+    <value>Tap to start...</value>
   </data>
   <data name="CommonCatalog" xml:space="preserve">
     <value>City Catalog</value>
@@ -152,6 +200,9 @@
   </data>
   <data name="CommonStart" xml:space="preserve">
     <value>Home</value>
+  </data>
+  <data name="Content360VisititCaption" xml:space="preserve">
+    <value>360° view</value>
   </data>
   <data name="LanguageNameEnglish" xml:space="preserve">
     <value>English</value>

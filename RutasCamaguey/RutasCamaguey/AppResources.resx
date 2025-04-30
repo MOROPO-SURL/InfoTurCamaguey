@@ -117,6 +117,51 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AboutAuthorCaption" xml:space="preserve">
+    <value>Desarrollado por:</value>
+  </data>
+  <data name="AboutAuthorName" xml:space="preserve">
+    <value>MOROPO S.U.R.L., soluciones e innovaciones en tecnologías de la informática y las comunicaciones.</value>
+  </data>
+  <data name="AboutCollaborationCaption" xml:space="preserve">
+    <value>Colaboración de:</value>
+  </data>
+  <data name="AboutCollaborator1" xml:space="preserve">
+    <value>Oficina de Infortur Camagüey.</value>
+  </data>
+  <data name="AboutCollaborator2" xml:space="preserve">
+    <value>Proyecto de Desarrollo Local Co-Lab Camagüey.</value>
+  </data>
+  <data name="AboutCollaborator3" xml:space="preserve">
+    <value>Centro Provincial de Patrimonio Cultural.</value>
+  </data>
+  <data name="AboutCollaborator4" xml:space="preserve">
+    <value>Agencia “Paradiso”.</value>
+  </data>
+  <data name="AboutDescriptionParagraph1" xml:space="preserve">
+    <value>Con herramientas avanzadas, información detallada y una experiencia visual innovadora, la aplicación promete ser un amigo digital para conocer y disfrutar del Camagüey.</value>
+  </data>
+  <data name="AboutFeature1" xml:space="preserve">
+    <value>“Rutas turísticas” es una sección que identifica en el mapa digital los espacios e instituciones patrimoniales ubicados en el recorrido y, a su vez, los principales servicios que el visitante puede disfrutar a su paso por la ruta. De igual manera se resaltan los lugares y servicios próximos a la ruta.</value>
+  </data>
+  <data name="AboutFeature2" xml:space="preserve">
+    <value>Los usuarios de la aplicación podrán explorar, en la sección “Mapa extendido”, experiencias informativas con el uso de realidad aumentada. Al activar la mencionada sección, y con la ayuda de la cámara de su dispositivo inteligente superpuesta sobre los puntos escogidos en un mapa impreso, se levantará la información relacionada con el lugar o instalación.</value>
+  </data>
+  <data name="AboutFeature3" xml:space="preserve">
+    <value>En su sección “Catálogo” se les brinda información ampliada sobre los diferentes lugares e instituciones patrimoniales y culturales marcados en el mapa digital. Cuna de escritores, artistas de la plástica, de las artes escénicas y músicos, Camagüey muestra todo su potencial a través de una red instituciones culturales como museos, galerías de artes, casas de la cultura y el desarrollo de eventos que trascienden hasta el ámbito internacional.</value>
+  </data>
+  <data name="AboutFeaturesCaption" xml:space="preserve">
+    <value>En el menú de la aplicación podrá encontrar varias secciones:</value>
+  </data>
+  <data name="AboutIntro" xml:space="preserve">
+    <value>“Rutas Camagüey” es más que una guía turística; es un puente hacia la riqueza cultural y los servicios locales que encontrará en esta ciudad patrimonial que sobrepasa los 500 años y que en su pasado fuera conocida como la Villa de Santa María del Puerto Príncipe.</value>
+  </data>
+  <data name="AboutTitularCaption" xml:space="preserve">
+    <value>Un producto de:</value>
+  </data>
+  <data name="AboutTitularName" xml:space="preserve">
+    <value>Delegación provincial del Ministerio del Turismo en Camagüey.</value>
+  </data>
   <data name="AppSummary" xml:space="preserve">
     <value>La ciudad de Camagüey, con su Centro Histórico reconocido por la UNESCO como "Patrimonio Cultural de la Humanidad", es un tesoro lleno de historia, cultura y tradición. Para acercar a los visitantes a los valores patrimoniales, históricos y culturales más emblemáticos del mencionado Centro Histórico, Infotur les facilita la aplicación móvil “Rutas Camagüey”, una herramienta diseñada para explorar y disfrutar de manera virtual esta ciudad única.</value>
   </data>
@@ -135,6 +180,9 @@
   <data name="CommonAbout" xml:space="preserve">
     <value>Acerca de</value>
   </data>
+  <data name="CommonActionCall" xml:space="preserve">
+    <value>Toque para comenzar...</value>
+  </data>
   <data name="CommonCatalog" xml:space="preserve">
     <value>Catálogo de la Ciudad</value>
   </data>
@@ -152,6 +200,9 @@
   </data>
   <data name="CommonStart" xml:space="preserve">
     <value>Inicio</value>
+  </data>
+  <data name="Content360VisititCaption" xml:space="preserve">
+    <value>Vista 360°</value>
   </data>
   <data name="LanguageNameEnglish" xml:space="preserve">
     <value>Inglés</value>

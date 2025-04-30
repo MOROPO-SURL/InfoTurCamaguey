@@ -61,6 +61,141 @@ namespace MOROPO.InfoTur.Camaguey.Rutas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Desarrollado por:.
+        /// </summary>
+        internal static string AboutAuthorCaption {
+            get {
+                return ResourceManager.GetString("AboutAuthorCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a MOROPO S.U.R.L., soluciones e innovaciones en tecnologías de la informática y las comunicaciones..
+        /// </summary>
+        internal static string AboutAuthorName {
+            get {
+                return ResourceManager.GetString("AboutAuthorName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Colaboración de:.
+        /// </summary>
+        internal static string AboutCollaborationCaption {
+            get {
+                return ResourceManager.GetString("AboutCollaborationCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Oficina de Infortur Camagüey..
+        /// </summary>
+        internal static string AboutCollaborator1 {
+            get {
+                return ResourceManager.GetString("AboutCollaborator1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Proyecto de Desarrollo Local Co-Lab Camagüey..
+        /// </summary>
+        internal static string AboutCollaborator2 {
+            get {
+                return ResourceManager.GetString("AboutCollaborator2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Centro Provincial de Patrimonio Cultural..
+        /// </summary>
+        internal static string AboutCollaborator3 {
+            get {
+                return ResourceManager.GetString("AboutCollaborator3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Agencia “Paradiso”..
+        /// </summary>
+        internal static string AboutCollaborator4 {
+            get {
+                return ResourceManager.GetString("AboutCollaborator4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Con herramientas avanzadas, información detallada y una experiencia visual innovadora, la aplicación promete ser un amigo digital para conocer y disfrutar del Camagüey..
+        /// </summary>
+        internal static string AboutDescriptionParagraph1 {
+            get {
+                return ResourceManager.GetString("AboutDescriptionParagraph1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a “Rutas turísticas” es una sección que identifica en el mapa digital los espacios e instituciones patrimoniales ubicados en el recorrido y, a su vez, los principales servicios que el visitante puede disfrutar a su paso por la ruta. De igual manera se resaltan los lugares y servicios próximos a la ruta..
+        /// </summary>
+        internal static string AboutFeature1 {
+            get {
+                return ResourceManager.GetString("AboutFeature1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Los usuarios de la aplicación podrán explorar, en la sección “Mapa extendido”, experiencias informativas con el uso de realidad aumentada. Al activar la mencionada sección, y con la ayuda de la cámara de su dispositivo inteligente superpuesta sobre los puntos escogidos en un mapa impreso, se levantará la información relacionada con el lugar o instalación..
+        /// </summary>
+        internal static string AboutFeature2 {
+            get {
+                return ResourceManager.GetString("AboutFeature2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a En su sección “Catálogo” se les brinda información ampliada sobre los diferentes lugares e instituciones patrimoniales y culturales marcados en el mapa digital. Cuna de escritores, artistas de la plástica, de las artes escénicas y músicos, Camagüey muestra todo su potencial a través de una red instituciones culturales como museos, galerías de artes, casas de la cultura y el desarrollo de eventos que trascienden hasta el ámbito internacional..
+        /// </summary>
+        internal static string AboutFeature3 {
+            get {
+                return ResourceManager.GetString("AboutFeature3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a En el menú de la aplicación podrá encontrar varias secciones:.
+        /// </summary>
+        internal static string AboutFeaturesCaption {
+            get {
+                return ResourceManager.GetString("AboutFeaturesCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a “Rutas Camagüey” es más que una guía turística; es un puente hacia la riqueza cultural y los servicios locales que encontrará en esta ciudad patrimonial que sobrepasa los 500 años y que en su pasado fuera conocida como la Villa de Santa María del Puerto Príncipe..
+        /// </summary>
+        internal static string AboutIntro {
+            get {
+                return ResourceManager.GetString("AboutIntro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Un producto de:.
+        /// </summary>
+        internal static string AboutTitularCaption {
+            get {
+                return ResourceManager.GetString("AboutTitularCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Delegación provincial del Ministerio del Turismo en Camagüey..
+        /// </summary>
+        internal static string AboutTitularName {
+            get {
+                return ResourceManager.GetString("AboutTitularName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a La ciudad de Camagüey, con su Centro Histórico reconocido por la UNESCO como &quot;Patrimonio Cultural de la Humanidad&quot;, es un tesoro lleno de historia, cultura y tradición. Para acercar a los visitantes a los valores patrimoniales, históricos y culturales más emblemáticos del mencionado Centro Histórico, Infotur les facilita la aplicación móvil “Rutas Camagüey”, una herramienta diseñada para explorar y disfrutar de manera virtual esta ciudad única..
         /// </summary>
         internal static string AppSummary {
@@ -115,6 +250,15 @@ namespace MOROPO.InfoTur.Camaguey.Rutas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Toque para comenzar....
+        /// </summary>
+        internal static string CommonActionCall {
+            get {
+                return ResourceManager.GetString("CommonActionCall", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Catálogo de la Ciudad.
         /// </summary>
         internal static string CommonCatalog {
@@ -165,6 +309,15 @@ namespace MOROPO.InfoTur.Camaguey.Rutas {
         internal static string CommonStart {
             get {
                 return ResourceManager.GetString("CommonStart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Vista 360°.
+        /// </summary>
+        internal static string Content360VisititCaption {
+            get {
+                return ResourceManager.GetString("Content360VisititCaption", resourceCulture);
             }
         }
         

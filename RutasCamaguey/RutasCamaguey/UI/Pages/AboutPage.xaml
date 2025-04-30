@@ -15,58 +15,58 @@
     <ContentPage.Content>
         <ScrollView Orientation="Vertical">
             <StackLayout Padding="16" Spacing="16">
-                <Label Text="“Rutas Camagüey” es más que una guía turística; es un puente hacia la riqueza cultural y los servicios locales que encontrará en esta ciudad patrimonial que sobrepasa los 500 años y que en su pasado fuera conocida como la Villa de Santa María del Puerto Príncipe." />
-                <Label Text="En el menú de la aplicación podrá encontrar varias secciones:" />
+                <Label Text="{Static root:AppResources.AboutIntro}" />
+                <Label Text="{Static root:AppResources.AboutFeaturesCaption}" />
                 <StackLayout Orientation="Horizontal">
                     <Label Text="-" />
-                    <Label Text="“Rutas turísticas” es una sección que identifica en el mapa digital los espacios e instituciones patrimoniales ubicados en el recorrido y, a su vez, los principales servicios que el visitante puede disfrutar a su paso por la ruta. De igual manera se resaltan los lugares y servicios próximos a la ruta." />
+                    <Label Text="{Static root:AppResources.AboutFeature1}" />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="-" />
-                    <Label Text="Los usuarios de la aplicación podrán explorar, en la sección “Mapa extendido”, experiencias informativas con el uso de realidad aumentada. Al activar la mencionada sección, y con la ayuda de la cámara de su dispositivo inteligente superpuesta sobre los puntos escogidos en un mapa impreso, se levantará la información relacionada con el lugar o instalación." />
+                    <Label Text="{Static root:AppResources.AboutFeature2}" />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="-" />
-                    <Label Text="En su sección “Catálogo” se les brinda información ampliada sobre los diferentes lugares e instituciones patrimoniales y culturales marcados en el mapa digital. Cuna de escritores, artistas de la plástica, de las artes escénicas y músicos, Camagüey muestra todo su potencial a través de una red instituciones culturales como museos, galerías de artes, casas de la cultura y el desarrollo de eventos que trascienden hasta el ámbito internacional." />
+                    <Label Text="{Static root:AppResources.AboutFeature3}" />
                 </StackLayout>
-                <Label Text="Con herramientas avanzadas, información detallada y una experiencia visual innovadora, la aplicación promete ser un amigo digital para conocer y disfrutar del Camagüey." />
+                <Label Text="{Static root:AppResources.AboutDescriptionParagraph1}" />
                 <StackLayout Orientation="Vertical" Spacing="8">
                     <Label 
-                        Text="Un producto de:" 
+                        Text="{Static root:AppResources.AboutTitularCaption}" 
                         FontAttributes="Bold" />
                     <StackLayout Orientation="Horizontal">
                         <Label Text="-" />
-                        <Label Text="Delegación provincial del Ministerio del Turismo en Camagüey." />
-                    </StackLayout>
-                </StackLayout>
-                <StackLayout Orientation="Vertical" Spacing="8">
-                    <Label 
-                        Text="Desarrollado por:" 
-                        FontAttributes="Bold" />
-                    <StackLayout Orientation="Horizontal">
-                        <Label Text="-" />
-                        <Label Text="MOROPO S.U.R.L., soluciones e inovaciones en tecnologías de la informática y las comunicaciones:" />
+                        <Label Text="{Static root:AppResources.AboutTitularName}" />
                     </StackLayout>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" Spacing="8">
                     <Label 
-                        Text="Colaboración de:" 
+                        Text="{Static root:AppResources.AboutAuthorCaption}" 
                         FontAttributes="Bold" />
                     <StackLayout Orientation="Horizontal">
                         <Label Text="-" />
-                        <Label Text="Oficina de Infortur Camagüey." />
+                        <Label Text="{Static root:AppResources.AboutAuthorName}" />
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Spacing="8">
+                    <Label 
+                        Text="{Static root:AppResources.AboutCollaborationCaption}" 
+                        FontAttributes="Bold" />
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="-" />
+                        <Label Text="{Static root:AppResources.AboutCollaborator1}" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="-" />
-                        <Label Text="Proyecto de Desarrollo Local Co-Lab Camagüey." />
+                        <Label Text="{Static root:AppResources.AboutCollaborator2}" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="-" />
-                        <Label Text="Centro Provincial de Patrimonio Cultural." />
+                        <Label Text="{Static root:AppResources.AboutCollaborator3}" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="-" />
-                        <Label Text="Agencia “Paradiso”." />
+                        <Label Text="{Static root:AppResources.AboutCollaborator4}" />
                     </StackLayout>
                 </StackLayout>
             </StackLayout>

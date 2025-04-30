@@ -206,6 +206,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
                 switch (targetName)
                 {
                     case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_1:
+                    case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_2:
                         targetNode.Position = new Vector3(0.0f, 0.0f, -0.5f);
 
                         var infoTourPlaceNode = targetNode.CreateChild();
@@ -215,6 +216,20 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
                         var natalHouseMuseumPlaceNode = targetNode.CreateChild();
 
                         calloutNodes.Add(ConfigureMarkerNode(natalHouseMuseumPlaceNode, Providers.DataModelProvider.Places[1], -0.1f, -0.2f, true));
+
+                        break;
+
+                    case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_3:
+                    case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_4:
+                        targetNode.Position = new Vector3(0.0f, 0.0f, -0.5f);
+
+                        var railwayMuseumTourPlaceNode = targetNode.CreateChild();
+
+                        calloutNodes.Add(ConfigureMarkerNode(railwayMuseumTourPlaceNode, Providers.DataModelProvider.Places[2], 0.0375f, -0.125f, false));
+
+                        var stateMuseumMuseumPlaceNode = targetNode.CreateChild();
+
+                        calloutNodes.Add(ConfigureMarkerNode(stateMuseumMuseumPlaceNode, Providers.DataModelProvider.Places[3], -0.125f, 0.25f, true));
 
                         break;
                 }
