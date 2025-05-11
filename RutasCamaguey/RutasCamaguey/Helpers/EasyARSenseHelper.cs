@@ -50,13 +50,15 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.Helpers
             outputFrameFork = OutputFrameFork.create(2);
             outputFrameBuffer = OutputFrameBuffer.create();
 
-            if (!camera.openWithPreferredType(CameraDeviceType.Back)) { throw new System.PlatformNotSupportedException(); }
+            if (!camera.openWithPreferredType(CameraDeviceType.Back)) { throw new PlatformNotSupportedException(); }
 
             camera.setSize(new Vec2I(1280, 960));
 
             camera.setBufferCapacity(10);
 
             tracker = ImageTracker.create();
+
+            tracker.setSimultaneousNum(5);
 
             LoadFromImage(tracker, "AR/Targets/guide-target-1.jpg", Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_1);
             LoadFromImage(tracker, "AR/Targets/guide-target-2.jpg", Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_2);

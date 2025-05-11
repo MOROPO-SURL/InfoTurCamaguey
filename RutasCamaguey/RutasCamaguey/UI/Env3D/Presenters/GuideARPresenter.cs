@@ -1,6 +1,8 @@
 ﻿using EasyAR;
 using MOROPO.InfoTur.Camaguey.Rutas.Extensions;
 using MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Components;
+using System.Collections.Generic;
+using System.Linq;
 using Urho;
 
 namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
@@ -12,12 +14,12 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
         private Camera urhoCameraComponent;
         private EasyARUrhoComponent easyARUrhoComponent;
 
-        private readonly System.Collections.Generic.List<Node> targetIdentitficationNodes;
+        private readonly System.Collections.Generic.Dictionary<string, Node> targetIdentitficationNodes;
 
         [Preserve]
         public GuideARPresenter(ApplicationOptions options) : base(options)
         {
-            targetIdentitficationNodes = new System.Collections.Generic.List<Node>();
+            targetIdentitficationNodes = new System.Collections.Generic.Dictionary<string, Node>();
         }
 
         public System.EventHandler<GuideARPresenterPlaceTargetEventArg> PlaceTarget;
@@ -122,6 +124,10 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
 
                         var targetInstances = result.targetInstances();
 
+                        System.Diagnostics.Debug.WriteLine($"XXXXXXXX>>>> Target Count: {targetInstances.Count}");
+
+                        var targetKeys = new List<string>();
+
                         foreach (TargetInstance targetInstance in targetInstances)
                         {
                             TargetStatus status = targetInstance.status();
@@ -154,6 +160,8 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
 
                                         UpdateARScene(target, targetIndex, convertedPoseMatrix, scale);
 
+                                        targetKeys.Add(imageTarget.name());
+
                                         foreach (Image targetImageToRelease in images)
                                         {
                                             targetImageToRelease.Dispose();
@@ -169,12 +177,13 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
                             targetIndex++;
                         }
 
-                        // Remove any targets that can no longer be located
-                        while (targetIdentitficationNodes.Count > targetIndex)
-                        {
-                            Node node = targetIdentitficationNodes[targetIndex];
+                        var targetIdentitficationNodeKeys = targetIdentitficationNodes.Keys.ToArray();
 
-                            targetIdentitficationNodes.RemoveAt(targetIndex);
+                        foreach (var key in targetIdentitficationNodeKeys)
+                        {
+                            if (targetKeys.Any(item => item == key)) continue;
+
+                            targetIdentitficationNodes.Remove(key, out var node);
 
                             node.Remove();
                         }
@@ -189,11 +198,13 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
         {
             Node rootNode;
 
-            var calloutNodes = new System.Collections.Generic.List<Node>();
+            var calloutNodes = new List<Node>();
 
-            if (targetIdentitficationNodes.Count > index)
+            var targetName = target.name();
+
+            if (targetIdentitficationNodes.ContainsKey(targetName))
             {
-                rootNode = targetIdentitficationNodes[index];
+                rootNode = targetIdentitficationNodes[targetName];
             }
             else
             {
@@ -201,7 +212,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
 
                 var targetNode = rootNode.CreateChild();
 
-                var targetName = target.name();
+                System.Diagnostics.Debug.WriteLine($"YYYYYYYY>>>> targetName: {targetName}");
 
                 switch (targetName)
                 {
@@ -234,7 +245,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
                         break;
                 }
 
-                targetIdentitficationNodes.Add(rootNode);
+                targetIdentitficationNodes.Add(targetName, rootNode);
             }
 
             // Flatten out the cube
