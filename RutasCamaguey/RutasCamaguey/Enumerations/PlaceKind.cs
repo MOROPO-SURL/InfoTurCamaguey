@@ -10,6 +10,7 @@
         SportCenter,
         Distinguished,
         Library,
-        Monument
+        Monument,
+        Hotel
     }
 }
