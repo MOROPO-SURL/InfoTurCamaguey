@@ -174,7 +174,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
                     break;
 
                 case Enumerations.PlaceKind.Monument:
-                    bitmapId = GetType().LoadSvgId("Resources.Vectors.symbol-monumnet.svg");
+                    bitmapId = GetType().LoadSvgId("Resources.Vectors.symbol-monument.svg");
 
                     break;
 
