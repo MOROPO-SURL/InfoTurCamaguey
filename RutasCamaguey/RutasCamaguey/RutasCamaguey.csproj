@@ -12,6 +12,7 @@
 	<ItemGroup>
 		<None Remove="Resources\DBs\map.mbtiles" />
 		<None Remove="Resources\Fonts\materialdesignicons-webfont.ttf" />
+		<None Remove="Resources\Images\0626-BIBLIOTECA_02.jpg" />
 		<None Remove="Resources\Images\06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg" />
 		<None Remove="Resources\Images\0f76b63b-8659-4587-bf54-1cb136f03fda.jpg" />
 		<None Remove="Resources\Images\219C0EF3_B075_4D76_B348_610B560CCA13.jpg" />
@@ -19,10 +20,19 @@
 		<None Remove="Resources\Images\76fc82ec-468e-4209-a483-4a873a0e1703.jpg" />
 		<None Remove="Resources\Images\76ff2435-636b-4f8f-b829-ee8dd4ab6cb3.jpg" />
 		<None Remove="Resources\Images\ACCD344C_AFF9_4B20_A161_EF7B4FA2D5C3.jpg" />
+		<None Remove="Resources\Images\agramonte-park.jpg" />
 		<None Remove="Resources\Images\C0CE5B94-9B41-46E9-B752-1DC4A208B793.jpg" />
+		<None Remove="Resources\Images\camaguey-Ignacio-Agramonte-Street.jpg" />
+		<None Remove="Resources\Images\catedral-nuestra-camaguey.jpg" />
+		<None Remove="Resources\Images\iglesia-merced.jpg" />
+		<None Remove="Resources\Images\ignacio-agramonte-museum.jpg" />
+		<None Remove="Resources\Images\museo-ferroviario.jpg" />
 		<None Remove="Resources\Images\museo-san-juan-de-dios.jpg" />
 		<None Remove="Resources\Images\plaza-carmen.jpg" />
 		<None Remove="Resources\Images\plaza-gallo.jpg" />
+		<None Remove="Resources\Images\plaza-hotel.jpg" />
+		<None Remove="Resources\Images\plaza-museo-san-juan-de-dios.jpg" />
+		<None Remove="Resources\Images\plaza-trabajaaodres.jpg" />
 		<None Remove="Resources\Images\plaza-trabajadores.jpg" />
 		<None Remove="Resources\Images\railway-museum-1.jpg" />
 		<None Remove="Resources\Images\railway-museum-2.jpg" />
@@ -57,13 +67,23 @@
 	<ItemGroup>
 		<EmbeddedResource Include="Resources\DBs\map.mbtiles" />
 		<EmbeddedResource Include="Resources\Fonts\materialdesignicons-webfont.ttf" />
+		<EmbeddedResource Include="Resources\Images\0626-BIBLIOTECA_02.jpg" />
 		<EmbeddedResource Include="Resources\Images\06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg" />
 		<EmbeddedResource Include="Resources\Images\219C0EF3_B075_4D76_B348_610B560CCA13.jpg" />
 		<EmbeddedResource Include="Resources\Images\ACCD344C_AFF9_4B20_A161_EF7B4FA2D5C3.jpg" />
+		<EmbeddedResource Include="Resources\Images\agramonte-park.jpg" />
 		<EmbeddedResource Include="Resources\Images\C0CE5B94-9B41-46E9-B752-1DC4A208B793.jpg" />
+		<EmbeddedResource Include="Resources\Images\camaguey-Ignacio-Agramonte-Street.jpg" />
+		<EmbeddedResource Include="Resources\Images\catedral-nuestra-camaguey.jpg" />
+		<EmbeddedResource Include="Resources\Images\iglesia-merced.jpg" />
+		<EmbeddedResource Include="Resources\Images\ignacio-agramonte-museum.jpg" />
+		<EmbeddedResource Include="Resources\Images\museo-ferroviario.jpg" />
 		<EmbeddedResource Include="Resources\Images\museo-san-juan-de-dios.jpg" />
 		<EmbeddedResource Include="Resources\Images\plaza-carmen.jpg" />
 		<EmbeddedResource Include="Resources\Images\plaza-gallo.jpg" />
+		<EmbeddedResource Include="Resources\Images\plaza-hotel.jpg" />
+		<EmbeddedResource Include="Resources\Images\plaza-museo-san-juan-de-dios.jpg" />
+		<EmbeddedResource Include="Resources\Images\plaza-trabajaaodres.jpg" />
 		<EmbeddedResource Include="Resources\Images\plaza-trabajadores.jpg" />
 		<EmbeddedResource Include="Resources\Images\railway-museum-1.jpg" />
 		<EmbeddedResource Include="Resources\Images\railway-museum-2.jpg" />

@@ -162,7 +162,7 @@
                     Lat = 21.389157,
                     Long = -77.915734,
                     Title = "Museo Ferroviario",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.museo-ferroviario.jpg"),
                     Summary = "Ocupa el edificio y exteriores, de la estación ferroviaria inaugurada en 1912, importante edificación de la arquitectura en la ciudad agramontina.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
@@ -251,7 +251,7 @@
                     Lat = 21.382229,
                     Long = -77.918687,
                     Title = "Plaza de los Trabajadores",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-trabajaaodres.jpg"),
                     Summary = "Constituye uno de los conjuntos plaza-iglesia más importantes de la ciudad",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
@@ -277,7 +277,7 @@
                     Lat = 21.382359,
                     Long = -77.917110,
                     Title = "Calle Mayor General Ignacio Agramonte y Loynaz, antiguamente Soledad.",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.camaguey-Ignacio-Agramonte-Street.jpg"),
                     Summary = "Desde la Plaza de la Soledad, siguiendo por la calle Ignacio Agramonte hasta Independencia, se ubica un paseo temático conocido por “Calle de los Cines” donde los establecimientos comerciales han sido nombrados con el título de clásicos de la filmografía mundial.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
@@ -299,7 +299,7 @@
                     Lat = 21.388818,
                     Long = -77.915409,
                     Title = "Hotel Plaza",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-hotel.jpg"),
                     Summary = "Inaugurado en los comienzos del siglo XX, este es el más antiguo de los hoteles camagüeyanos en funcionamiento.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
@@ -321,7 +321,7 @@
                     Lat = 21.382344,
                     Long = -77.918274,
                     Title = "Iglesia-convento de “Nuestra Señora de la Merced (1748)",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.iglesia-merced.jpg"),
                     Summary = "Ubicada en el centro de la ciudad la referida edificación es la más grande de tipo religioso de la provincia.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
@@ -343,7 +343,7 @@
                     Lat = 21.379072,
                     Long = -77.918397,
                     Title = "Parque Ignacio Agramonte.",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.agramonte-park.jpg"),
                     Summary = "Comprende el área que ya desde la segunda década del siglo XVII se estableció como el centro político administrativo y comercial de la localidad.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
@@ -381,7 +381,7 @@
                     Lat = 21.378678,
                     Long = -77.918258,
                     Title = "Catedral Metropolitana (antigua Parroquial Mayor)",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.catedral-nuestra-camaguey.jpg"),
                     Summary = "Ubicada a un costado del Parque Agramonte desde su construcción hasta la actualidad, esta iglesia ha sido notablemente modificada.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
@@ -411,7 +411,7 @@
                     Lat = 21.376025,
                     Long = -77.917560,
                     Title = "Conjunto, Plaza, Iglesia y Hospital San Juan de Dios.",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-museo-san-juan-de-dios.jpg"),
                     Summary = "Declarado como Monumento Nacional el 10 de octubre de 1978, el conjunto arquitectónico Plaza, Iglesia y Hospital del siglo XVIII, debe su designación al antiguo convento-hospital de San Juan de Dios que se da como concluido en 1728.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
@@ -509,7 +509,7 @@
                     Lat = 21.379150,
                     Long = -77.918808,
                     Title = "Biblioteca Provincial Julio Antonio Mella - Camagüey. Calle Salvador Cisneros 177, Camagüey.",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.0626-BIBLIOTECA_02.jpg"),
                     Summary = "El edificio actual fue inaugurado en la cuarta década del siglo XX, tras demolerse la antigua casona colonial.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
@@ -666,7 +666,7 @@
                     Lat = 21.389157,
                     Long = -77.915734,
                     Title = "Railway Museum",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.museo-ferroviario.jpg"),
                     Summary = "It occupies the building and exterior of the railway station inaugurated in 1912, an important architectural building in the city of Agramonte.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
@@ -755,7 +755,7 @@
                     Lat = 21.382229,
                     Long = -77.918687,
                     Title = "Workers' Square",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-trabajaaodres.jpg"),
                     Summary = "It constitutes one of the most important square-church complexes in the city.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
@@ -781,7 +781,7 @@
                     Lat = 21.382359,
                     Long = -77.917110,
                     Title = "General Ignacio Agramonte and Loynaz Street, formerly Soledad.",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.camaguey-Ignacio-Agramonte-Street.jpg"),
                     Summary = "From Plaza de la Soledad, continuing along Ignacio Agramonte Street to Independencia, there is a themed promenade known as “Cinema Street”, where commercial establishments have been named after world film classics.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
@@ -803,7 +803,7 @@
                     Lat = 21.388818,
                     Long = -77.915409,
                     Title = "Plaza Hotel",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-hotel.jpg"),
                     Summary = "Opened at the beginning of the 20th century, this is the oldest of the Camagüey hotels still in operation.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
@@ -825,7 +825,7 @@
                     Lat = 21.382344,
                     Long = -77.918274,
                     Title = "Church-convent of “Our Lady of Mercy (1748)",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.iglesia-merced.jpg"),
                     Summary = "Located in the city center, the aforementioned building is the largest religious building in the province.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
@@ -847,7 +847,7 @@
                     Lat = 21.379072,
                     Long = -77.918397,
                     Title = "Ignacio Agramonte Park.",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.agramonte-park.jpg"),
                     Summary = "It includes the area that was established as the political, administrative and commercial center of the town since the second decade of the 17th century.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
@@ -885,7 +885,7 @@
                     Lat = 21.378678,
                     Long = -77.918258,
                     Title = "Metropolitan Cathedral (formerly the Major Parish)",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.catedral-nuestra-camaguey.jpg"),
                     Summary = "Located next to Agramonte Park since its construction until today, this church has been significantly modified.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
@@ -915,7 +915,7 @@
                     Lat = 21.376025,
                     Long = -77.917560,
                     Title = "Complex, Square, Church and Hospital San Juan de Dios.",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-museo-san-juan-de-dios.jpg"),
                     Summary = "Declared a National Monument on October 10, 1978, the 18th-century Plaza, Church and Hospital architectural complex owes its designation to the former convent-hospital of San Juan de Dios, which was completed in 1728.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
@@ -1013,7 +1013,7 @@
                     Lat = 21.379150,
                     Long = -77.918808,
                     Title = "Julio Antonio Mella Provincial Library - Camagüey. Salvador Cisneros Street 177, Camagüey.",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.0626-BIBLIOTECA_02.jpg"),
                     Summary = "The current building was inaugurated in the fourth decade of the 20th century, after the old colonial mansion was demolished.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
