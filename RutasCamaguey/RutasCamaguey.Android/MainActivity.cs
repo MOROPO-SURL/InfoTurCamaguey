@@ -18,13 +18,12 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.Droid
 
             Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
-            // Initialize the EasyAR Engine
-            //if (!EasyAR.Engine.initialize(this, Providers.ConstantProvider.EASYAR_KEY))
-            //{
-            //    string message = $"Failed intializing EasyAR: {EasyAR.Engine.errorMessage()}.";
+            if (!EasyAR.Engine.initialize(this, Providers.ConstantProvider.EASYAR_KEY))
+            {
+                string message = $"Failed intializing EasyAR: {EasyAR.Engine.errorMessage()}.";
 
-            //    throw new System.InvalidOperationException(message);
-            //}
+                throw new System.InvalidOperationException(message);
+            }
 
             LoadApplication(new App());
         }

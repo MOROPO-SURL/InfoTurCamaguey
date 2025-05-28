@@ -178,6 +178,11 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
 
                     break;
 
+                case Enumerations.PlaceKind.Hotel:
+                    bitmapId = GetType().LoadSvgId("Resources.Vectors.symbol-hotel.svg");
+
+                    break;
+
                 case Enumerations.PlaceKind.Distinguished:
                 default:
                     bitmapId = GetType().LoadSvgId("Resources.Vectors.symbol-distinguished.svg");

@@ -505,7 +505,7 @@
                 {
                     // {DF7336B4-248C-416B-8D3B-7D124E415045}
                     Id = new System.Guid(0xdf7336b4, 0x248c, 0x416b, 0x8d, 0x3b, 0x7d, 0x12, 0x4e, 0x41, 0x50, 0x45),
-                    Kind = Enumerations.PlaceKind.Distinguished,
+                    Kind = Enumerations.PlaceKind.Library,
                     Lat = 21.379150,
                     Long = -77.918808,
                     Title = "Biblioteca Provincial Julio Antonio Mella - Camagüey. Calle Salvador Cisneros 177, Camagüey.",
@@ -1009,7 +1009,7 @@
                 {
                     // {DF7336B4-248C-416B-8D3B-7D124E415045}
                     Id = new System.Guid(0xdf7336b4, 0x248c, 0x416b, 0x8d, 0x3b, 0x7d, 0x12, 0x4e, 0x41, 0x50, 0x45),
-                    Kind = Enumerations.PlaceKind.Distinguished,
+                    Kind = Enumerations.PlaceKind.Library,
                     Lat = 21.379150,
                     Long = -77.918808,
                     Title = "Julio Antonio Mella Provincial Library - Camagüey. Salvador Cisneros Street 177, Camagüey.",
