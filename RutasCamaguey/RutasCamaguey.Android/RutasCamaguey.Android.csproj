@@ -158,5 +158,28 @@
     <AndroidAsset Include="Assets\AR\Targets\guide-target-3.jpg" />
     <AndroidAsset Include="Assets\AR\Targets\guide-target-4.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UrhoData\Sprites\39D4C52D-07E7-4D85-871B-C3121837D363.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Sprites\4A29185E-DAED-4F8A-9CAD-F7FBBD727E64.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Sprites\7C2C3B41-760D-4471-994F-1A7BC974EA23.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Sprites\804EBD54-5ED9-4762-97F1-1D3042469829.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Sprites\82E32A87-5728-4151-9C9E-443AAF5CA363.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Sprites\A5E6FDA4-C96B-4F33-86AB-6BCACCC36BFB.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Sprites\B5A960E9-4C4C-490E-AF6F-752BB9EB98BD.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Sprites\CBF018EA-EF3E-45E0-94E8-090F4D9ADAE4.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Sprites\CDD68EB6-AE68-458A-97DF-EC41177D740B.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Sprites\DF7336B4-248C-416B-8D3B-7D124E415045.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Sprites\E06A57B3-B738-4146-84CB-F02AAC82A5D4.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Sprites\F7FC16C5-AF3A-43FA-B31A-C25ED9DA5D3.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Sprites\FD858121-66B5-4841-A044-79A8349BB903.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UrhoData\Sprites\29E4AC5F-30D7-4216-BDF8-6AB1273CF0D2.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Sprites\867B5594-062A-4A96-BDEC-D500DBDEF956.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Sprites\8EDCCBD2-3DE1-4528-B475-06D6EFA42A84.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Sprites\9DBC1AE1-6FC6-485E-94E5-A6F9D7CFFC67.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Sprites\EEC8965A-FA25-488F-BE14-F3D6C1264FD1.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Sprites\F105B083-7691-4CC3-A613-9644C811D437.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

@@ -28,6 +28,165 @@
             {
                 new Models.Data.PlaceDataModel
                 {
+                    // {ACCD344C-AFF9-4B20-A161-EF7B4FA2D5C3}
+                    Id = new System.Guid(0xaccd344c, 0xaff9, 0x4b20, 0xa1, 0x61, 0xef, 0x7b, 0x4f, 0xa2, 0xd5, 0xc3),
+                    Kind = Enumerations.PlaceKind.Museum,
+                    Lat = 21.390498,
+                    Long = -77.916565,
+                    Title = "Museo Provincial Ignacio Agramonte",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.ACCD344C_AFF9_4B20_A161_EF7B4FA2D5C3.jpg"),
+                    Summary = "La edificación en la que actualmente funciona el museo fue en sus inicios, en 1848, el Cuartel de Caballería del ejército español. Al terminar la dominación española, y luego de un proceso de transformación, se ubicó en el lugar el Hotel Camagüey función que mantuvo hasta el 23 de diciembre del año 1955 cuando, en un aniversario del natalicio del patriota Ignacio Agramonte, se inauguró el actual museo.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.PictureGalleryContentDataModel
+                        {
+                            Items = new Xamarin.Forms.ImageSource[]
+                            {
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-legancy-1.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-legancy-2.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-legancy-3.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-legancy-4.jpg")
+                            }
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "De acuerdo al contenido y diversidad de las colecciones que atesora, el museo se clasifica como una institución de tipo general. Consta de varias salas expositivas: pintura, artes decorativas, de historia natural, entre otras. Se distingue la sala de pintura cubana, considerada como la segunda colección en importancia en el país, con obras de varios artistas de renombre nacional e internacional como Menocal, Romañach, Carlos Enríquez, Amelia Peláez, Wifredo Lam y Fidelio Ponce, este último nacido en la provincia."
+                        },
+                        new Models.Data.Content.PictureGalleryContentDataModel
+                        {
+                            Items = new Xamarin.Forms.ImageSource[]
+                            {
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-1.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-2.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-3.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-4.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-5.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-6.jpg")
+                            }
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "La belleza y tranquilidad de su patio interior, en el que se conservan elementos arquitectónicos, decorativos y funcionales de las épocas colonial y republicana, es custodiada por ejemplares de la flora cubana."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "En la parte trasera de la edificación se ubica la escuela de artes Vicentina de la Torre, institución donde se forman niños y jóvenes talentos del ballet, artes escénicas y visuales."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
+                    // {06C3FEBB-04EC-4B5F-8939-2CCFA4C5E7E7}
+                    Id = new System.Guid(0x6c3febb, 0x4ec, 0x4b5f, 0x89, 0x39, 0x2c, 0xcf, 0xa4, 0xc5, 0xe7, 0xe7),
+                    Kind = Enumerations.PlaceKind.Museum,
+                    Lat = 21.389157,
+                    Long = -77.915734,
+                    Title = "Museo Ferroviario",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.museo-ferroviario.jpg"),
+                    Summary = "Ocupa el edificio y exteriores, de la estación ferroviaria inaugurada en 1912, importante edificación de la arquitectura en la ciudad agramontina.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Al recorrer sus salas y áreas exteriores los visitantes se familiarizan con el patrimonio y el quehacer ferroviario de la provincia y el país."
+                        },
+                        new Models.Data.Content.PictureGalleryContentDataModel
+                        {
+                            Items = new Xamarin.Forms.ImageSource[]
+                            {
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.railway-museum-1.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.railway-museum-2.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.railway-museum-3.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.railway-museum-4.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.railway-museum-5.jpg")
+                            }
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "El uso de las nuevas tecnologías convierten a este museo en un espacio interactivo y virtual muy agradable e informativo para toda la familia. De visitantes a viajeros las personas tienen la posibilidad de participar en un recorrido imaginario concebido a través de varias «estaciones», en cada una de las cuales conocerá una etapa diferente de la historia del ferrocarril; una cronología precisa del devenir histórico del ferrocarril. "
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Las labores de restauración y conservación de la edificación y el patrimonio que resguarda, lideradas por la Oficina del Historiador de la Ciudad, fueron distinguidas, entre otros lauros, con el Premio Nacional de Conservación y Restauración de Monumentos."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "El acceso al museo se realiza desde un agradable bulevar que lo separa, y une, con el Hotel Plaza."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
+                    // {FD858121-66B5-4841-A044-79A8349BB903}
+                    Id = new System.Guid(0xfd858121, 0x66b5, 0x4841, 0xa0, 0x44, 0x79, 0xa8, 0x34, 0x9b, 0xb9, 0x3),
+                    Kind = Enumerations.PlaceKind.Hotel,
+                    Lat = 21.388818,
+                    Long = -77.915409,
+                    Title = "Hotel Plaza",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-hotel.jpg"),
+                    Summary = "Inaugurado en los comienzos del siglo XX, este es el más antiguo de los hoteles camagüeyanos en funcionamiento.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Aún conserva la mayor parte de sus características arquitectónicas originales y atesora entre sus múltiples hechos relevantes, el paso de la poetisa chilena Gabriela Mistral, Premio Nobel de Literatura en 1945, y la salida al aire de la primera emisora de radio fuera de la capital cubana."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Íntimo y acogedor, se caracteriza por el trato familiar de sus empleados y su excelente ubicación geográfica, justo en la confluencia de las principales vías de acceso a la ciudad (línea férrea, aeropuerto y carretera) y a pocos metros de la zona comercial."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
+                    // {39D4C52D-07E7-4D85-871B-C3121837D363}
+                    Id = new System.Guid(0x39d4c52d, 0x7e7, 0x4d85, 0x87, 0x1b, 0xc3, 0x12, 0x18, 0x37, 0xd3, 0x63),
+                    Kind = Enumerations.PlaceKind.Church,
+                    Lat = 21.382699, 
+                    Long = -77.916316,
+                    Title = "Iglesia de Nuestra Señora de la Soledad.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.Iglesia-Soledad.jpg"),
+                    Summary = "La Iglesia de Nuestra Señora de la Soledad es un emblemático templo católico ubicado en Camagüey, Cuba, en la intersección de las calle República e Ignacio Agramonte.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Construida durante el siglo XVIII se destaca por su pintoresca torre de color crema y terracota que se erige como un punto de referencia distintivo en el horizonte de la ciudad. La iglesia es un ejemplo del estilo colonial cubano con influencias mudéjares evidentes en elementos como el techo de la nave central, lo que la convierte en una joya arquitectónica."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "En su interior el templo alberga detallados frescos barrocos y la pila bautismal sagrada donde fue bautizado en 1841 el héroe cubano Ignacio Agramonte. También fue el lugar donde Agramonte y Amalia Simoni contrajeron matrimonio. Debajo del presbiterio, existe una cripta."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "La Iglesia de la Soledad no solo es un símbolo de devoción para los católicos locales sino también una atracción turística que permite apreciar la arquitectura colonial cubana y sumergirse en la historia de la ciudad."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
+                    // {7C2C3B41-760D-4471-994F-1A7BC974EA23}
+                    Id = new System.Guid(0x7c2c3b41, 0x760d, 0x4471, 0x99, 0x4f, 0x1a, 0x7b, 0xc9, 0x74, 0xea, 0x23),
+                    Kind = Enumerations.PlaceKind.Distinguished,
+                    Lat = 21.382359,
+                    Long = -77.917110,
+                    Title = "Calle Mayor General Ignacio Agramonte y Loynaz.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.camaguey-Ignacio-Agramonte-Street.jpg"),
+                    Summary = "Desde la Plaza de la Soledad, siguiendo por la calle Ignacio Agramonte (antiguamente Soledad) hasta Independencia, se ubica un paseo temático conocido por “Calle de los Cines” donde los establecimientos comerciales han sido nombrados con el título de clásicos de la filmografía mundial.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "En ese tramo se encuentran instalaciones y proyectos, como el “Callejón de los Milagros” representativos de este universo artístico."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "En el espacio de este último tiene su sede el Centro de información Turística, conocido como Infotur. De igual manera se encuentran en su cercanía las oficinas de varias agencias turísticas como Paradiso."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
                     // {C0CE5B94-9B41-46E9-B752-1DC4A208B793}
                     Id = new System.Guid(0xc0ce5b94, 0x9b41, 0x46e9, 0xb7, 0x52, 0x1d, 0xc4, 0xa2, 0x8, 0xb7, 0x93),
                     Kind = Enumerations.PlaceKind.InfoturOffice,
@@ -156,90 +315,23 @@
                 },
                 new Models.Data.PlaceDataModel
                 {
-                    // {06C3FEBB-04EC-4B5F-8939-2CCFA4C5E7E7}
-                    Id = new System.Guid(0x6c3febb, 0x4ec, 0x4b5f, 0x89, 0x39, 0x2c, 0xcf, 0xa4, 0xc5, 0xe7, 0xe7),
-                    Kind = Enumerations.PlaceKind.Museum,
-                    Lat = 21.389157,
-                    Long = -77.915734,
-                    Title = "Museo Ferroviario",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.museo-ferroviario.jpg"),
-                    Summary = "Ocupa el edificio y exteriores, de la estación ferroviaria inaugurada en 1912, importante edificación de la arquitectura en la ciudad agramontina.",
+                    // {CBF018EA-EF3E-45E0-94E8-090F4D9ADAE4}
+                    Id = new System.Guid(0xcbf018ea, 0xef3e, 0x45e0, 0x94, 0xe8, 0x9, 0xf, 0x4d, 0x9a, 0xda, 0xe4),
+                    Kind = Enumerations.PlaceKind.Church,
+                    Lat = 21.382344,
+                    Long = -77.918274,
+                    Title = "Iglesia-convento “Nuestra Señora de la Merced” (1748)",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.iglesia-merced.jpg"),
+                    Summary = "Ubicada en el centro de la ciudad la referida edificación es la más grande de tipo religioso de la provincia.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "Al recorrer sus salas y áreas exteriores los visitantes se familiarizan con el patrimonio y el quehacer ferroviario de la provincia y el país."
-                        },
-                        new Models.Data.Content.PictureGalleryContentDataModel
-                        {
-                            Items = new Xamarin.Forms.ImageSource[]
-                            {
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.railway-museum-1.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.railway-museum-2.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.railway-museum-3.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.railway-museum-4.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.railway-museum-5.jpg")
-                            }
+                            Text = "La iglesia consta de tres naves y una torre central, debajo de su altar mayor se encuentran sus antiguas criptas donde se resguardan reliquias religiosas como una lápida sepulcral, que según referencias conocidas hasta el momento es el monumento funerario más antiguo de la provincia. Anexo se edificó el convento que tuvo varios usos durante la etapa colonial."
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "El uso de las nuevas tecnologías convierten a este museo en un espacio interactivo y virtual muy agradable e informativo para toda la familia. De visitantes a viajeros las personas tienen la posibilidad de participar en un recorrido imaginario concebido a través de varias «estaciones», en cada una de las cuales conocerá una etapa diferente de la historia del ferrocarril; una cronología precisa del devenir histórico del ferrocarril. "
-                        },
-                        new Models.Data.Content.TextContentDataModel
-                        {
-                            Text = "Las labores de restauración y conservación de la edificación y el patrimonio que resguarda, lideradas por la Oficina del Historiador de la Ciudad, fueron distinguidas, entre otros lauros, con el Premio Nacional de Conservación y Restauración de Monumentos."
-                        },
-                        new Models.Data.Content.TextContentDataModel
-                        {
-                            Text = "El acceso al museo se realiza desde un agradable bulevar que lo separa, y une, con el Hotel Plaza."
-                        }
-                    }
-                },
-                new Models.Data.PlaceDataModel
-                {
-                    // {ACCD344C-AFF9-4B20-A161-EF7B4FA2D5C3}
-                    Id = new System.Guid(0xaccd344c, 0xaff9, 0x4b20, 0xa1, 0x61, 0xef, 0x7b, 0x4f, 0xa2, 0xd5, 0xc3),
-                    Kind = Enumerations.PlaceKind.Museum,
-                    Lat = 21.390498,
-                    Long = -77.916565,
-                    Title = "Museo Provincial Ignacio Agramonte",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.ACCD344C_AFF9_4B20_A161_EF7B4FA2D5C3.jpg"),
-                    Summary = "La edificación en la que actualmente funciona el museo fue en sus inicios, en 1848, el Cuartel de Caballería del ejército español. Al terminar la dominación española, y luego de un proceso de transformación, se ubicó en el lugar el Hotel Camagüey función que mantuvo hasta el 23 de diciembre del año 1955 cuando, en un aniversario del natalicio del patriota Ignacio Agramonte, se inauguró el actual museo.",
-                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
-                    {
-                        new Models.Data.Content.PictureGalleryContentDataModel
-                        {
-                            Items = new Xamarin.Forms.ImageSource[]
-                            {
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-legancy-1.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-legancy-2.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-legancy-3.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-legancy-4.jpg")
-                            }
-                        },
-                        new Models.Data.Content.TextContentDataModel
-                        {
-                            Text = "De acuerdo al contenido y diversidad de las colecciones que atesora, el museo se clasifica como una institución de tipo general. Consta de varias salas expositivas: pintura, artes decorativas, de historia natural, entre otras. Se distingue la sala de pintura cubana, considerada como la segunda colección en importancia en el país, con obras de varios artistas de renombre nacional e internacional como Menocal, Romañach, Carlos Enríquez, Amelia Peláez, Wifredo Lam y Fidelio Ponce, este último nacido en la provincia."
-                        },
-                        new Models.Data.Content.PictureGalleryContentDataModel
-                        {
-                            Items = new Xamarin.Forms.ImageSource[]
-                            {
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-1.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-2.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-3.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-4.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-5.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-6.jpg")
-                            }
-                        },
-                        new Models.Data.Content.TextContentDataModel
-                        {
-                            Text = "La belleza y tranquilidad de su patio interior, en el que se conservan elementos arquitectónicos, decorativos y funcionales de las épocas colonial y republicana, es custodiada por ejemplares de la flora cubana."
-                        },
-                        new Models.Data.Content.TextContentDataModel
-                        {
-                            Text = "En la parte trasera de la edificación se ubica la escuela de artes Vicentina de la Torre, institución donde se forman niños y jóvenes talentos del ballet, artes escénicas y visuales."
+                            Text = "A partir del siglo XVIII la iglesia estuvo estrechamente relacionada con las procesiones durante la Semana Santa y el recorrido del Santo Sepulcro. Este último constituye, desde la etapa colonial, uno de los muebles religiosos más valioso y objeto de una de las leyendas de la tradición local."
                         }
                     }
                 },
@@ -271,67 +363,113 @@
                 },
                 new Models.Data.PlaceDataModel
                 {
-                    // {7C2C3B41-760D-4471-994F-1A7BC974EA23}
-                    Id = new System.Guid(0x7c2c3b41, 0x760d, 0x4471, 0x99, 0x4f, 0x1a, 0x7b, 0xc9, 0x74, 0xea, 0x23),
+                    // {82E32A87-5728-4151-9C9E-443AAF5CA363}
+                    Id = new System.Guid(0x82e32a87, 0x5728, 0x4151, 0x9c, 0x9e, 0x44, 0x3a, 0xaf, 0x5c, 0xa3, 0x63),
                     Kind = Enumerations.PlaceKind.Distinguished,
-                    Lat = 21.382359,
-                    Long = -77.917110,
-                    Title = "Calle Mayor General Ignacio Agramonte y Loynaz, antiguamente Soledad.",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.camaguey-Ignacio-Agramonte-Street.jpg"),
-                    Summary = "Desde la Plaza de la Soledad, siguiendo por la calle Ignacio Agramonte hasta Independencia, se ubica un paseo temático conocido por “Calle de los Cines” donde los establecimientos comerciales han sido nombrados con el título de clásicos de la filmografía mundial.",
+                    Lat = 21.380571,
+                    Long = -77.919030,
+                    Title = "Sede del Tribunal Provincial Popular. Antigua Real Audiencia de Santo Domingo.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.Tribunal-Provincial-Popular.jpg"),
+                    Summary = "El edificio fue construido por la Orden de los Jesuitas con el propósito de establecer un colegio de la orden. Luego de la expulsión de la orden el estado español dispuso,a partir del 1800, como sede de la Real Audiencia de Santo Domingo, considerada la más antigua de América",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "En ese tramo se encuentran instalaciones y proyectos, como el “Callejón de los Milagros” representativos de este universo artístico."
+                            Text = "A partir de ese momento la entonces Villa experimentó una gran animación judicial y resultó foro de muchos abogados."
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "En el espacio de este último tiene su sede el Centro de información Turística, conocido como Infotur. De igual manera se encuentran en su cercanía las oficinas de varias agencias turísticas como Paradiso. "
+                            Text = "Al momento de su traslado a Puerto Príncipe la Audiencia tenía jurisdicción sobre la isla de Cuba, la Luisiana, la Florida y la Capitanía General de Puerto Rico. Permaneció en Puerto Príncipe hasta 1808 cuando se trasladó a La Habana, volviendo luego a Puerto Príncipe."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Un real decreto del 18 de agosto de 1838 limitó su jurisdicción a los departamentos Oriental y Central de la isla de Cuba. Suprimida en 1853 la edificación sirvió como Cuartel de Artillería y del Cuerpo de Ingenieros. En el año 1868 fue restablecida como Real Audiencia de Camagüey."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "A inicios del siglo XX pasó a ser Palacio de Justicia y hoy acoge el Tribunal Popular Provincial, con igual objeto social de impartir justicia."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "La edificación acogió transformaciones en 1910, incorporó elementos antiguos y con una decoración sobria en la fachada y en el interior, en tanto se conservan sus antiguos arcos y columnas coloniales en la planta baja, entre los que asciende una elegante escalera de mármol de doble vuelta adicionada entonces."
                         }
                     }
                 },
                 new Models.Data.PlaceDataModel
                 {
-                    // {FD858121-66B5-4841-A044-79A8349BB903}
-                    Id = new System.Guid(0xfd858121, 0x66b5, 0x4841, 0xa0, 0x44, 0x79, 0xa8, 0x34, 0x9b, 0xb9, 0x3),
-                    Kind = Enumerations.PlaceKind.Hotel,
-                    Lat = 21.388818,
-                    Long = -77.915409,
-                    Title = "Hotel Plaza",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-hotel.jpg"),
-                    Summary = "Inaugurado en los comienzos del siglo XX, este es el más antiguo de los hoteles camagüeyanos en funcionamiento.",
+                    // {4A29185E-DAED-4F8A-9CAD-F7FBBD727E64}
+                    Id = new System.Guid(0x4a29185e, 0xdaed, 0x4f8a, 0x9c, 0xad, 0xf7, 0xfb, 0xbd, 0x72, 0x7e, 0x64),
+                    Kind = Enumerations.PlaceKind.Distinguished,
+                    Lat = 21.379911,
+                    Long = -77.923515,
+                    Title = "Plaza e Iglesia del Carmen. Monasterio de las Ursulinas.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.Plaza-Del-Carmen.jpg"),
+                    Summary = "Este conjunto, conformado por la Plaza del Carmen, la Iglesia del Carmen y el antiguo Convento de las Ursulinas, representa uno de los núcleos coloniales mejor conservados y más significativos de Camagüey, ofreciendo un testimonio vivo de la historia y la arquitectura de la ciudad.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "Aún conserva la mayor parte de sus características arquitectónicas originales y atesora entre sus múltiples hechos relevantes, el paso de la poetisa chilena Gabriela Mistral, Premio Nobel de Literatura en 1945, y la salida al aire de la primera emisora de radio fuera de la capital cubana."
+                            Text = "La Plaza del Carmen es un espacio de gran valor histórico y arquitectónico. Su creación data de las primeras décadas del siglo XIX, y, a diferencia de otras plazas, se distingue por su arquitectura popular, irregulares y de fachadas sencillas, lo que le confiere un encanto singular. Tras una importante restauración, la plaza fue embellecida con tinajones de arcilla, faroles encantadores y esculturas de tamaño real que representan escenas de la vida cotidiana camagüeyana, convirtiéndola en una de las plazas más bellas de la ciudad."
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "Íntimo y acogedor, se caracteriza por el trato familiar de sus empleados y su excelente ubicación geográfica, justo en la confluencia de las principales vías de acceso a la ciudad (línea férrea, aeropuerto y carretera) y a pocos metros de la zona comercial."
+                            Text = "La Iglesia de Nuestra Señora del Carmen, construida en 1825, domina gran parte de la plaza con su imponente belleza barroca. Es la única iglesia en Camagüey que posee dos torres. Su majestuosa fachada presenta tres accesos, lo que a primera vista podría sugerir que está compuesta por tres naves, aunque en realidad cuenta con una sola planta de tamaño modesto que incluye vestíbulo, coro, presbiterio y sacristía. Este templo forma parte de un conjunto arquitectónico invaluable del siglo XIX, compartiendo espacio con el antiguo Monasterio de las Ursulinas."
+                        },
+                         new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "El edificio que albergó el Convento de las Ursulinas es otra de las joyas arquitectónica de la primera mitad del siglo XIX que se encuentra a un costado de la plaza. El edificio actual fue terminado en 1829, y a lo largo de su historia ha sufrido varias rehabilitaciones. Originalmente, el convento y su colegio se fundaron para educar a niñas, incluso aquellas de escasos recursos. "
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "En la actualidad la edificación aloja la sede de la Oficina del Historiador de la ciudad y, en su otra mitad, la filial de la Universidad de las Artes en la provincia con aulas especializadas para música, danza y artes audiovisuales. A pesar de los años, el inmueble conserva su singular distribución de puertas y ventanas exteriores, enmarcadas por 70 arcos."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "A escasos metros de la Plaza del Carmen, y sirviendo de antesala en el recorrido desde el centro de la ciudad, se encuentra la plazoleta de Bedoya resultado de la intersección irregular de varias calles y sitio tradicional de fiestas populares como el San Juan Camagüeyano."
                         }
                     }
                 },
                 new Models.Data.PlaceDataModel
                 {
-                    // {CBF018EA-EF3E-45E0-94E8-090F4D9ADAE4}
-                    Id = new System.Guid(0xcbf018ea, 0xef3e, 0x45e0, 0x94, 0xe8, 0x9, 0xf, 0x4d, 0x9a, 0xda, 0xe4),
-                    Kind = Enumerations.PlaceKind.Church,
-                    Lat = 21.382344,
-                    Long = -77.918274,
-                    Title = "Iglesia-convento de “Nuestra Señora de la Merced (1748)",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.iglesia-merced.jpg"),
-                    Summary = "Ubicada en el centro de la ciudad la referida edificación es la más grande de tipo religioso de la provincia.",
+                    // {804EBD54-5ED9-4762-97F1-1D3042469829}
+                    Id = new System.Guid(0x804ebd54, 0x5ed9, 0x4762, 0x97, 0xf1, 0x1d, 0x30, 0x42, 0x46, 0x98, 0x29),
+                    Kind = Enumerations.PlaceKind.Distinguished,
+                    Lat = 21.379489,
+                    Long = -77.918885,
+                    Title = "Sede de la Asamblea municipal del Poder Popular en Camagüey.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.AsambleaMunicipal-PoderPopular.jpg"),
+                    Summary = "Antiguo Ayuntamiento de la ciudad.Situado en la calle Cisneros (antigua Mayor) esquina a Martí (antigua San Diego), y colindante con el parque Agramonte.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "La iglesia consta de tres naves y una torre central, debajo de su altar mayor se encuentran sus antiguas criptas donde se resguardan reliquias religiosas como una lápida sepulcral, que según referencias conocidas hasta el momento es el monumento funerario más antiguo de la provincia. Anexo se edificó el convento que tuvo varios usos durante la etapa colonial."
+                            Text = "El edificio ha mantenido durante más de 200 años similares funciones como sede de las autoridades locales desde la etapa colonial hasta la actualidad: originalmente Cabildo, Casa Consistorial, Ayuntamiento, y en el período revolucionario se ubicó aquí la Junta Central de Ejecución e Inspección (JCEI), el Poder Local y en la actualidad la Asamblea Municipal del Poder Popular."
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "A partir del siglo XVIII la iglesia estuvo estrechamente relacionada con las procesiones durante la Semana Santa y el recorrido del Santo Sepulcro. Este último constituye, desde la etapa colonial, uno de los muebles religiosos más valioso y objeto de una de las leyendas de la tradición local."
+                            Text = "Inaugurado en 1775 la edificación ha sido remodelada en varias ocasiones, entre ellas se destaca la de su fachada a principios del siglo XX de carácter ecléctico con detalles Art Nouveau en sus balcones y remates de ventanas y puertas."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
+                    // {DF7336B4-248C-416B-8D3B-7D124E415045}
+                    Id = new System.Guid(0xdf7336b4, 0x248c, 0x416b, 0x8d, 0x3b, 0x7d, 0x12, 0x4e, 0x41, 0x50, 0x45),
+                    Kind = Enumerations.PlaceKind.Library,
+                    Lat = 21.379150,
+                    Long = -77.918808,
+                    Title = "Biblioteca Provincial Julio Antonio Mella. Calle Salvador Cisneros 177, Camagüey.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.0626-BIBLIOTECA_02.jpg"),
+                    Summary = "El edificio actual fue inaugurado en la cuarta década del siglo XX, tras demolerse la antigua casona colonial.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "La edificación presenta un estilo neocolonial con influencias coloniales tradicionales. Destacan sus dos niveles, un portal jerarquizado con tres arcos de medio punto, y un patio interior con arcos mixtilíneos isabelinos, vitrales y persianas francesas. La cubierta está hecha con tejas criollas en excelente estado."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Anteriormente funcionaron en el lugar la Sociedad Filarmónica de Puerto Príncipe, el Casino Español y el Liceo de Camagüey. Desde 1963, es sede de la Biblioteca Provincial Julio Antonio Mella. La biblioteca es sede de eventos literarios y culturales como el Encuentro de Escritores camagüeyanos y la Feria Internacional del Libro en Camagüey, fomentando la cultura local y nacional."
                         }
                     }
                 },
@@ -405,9 +543,43 @@
                 },
                 new Models.Data.PlaceDataModel
                 {
+                    // {F105B083-7691-4CC3-A613-9644C811D437}
+                    Id = new System.Guid(0xf105b083, 0x7691, 0x4cc3, 0xa6, 0x13, 0x96, 0x44, 0xc8, 0x11, 0xd4, 0x37),
+                    Kind = Enumerations.PlaceKind.Museum,
+                    Lat = 21.378733,
+                    Long = -77.918690,
+                    Title = "Casa de la Diversidad Cultural.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.Casa-de-la-Diversidad.jpg"),
+                    Summary = "La Casa de la Diversidad Cultural en Camagüey es un espacio vibrante y significativo dedicado a preservar, promover y celebrar el rico conjunto de identidades que conforman la cultura cubana.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Más que un simple museo, funciona como un centro dinámico que fomenta el diálogo intercultural y el entendimiento mutuo."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Ubicada en el corazón de esta histórica ciudad, la Casa de la Diversidad Cultural se erige como un testimonio de la compleja mezcla de influencias africanas, europeas y aborígenes que han moldeado la idiosincrasia del pueblo cubano."
+                        },
+                         new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "A través de sus exposiciones permanentes y temporales, el visitante puede adentrarse en las expresiones artísticas, las tradiciones religiosas, las costumbres culinarias y las narrativas históricas de las diversas comunidades que han confluido en la isla."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Este centro cultural no solo exhibe piezas y documentos, sino que también organiza talleres, conferencias, presentaciones artísticas y eventos comunitarios. Es un punto de encuentro para investigadores, artistas, estudiantes y el público en general, ofreciendo una plataforma para la reflexión sobre la diversidad como una fortaleza y un motor para el desarrollo social."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "En la Casa de la Diversidad Cultural, la historia se entrelaza con el presente, y la herencia se proyecta hacia el futuro, reafirmando el valor incalculable de la pluralidad en la identidad cubana."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
                     // {CDD68EB6-AE68-458A-97DF-EC41177D740B}
                     Id = new System.Guid(0xcdd68eb6, 0xae68, 0x458a, 0x97, 0xdf, 0xec, 0x41, 0x17, 0x7d, 0x74, 0xb),
-                    Kind = Enumerations.PlaceKind.Monument,
+                    Kind = Enumerations.PlaceKind.Distinguished,
                     Lat = 21.376025,
                     Long = -77.917560,
                     Title = "Conjunto, Plaza, Iglesia y Hospital San Juan de Dios.",
@@ -447,79 +619,157 @@
                 },
                 new Models.Data.PlaceDataModel
                 {
-                    // {82E32A87-5728-4151-9C9E-443AAF5CA363}
-                    Id = new System.Guid(0x82e32a87, 0x5728, 0x4151, 0x9c, 0x9e, 0x44, 0x3a, 0xaf, 0x5c, 0xa3, 0x63),
+                    // {9DBC1AE1-6FC6-485E-94E5-A6F9D7CFFC67}
+                    Id = new System.Guid(0x9dbc1ae1, 0x6fc6, 0x485e, 0x94, 0xe5, 0xa6, 0xf9, 0xd7, 0xcf, 0xfc, 0x67),
                     Kind = Enumerations.PlaceKind.Distinguished,
-                    Lat = 21.380571,
-                    Long = -77.919030,
-                    Title = "Sede del Tribunal Provincial Popular. Antigua Real Audiencia de Santo Domingo.",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
-                    Summary = "El edificio fue construido por la Orden de los Jesuitas con el propósito de establecer un colegio de la orden. Luego de la expulsión de la orden el estado español dispuso,a partir del 1800, como sede de la Real Audiencia de Santo Domingo, considerada la más antigua de América",
+                    Lat = 21.375521,
+                    Long = -77.914508,
+                    Title = "Palacio de los Matrimonios.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.Palacio-de-los-Matrimonios.jpg"),
+                    Summary = "Es una institución dedicada a la celebración de uniones civiles, siendo el lugar donde muchas parejas formalizan su matrimonio.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "A partir de ese momento la entonces Villa experimentó una gran animación judicial y resultó foro de muchos abogados."
+                            Text = "Este inmueble situado al inicio de la Avenida de la Caridad, importante arteria comercial y cultural de la ciudad, se encuentra en el antiguo palacete de una de las familias más prominentes y adineradas de Camagüey en el siglo XIX."
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "Al momento de su traslado a Puerto Príncipe la Audiencia tenía jurisdicción sobre la isla de Cuba, la Luisiana, la Florida y la Capitanía General de Puerto Rico. Permaneció en Puerto Príncipe hasta 1808 cuando se trasladó a La Habana, volviendo luego a Puerto Príncipe."
+                            Text = "El edificio no solo funciona como una oficina de registro, sino que también ofrece un ambiente especial para las ceremonias nupciales, haciendo del acto de casarse una experiencia memorable para los contrayentes y sus familias. Es un símbolo de amor y compromiso para la comunidad."
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "Un real decreto del 18 de agosto de 1838 limitó su jurisdicción a los departamentos Oriental y Central de la isla de Cuba. Suprimida en 1853 la edificación sirvió como Cuartel de Artillería y del Cuerpo de Ingenieros. En el año 1868 fue restablecida como Real Audiencia de Camagüey."
-                        },
-                        new Models.Data.Content.TextContentDataModel
-                        {
-                            Text = "A inicios del siglo XX pasó a ser Palacio de Justicia y hoy acoge el Tribunal Popular Provincial, con igual objeto social de impartir justicia."
-                        },
-                        new Models.Data.Content.TextContentDataModel
-                        {
-                            Text = "La edificación acogió transformaciones en 1910, incorporó elementos antiguos y con una decoración sobria en la fachada y en el interior, en tanto se conservan sus antiguos arcos y columnas coloniales en la planta baja, entre los que asciende una elegante escalera de mármol de doble vuelta adicionada entonces."
+                            Text = "El palacio suele tener una arquitectura que lo distingue, con elementos históricos que le confieren un toque de solemnidad y elegancia a las bodas que allí se celebran."
                         }
                     }
                 },
                 new Models.Data.PlaceDataModel
                 {
-                    // {804EBD54-5ED9-4762-97F1-1D3042469829}
-                    Id = new System.Guid(0x804ebd54, 0x5ed9, 0x4762, 0x97, 0xf1, 0x1d, 0x30, 0x42, 0x46, 0x98, 0x29),
+                    // {E06A57B3-B738-4146-84CB-F02AAC82A5D4}
+                    Id = new System.Guid(0xe06a57b3, 0xb738, 0x4146, 0x84, 0xcb, 0xf0, 0x2a, 0xac, 0x82, 0xa5, 0xd4),
                     Kind = Enumerations.PlaceKind.Distinguished,
-                    Lat = 21.379489,
-                    Long = -77.918885,
-                    Title = "Sede de la Asamblea municipal del Poder Popular en Camagüey.",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
-                    Summary = "Antiguo Ayuntamiento de la ciudad.Situado en la calle Cisneros (antigua Mayor) esquina a Martí (antigua San Diego), y colindante con el parque Agramonte.",
+                    Lat = 21.376340,
+                    Long = -77.911804,
+                    Title = "Casino Campestre.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.casino-campestre1.jpg"),
+                    Summary = "Es el parque urbano más grande de Camagüey y uno de los más extensos de Cuba.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "El edificio ha mantenido durante más de 200 años similares funciones como sede de las autoridades locales desde la etapa colonial hasta la actualidad: originalmente Cabildo, Casa Consistorial, Ayuntamiento, y en el período revolucionario se ubicó aquí la Junta Central de Ejecución e Inspección (JCEI), el Poder Local y en la actualidad la Asamblea Municipal del Poder Popular."
+                            Text = "Situado a la orilla del río Hatibonico, y su convergencia con el arroyo Juan del Toro, la existencia de este parque se remonta a los años 50 del siglo XIX. Fue concebido como un espacio para ferias y exposiciones agrícolas e industriales, así como para el recreo, la expansión social y cultural."
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "Inaugurado en 1775 la edificación ha sido remodelada en varias ocasiones, entre ellas se destaca la de su fachada a principios del siglo XX de carácter ecléctico con detalles Art Nouveau en sus balcones y remates de ventanas y puertas."
+                            Text = "Colinda con el Centro Histórico de Camagüey, declarado Patrimonio de la Humanidad, ofreciendo a locales y visitantes un espacio para el descanso, el deporte y la apreciación artística y natural."
+                        },
+                         new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "A lo largo de su historia, el parque ha sido escenario de diversas remodelaciones y se ha convertido en un importante pulmón verde para la ciudad. En 1916 se le otorgó el nombre de Gonzalo de Quesada en homenaje al patriota local, aunque la denominación popular de \"Casino Campestre\" ha persistido."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "En su interior se encuentran situados varios monumentos que rinden tributo a personalidades relevantes de la historia local y nacional como Salvador Cisneros Betancourt figura importante en la configuración de la nación cubana y sus luchas independentistas, el Libertador Desconocido y a los aviadores españoles Barberán y Collar, protagonistas del primer vuelo trasatlántico sin escalas de España (Sevilla) a Cuba (Camagüey)."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "El parque también es notable por haber sido uno de los primeros lugares en Cuba donde se exhibieron animales en el siglo XVIII, hoy alberga el zoológico de Camagüey."
                         }
                     }
                 },
                 new Models.Data.PlaceDataModel
                 {
-                    // {DF7336B4-248C-416B-8D3B-7D124E415045}
-                    Id = new System.Guid(0xdf7336b4, 0x248c, 0x416b, 0x8d, 0x3b, 0x7d, 0x12, 0x4e, 0x41, 0x50, 0x45),
-                    Kind = Enumerations.PlaceKind.Library,
-                    Lat = 21.379150,
-                    Long = -77.918808,
-                    Title = "Biblioteca Provincial Julio Antonio Mella - Camagüey. Calle Salvador Cisneros 177, Camagüey.",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.0626-BIBLIOTECA_02.jpg"),
-                    Summary = "El edificio actual fue inaugurado en la cuarta década del siglo XX, tras demolerse la antigua casona colonial.",
+                    // {8EDCCBD2-3DE1-4528-B475-06D6EFA42A84}
+                    Id = new System.Guid(0x8edccbd2, 0x3de1, 0x4528, 0xb4, 0x75, 0x6, 0xd6, 0xef, 0xa4, 0x2a, 0x84),
+                    Kind = Enumerations.PlaceKind.Zoo,
+                    Lat = 21.377194,
+                    Long = -77.912609,
+                    Title = "Zoológico de Camagüey.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.zoologico-entrada.jpg"),
+                    Summary = "Es un espacio dedicado a la conservación y exhibición de diversas especies animales, ofreciendo a los visitantes la oportunidad de aprender sobre la fauna local e internacional.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "La edificación presenta un estilo neocolonial con influencias coloniales tradicionales. Destacan sus dos niveles, un portal jerarquizado con tres arcos de medio punto, y un patio interior con arcos mixtilíneos isabelinos, vitrales y persianas francesas. La cubierta está hecha con tejas criollas en excelente estado."
+                            Text = "Entre las principales especies que se muestran al público se encuentran el león, el tigre, el jaguar, varias especies de monos, aves exóticas, y reptiles. Se encuentra en un entorno natural que busca replicar el hábitat de los animales, proporcionando un ambiente adecuado para su bienestar."
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "Anteriormente funcionaron en el lugar la Sociedad Filarmónica de Puerto Príncipe, el Casino Español y el Liceo de Camagüey. Desde 1963, es sede de la Biblioteca Provincial Julio Antonio Mella. La biblioteca es sede de eventos literarios y culturales como el Encuentro de Escritores camagüeyanos y la Feria Internacional del Libro en Camagüey, fomentando la cultura local y nacional."
+                            Text = "Es un lugar popular para familias y grupos escolares, que buscan una experiencia educativa y recreativa en contacto con la naturaleza. Además de su función educativa, el zoológico también cumple un rol en la investigación y reproducción de especies, contribuyendo a programas de conservación."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
+                    // {867B5594-062A-4A96-BDEC-D500DBDEF956}
+                    Id = new System.Guid(0x867b5594, 0x62a, 0x4a96, 0xbd, 0xec, 0xd5, 0x0, 0xdb, 0xde, 0xf9, 0x56),
+                    Kind = Enumerations.PlaceKind.SportCenter,
+                    Lat = 21.378802,
+                    Long = -77.911177,
+                    Title = "Estadio Cándido González.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.estadio-Camaguey.jpg"),
+                    Summary = "Es un recinto deportivo de gran relevancia en Camagüey, principalmente conocido por ser el hogar del equipo de béisbol de la provincia, los Toros de Camagüey.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Es el escenario de numerosos partidos de béisbol a nivel nacional, congregando a miles de aficionados que acuden a apoyar a su equipo."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "El estadio no solo es un centro para el deporte, sino también un punto de encuentro social y cultural para la comunidad, especialmente durante la temporada de béisbol."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
+                    // {29E4AC5F-30D7-4216-BDF8-6AB1273CF0D2}
+                    Id = new System.Guid(0x29e4ac5f, 0x30d7, 0x4216, 0xbd, 0xf8, 0x6a, 0xb1, 0x27, 0x3c, 0xf0, 0xd2),
+                    Kind = Enumerations.PlaceKind.SportCenter,
+                    Lat = 21.377154,
+                    Long = -77.908806,
+                    Title = "Sala Polivalente Rafael Fortún.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.sala-Polivalente.jpg"),
+                    Summary = "Importante complejo deportivo y de eventos en Camagüey, diseñado para albergar una amplia variedad de actividades bajo techo.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Su carácter \"polivalente\" se debe a la capacidad de sus instalaciones para adaptarse a diferentes disciplinas deportivas como baloncesto, voleibol, balonmano, entre otras, así como para la realización de conciertos, ferias y otros eventos masivos. Es un espacio crucial para el desarrollo deportivo y cultural de la provincia."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Este recinto no solo sirve como sede para competiciones y entrenamientos deportivos, sino que también es un punto de reunión para la comunidad, ofreciendo opciones de entretenimiento y esparcimiento. Su diseño permite una gran flexibilidad en la configuración de sus espacios, lo que la convierte en una de las instalaciones más versátiles de la ciudad."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
+                    // {EEC8965A-FA25-488F-BE14-F3D6C1264FD1}
+                    Id = new System.Guid(0xeec8965a, 0xfa25, 0x488f, 0xbe, 0x14, 0xf3, 0xd6, 0xc1, 0x26, 0x4f, 0xd1),
+                    Kind = Enumerations.PlaceKind.Monument,
+                    Lat = 21.379324,
+                    Long = -77.908776,
+                    Title = "Plaza de la Revolución Ignacio Agramonte.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-revolucion-camaguey.jpg"),
+                    Summary = "Dedicada al Mayor General Ignacio Agramonte, figura clave en la independencia de Cuba, la plaza es un lugar de encuentro cívico y político, donde se realizan importantes actos conmemorativos, desfiles y concentraciones populares. Su inauguración oficial fue en julio de 1989.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Fruto de la creación de los arquitectos Souto y Balmaseda y los artistas Reynaldo Miranda y Herminio Escalona, con el asesoramiento del historiador Gustavo Sed Nieves, su diseño monumental incluye elementos escultóricos y arquitectónicos que rinden homenaje a la historia y a los héroes de la nación."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Es conocida internacionalmente su imagen, pues recorrió el mundo el 23 de enero de 1998, cuando el Papa Juan Pablo II celebró una Santa Misa. En la base del Monumento también existe un Salón de Protocolo, que hace honor a otro de los grandes de Camagüey y de Cuba, el poeta nacional Nicolás Guillén."
+                        },
+                         new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Ese recinto está dedicado a actividades solemnes y protocolares. El 1 de diciembre de 2016, el séquito fúnebre que trasladaba las cenizas del líder histórico de la revolución cubana, Fidel Castro Ruz detuvo su marcha y sus restos pernoctaron en el salón Jimaguayú, en la base del Monumento al Mayor General Ignacio Agramonte y Loynaz."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "La plaza no solo es un punto de referencia para eventos oficiales, sino que también es un lugar de esparcimiento y reflexión para los ciudadanos. A su alrededor se encuentran edificios de interés y es un punto de partida para explorar otras zonas de la ciudad."
                         }
                     }
                 }
@@ -530,6 +780,165 @@
         {
             places = new Models.Data.PlaceDataModel[]
             {
+                new Models.Data.PlaceDataModel
+                {
+                    // {ACCD344C-AFF9-4B20-A161-EF7B4FA2D5C3}
+                    Id = new System.Guid(0xaccd344c, 0xaff9, 0x4b20, 0xa1, 0x61, 0xef, 0x7b, 0x4f, 0xa2, 0xd5, 0xc3),
+                    Kind = Enumerations.PlaceKind.Museum,
+                    Lat = 21.390498,
+                    Long = -77.916565,
+                    Title = "Ignacio Agramonte Provincial Museum",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.ACCD344C_AFF9_4B20_A161_EF7B4FA2D5C3.jpg"),
+                    Summary = "The building that currently houses the museum was originally the Spanish Army Cavalry Barracks in 1848. At the end of Spanish rule, and following a process of transformation, the Hotel Camagüey was located on the site, serving until December 23, 1955, when the current museum was inaugurated on the anniversary of the birth of patriot Ignacio Agramonte.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.PictureGalleryContentDataModel
+                        {
+                            Items = new Xamarin.Forms.ImageSource[]
+                            {
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-legancy-1.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-legancy-2.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-legancy-3.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-legancy-4.jpg")
+                            }
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Based on the content and diversity of its collections, the museum is classified as a general institution. It consists of several exhibition halls: painting, decorative arts, natural history, among others. The Cuban painting hall is considered the second most important collection in the country, featuring works by several nationally and internationally renowned artists such as Menocal, Romañach, Carlos Enríquez, Amelia Peláez, Wifredo Lam, and Fidelio Ponce, the latter born in the province."
+                        },
+                        new Models.Data.Content.PictureGalleryContentDataModel
+                        {
+                            Items = new Xamarin.Forms.ImageSource[]
+                            {
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-1.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-2.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-3.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-4.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-5.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-6.jpg")
+                            }
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "The beauty and tranquility of its interior courtyard, which preserves architectural, decorative, and functional elements from the colonial and republican eras, is preserved by specimens of Cuban flora."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "At the rear of the building is the Vicentina de la Torre School of Arts, an institution that trains talented children and young people in ballet, performing arts, and visual arts."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
+                    // {06C3FEBB-04EC-4B5F-8939-2CCFA4C5E7E7}
+                    Id = new System.Guid(0x6c3febb, 0x4ec, 0x4b5f, 0x89, 0x39, 0x2c, 0xcf, 0xa4, 0xc5, 0xe7, 0xe7),
+                    Kind = Enumerations.PlaceKind.Museum,
+                    Lat = 21.389157,
+                    Long = -77.915734,
+                    Title = "Railway Museum",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.museo-ferroviario.jpg"),
+                    Summary = "It occupies the building and exterior of the railway station inaugurated in 1912, an important architectural building in the city of Agramonte.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "By touring its halls and outdoor areas, visitors become familiar with the province's and country's railway heritage and activities."
+                        },
+                        new Models.Data.Content.PictureGalleryContentDataModel
+                        {
+                            Items = new Xamarin.Forms.ImageSource[]
+                            {
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.railway-museum-1.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.railway-museum-2.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.railway-museum-3.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.railway-museum-4.jpg"),
+                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.railway-museum-5.jpg")
+                            }
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "The use of new technologies turns this museum into a highly enjoyable and informative interactive virtual space for the whole family. Visitors and travelers alike have the opportunity to participate in an imaginary journey through several \"stations,\" at each of which they will learn about a different stage in the history of the railroad; a precise chronology of the historical development of the railroad."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "The restoration and conservation efforts on the building and the heritage it houses, led by the City Historian's Office, were recognized, among other awards, with the National Prize for the Preservation and Restoration of Monuments."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "The museum is accessed from a pleasant boulevard that separates and connects it to the Plaza Hotel."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
+                    // {FD858121-66B5-4841-A044-79A8349BB903}
+                    Id = new System.Guid(0xfd858121, 0x66b5, 0x4841, 0xa0, 0x44, 0x79, 0xa8, 0x34, 0x9b, 0xb9, 0x3),
+                    Kind = Enumerations.PlaceKind.Hotel,
+                    Lat = 21.388818,
+                    Long = -77.915409,
+                    Title = "Plaza Hotel",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-hotel.jpg"),
+                    Summary = "Opened at the beginning of the 20th century, this is the oldest of the Camagüey hotels still in operation.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "It still retains most of its original architectural features and, among its many significant events, treasures the visit of Chilean poet Gabriela Mistral, Nobel Prize winner for Literature in 1945, and the launch of the first radio station outside the Cuban capital."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Intimate and welcoming, it is characterized by the friendly service of its employees and its excellent geographical location, right at the confluence of the main access routes to the city (railway, airport, and highway) and just a few meters from the commercial area."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
+                    // {39D4C52D-07E7-4D85-871B-C3121837D363}
+                    Id = new System.Guid(0x39d4c52d, 0x7e7, 0x4d85, 0x87, 0x1b, 0xc3, 0x12, 0x18, 0x37, 0xd3, 0x63),
+                    Kind = Enumerations.PlaceKind.Church,
+                    Lat = 21.382699,
+                    Long = -77.916316,
+                    Title = "Church of Our Lady of Solitude.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.Iglesia-Soledad.jpg"),
+                    Summary = "The Church of Our Lady of Solitude is an emblematic Catholic temple located in Camagüey, Cuba, at the intersection of República and Ignacio Agramonte streets.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Built during the 18th century, it stands out for its picturesque cream and terracotta tower, which stands as a distinctive landmark on the city skyline. The church is an example of the Cuban colonial style with Mudejar influences evident in elements such as the ceiling of the central nave, making it an architectural gem."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Inside, the church houses detailed Baroque frescoes and the sacred baptismal font where Cuban hero Ignacio Agramonte was baptized in 1841. It was also the place where Agramonte and Amalia Simoni were married. There is a crypt beneath the presbytery."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "The Church of La Soledad is not only a symbol of devotion for local Catholics but also a tourist attraction that allows visitors to appreciate Cuban colonial architecture and immerse themselves in the city's history."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
+                    // {7C2C3B41-760D-4471-994F-1A7BC974EA23}
+                    Id = new System.Guid(0x7c2c3b41, 0x760d, 0x4471, 0x99, 0x4f, 0x1a, 0x7b, 0xc9, 0x74, 0xea, 0x23),
+                    Kind = Enumerations.PlaceKind.Distinguished,
+                    Lat = 21.382359,
+                    Long = -77.917110,
+                    Title = "General Ignacio Agramonte and Loynaz Street.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.camaguey-Ignacio-Agramonte-Street.jpg"),
+                    Summary = "From Plaza de la Soledad, continuing along Ignacio Agramonte Street (formerly Soledad) to Independencia, there is a themed promenade known as “Cinema Street”, where commercial establishments have been named after world film classics.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "In this section, you'll find installations and projects, such as the “Alley of Miracles”, representative of this artistic universe."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "The Tourist Information Center, known as Infotur, is located in the latter space. Also nearby are the offices of several travel agencies, such as Paradiso."
+                        }
+                    }
+                },
                 new Models.Data.PlaceDataModel
                 {
                     // {C0CE5B94-9B41-46E9-B752-1DC4A208B793}
@@ -660,90 +1069,23 @@
                 },
                 new Models.Data.PlaceDataModel
                 {
-                    // {06C3FEBB-04EC-4B5F-8939-2CCFA4C5E7E7}
-                    Id = new System.Guid(0x6c3febb, 0x4ec, 0x4b5f, 0x89, 0x39, 0x2c, 0xcf, 0xa4, 0xc5, 0xe7, 0xe7),
-                    Kind = Enumerations.PlaceKind.Museum,
-                    Lat = 21.389157,
-                    Long = -77.915734,
-                    Title = "Railway Museum",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.museo-ferroviario.jpg"),
-                    Summary = "It occupies the building and exterior of the railway station inaugurated in 1912, an important architectural building in the city of Agramonte.",
+                    // {CBF018EA-EF3E-45E0-94E8-090F4D9ADAE4}
+                    Id = new System.Guid(0xcbf018ea, 0xef3e, 0x45e0, 0x94, 0xe8, 0x9, 0xf, 0x4d, 0x9a, 0xda, 0xe4),
+                    Kind = Enumerations.PlaceKind.Church,
+                    Lat = 21.382344,
+                    Long = -77.918274,
+                    Title = "Church-convent of “Our Lady of Mercy (1748)",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.iglesia-merced.jpg"),
+                    Summary = "Located in the city center, the aforementioned building is the largest religious building in the province.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "By touring its halls and outdoor areas, visitors become familiar with the province's and country's railway heritage and activities."
-                        },
-                        new Models.Data.Content.PictureGalleryContentDataModel
-                        {
-                            Items = new Xamarin.Forms.ImageSource[]
-                            {
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.railway-museum-1.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.railway-museum-2.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.railway-museum-3.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.railway-museum-4.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.railway-museum-5.jpg")
-                            }
+                            Text = "The church consists of three naves and a central tower. Beneath its main altar are ancient crypts housing religious relics, such as a tombstone, which, according to known sources, is the oldest funerary monument in the province. A convent was built adjacent to it, which had several uses during the colonial period."
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "The use of new technologies turns this museum into a highly enjoyable and informative interactive virtual space for the whole family. Visitors and travelers alike have the opportunity to participate in an imaginary journey through several \"stations,\" at each of which they will learn about a different stage in the history of the railroad; a precise chronology of the historical development of the railroad."
-                        },
-                        new Models.Data.Content.TextContentDataModel
-                        {
-                            Text = "The restoration and conservation efforts on the building and the heritage it houses, led by the City Historian's Office, were recognized, among other awards, with the National Prize for the Preservation and Restoration of Monuments."
-                        },
-                        new Models.Data.Content.TextContentDataModel
-                        {
-                            Text = "The museum is accessed from a pleasant boulevard that separates and connects it to the Plaza Hotel."
-                        }
-                    }
-                },
-                new Models.Data.PlaceDataModel
-                {
-                    // {ACCD344C-AFF9-4B20-A161-EF7B4FA2D5C3}
-                    Id = new System.Guid(0xaccd344c, 0xaff9, 0x4b20, 0xa1, 0x61, 0xef, 0x7b, 0x4f, 0xa2, 0xd5, 0xc3),
-                    Kind = Enumerations.PlaceKind.Museum,
-                    Lat = 21.390498,
-                    Long = -77.916565,
-                    Title = "Ignacio Agramonte Provincial Museum",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.ACCD344C_AFF9_4B20_A161_EF7B4FA2D5C3.jpg"),
-                    Summary = "The building that currently houses the museum was originally the Spanish Army Cavalry Barracks in 1848. At the end of Spanish rule, and following a process of transformation, the Hotel Camagüey was located on the site, serving until December 23, 1955, when the current museum was inaugurated on the anniversary of the birth of patriot Ignacio Agramonte.",
-                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
-                    {
-                        new Models.Data.Content.PictureGalleryContentDataModel
-                        {
-                            Items = new Xamarin.Forms.ImageSource[]
-                            {
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-legancy-1.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-legancy-2.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-legancy-3.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-legancy-4.jpg")
-                            }
-                        },
-                        new Models.Data.Content.TextContentDataModel
-                        {
-                            Text = "Based on the content and diversity of its collections, the museum is classified as a general institution. It consists of several exhibition halls: painting, decorative arts, natural history, among others. The Cuban painting hall is considered the second most important collection in the country, featuring works by several nationally and internationally renowned artists such as Menocal, Romañach, Carlos Enríquez, Amelia Peláez, Wifredo Lam, and Fidelio Ponce, the latter born in the province."
-                        },
-                        new Models.Data.Content.PictureGalleryContentDataModel
-                        {
-                            Items = new Xamarin.Forms.ImageSource[]
-                            {
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-1.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-2.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-3.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-4.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-5.jpg"),
-                                Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.state-museum-nature-6.jpg")
-                            }
-                        },
-                        new Models.Data.Content.TextContentDataModel
-                        {
-                            Text = "The beauty and tranquility of its interior courtyard, which preserves architectural, decorative, and functional elements from the colonial and republican eras, is preserved by specimens of Cuban flora."
-                        },
-                        new Models.Data.Content.TextContentDataModel
-                        {
-                            Text = "At the rear of the building is the Vicentina de la Torre School of Arts, an institution that trains talented children and young people in ballet, performing arts, and visual arts."
+                            Text = "Beginning in the 18th century, the church was closely associated with Holy Week processions and the procession of the Holy Sepulchre. Since the colonial era, the latter has been one of the most valuable religious artifacts and the subject of one of the legends in local tradition."
                         }
                     }
                 },
@@ -775,67 +1117,113 @@
                 },
                 new Models.Data.PlaceDataModel
                 {
-                    // {7C2C3B41-760D-4471-994F-1A7BC974EA23}
-                    Id = new System.Guid(0x7c2c3b41, 0x760d, 0x4471, 0x99, 0x4f, 0x1a, 0x7b, 0xc9, 0x74, 0xea, 0x23),
+                    // {82E32A87-5728-4151-9C9E-443AAF5CA363}
+                    Id = new System.Guid(0x82e32a87, 0x5728, 0x4151, 0x9c, 0x9e, 0x44, 0x3a, 0xaf, 0x5c, 0xa3, 0x63),
                     Kind = Enumerations.PlaceKind.Distinguished,
-                    Lat = 21.382359,
-                    Long = -77.917110,
-                    Title = "General Ignacio Agramonte and Loynaz Street, formerly Soledad.",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.camaguey-Ignacio-Agramonte-Street.jpg"),
-                    Summary = "From Plaza de la Soledad, continuing along Ignacio Agramonte Street to Independencia, there is a themed promenade known as “Cinema Street”, where commercial establishments have been named after world film classics.",
+                    Lat = 21.380571,
+                    Long = -77.919030,
+                    Title = "Headquarters of the Provincial People's Court. Former Royal Court of Santo Domingo.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.Tribunal-Provincial-Popular.jpg"),
+                    Summary = "The building was constructed by the Jesuit Order to establish a college for the order. After the order's expulsion, the Spanish government established it as the seat of the Royal Audience of Santo Domingo, considered the oldest in the Americas, starting in 1800.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "In this section, you'll find installations and projects, such as the “Alley of Miracles”, representative of this artistic universe."
+                            Text = "From that moment on, the then-villa experienced a great deal of judicial activity and became a forum for many lawyers."
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "The Tourist Information Center, known as Infotur, is located in the latter space. Also nearby are the offices of several travel agencies, such as Paradiso."
+                            Text = "At the time of its transfer to Port-au-Prince, the Audiencia had jurisdiction over the island of Cuba, Louisiana, Florida, and the Captaincy General of Puerto Rico. It remained in Port-au-Prince until 1808, when it moved to Havana, later returning to Port-au-Prince."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "A royal decree of August 18, 1838, limited its jurisdiction to the Eastern and Central departments of the island of Cuba. Suppressed in 1853, the building served as an Artillery Barracks and the Engineering Corps. In 1868, it was reestablished as the Royal Court of Camagüey."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "At the beginning of the 20th century, it became the Palace of Justice and today houses the Provincial People's Court, with the same social purpose of administering justice."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "The building underwent renovations in 1910, incorporating antique elements and a sober decoration on the façade and interior. Its old colonial arches and columns remain on the ground floor, and ascend to an elegant double-turn marble staircase added at that time."
                         }
                     }
                 },
                 new Models.Data.PlaceDataModel
                 {
-                    // {FD858121-66B5-4841-A044-79A8349BB903}
-                    Id = new System.Guid(0xfd858121, 0x66b5, 0x4841, 0xa0, 0x44, 0x79, 0xa8, 0x34, 0x9b, 0xb9, 0x3),
-                    Kind = Enumerations.PlaceKind.Hotel,
-                    Lat = 21.388818,
-                    Long = -77.915409,
-                    Title = "Plaza Hotel",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-hotel.jpg"),
-                    Summary = "Opened at the beginning of the 20th century, this is the oldest of the Camagüey hotels still in operation.",
+                    // {4A29185E-DAED-4F8A-9CAD-F7FBBD727E64}
+                    Id = new System.Guid(0x4a29185e, 0xdaed, 0x4f8a, 0x9c, 0xad, 0xf7, 0xfb, 0xbd, 0x72, 0x7e, 0x64),
+                    Kind = Enumerations.PlaceKind.Distinguished,
+                    Lat = 21.379911,
+                    Long = -77.923515,
+                    Title = "Plaza and Church of Carmen. Ursuline Monastery.", // TODO TRADUCIR TEXTOS
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.Plaza-Del-Carmen.jpg"),
+                    Summary = "This complex, comprised of the Plaza del Carmen, the Iglesia del Carmen, and the former Ursuline Convent, represents one of Camagüey's best-preserved and most significant colonial centers, offering a living testament to the city's history and architecture.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "It still retains most of its original architectural features and, among its many significant events, treasures the visit of Chilean poet Gabriela Mistral, Nobel Prize winner for Literature in 1945, and the launch of the first radio station outside the Cuban capital."
+                            Text = "The Plaza del Carmen is a space of great historical and architectural value. Its creation dates back to the early decades of the 19th century, and, unlike other squares, it is distinguished by its popular architecture, irregular shapes, and simple facades, giving it a unique charm. After a major restoration, the square was embellished with clay jars, charming lanterns, and life-size sculptures depicting scenes from everyday life in Camagüey, making it one of the city's most beautiful squares."
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "Intimate and welcoming, it is characterized by the friendly service of its employees and its excellent geographical location, right at the confluence of the main access routes to the city (railway, airport, and highway) and just a few meters from the commercial area."
+                            Text = "The Church of Our Lady of Carmen, built in 1825, dominates much of the plaza with its imposing Baroque beauty. It is the only church in Camagüey with two towers. Its majestic façade features three entrances, which at first glance might suggest it is composed of three naves, although in reality it consists of a single, modestly sized floor that includes the vestibule, choir stalls, presbytery, and sacristy. This church is part of an invaluable 19th-century architectural complex, sharing space with the former Ursuline Monastery."
+                        },
+                         new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "The building that housed the Ursuline Convent is another architectural gem from the first half of the 19th century, located on one side of the square. The current building was completed in 1829 and has undergone several renovations throughout its history. Originally, the convent and its school were founded to educate girls, including those from low-income backgrounds."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "The building currently houses the headquarters of the City Historian's Office and, on the other side, the provincial branch of the University of the Arts, with specialized classrooms for music, dance, and audiovisual arts. Despite the passing of time, the building retains its unique layout of exterior doors and windows, framed by 70 arches."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Just a few meters from Plaza del Carmen, and serving as a prelude to the journey from the city center, is the Bedoya square, the result of the irregular intersection of several streets and a traditional site for popular festivals such as San Juan Camagüeyano."
                         }
                     }
                 },
                 new Models.Data.PlaceDataModel
                 {
-                    // {CBF018EA-EF3E-45E0-94E8-090F4D9ADAE4}
-                    Id = new System.Guid(0xcbf018ea, 0xef3e, 0x45e0, 0x94, 0xe8, 0x9, 0xf, 0x4d, 0x9a, 0xda, 0xe4),
-                    Kind = Enumerations.PlaceKind.Church,
-                    Lat = 21.382344,
-                    Long = -77.918274,
-                    Title = "Church-convent of “Our Lady of Mercy (1748)",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.iglesia-merced.jpg"),
-                    Summary = "Located in the city center, the aforementioned building is the largest religious building in the province.",
+                    // {804EBD54-5ED9-4762-97F1-1D3042469829}
+                    Id = new System.Guid(0x804ebd54, 0x5ed9, 0x4762, 0x97, 0xf1, 0x1d, 0x30, 0x42, 0x46, 0x98, 0x29),
+                    Kind = Enumerations.PlaceKind.Distinguished,
+                    Lat = 21.379489,
+                    Long = -77.918885,
+                    Title = "Headquarters of the Municipal Assembly of People's Power in Camagüey.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.AsambleaMunicipal-PoderPopular.jpg"),
+                    Summary = "Old City Hall. Located on Cisneros Street (formerly Mayor) at the corner of Martí Street (formerly San Diego Street), and adjacent to Agramonte Park.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "The church consists of three naves and a central tower. Beneath its main altar are ancient crypts housing religious relics, such as a tombstone, which, according to known sources, is the oldest funerary monument in the province. A convent was built adjacent to it, which had several uses during the colonial period."
+                            Text = "The building has served similar functions as the seat of local authorities for over 200 years, from the colonial era to the present day: originally the Town Hall, City Council, and during the revolutionary period, the Central Board of Execution and Inspection (JCEI), the Local Authority, and currently the Municipal Assembly of People's Power, were located here.\r\n"
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "Beginning in the 18th century, the church was closely associated with Holy Week processions and the procession of the Holy Sepulchre. Since the colonial era, the latter has been one of the most valuable religious artifacts and the subject of one of the legends in local tradition."
+                            Text = "Inaugurated in 1775, the building has been remodeled several times, including the eclectic design of its façade at the beginning of the 20th century, with Art Nouveau details on its balconies and window and door trim."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
+                    // {DF7336B4-248C-416B-8D3B-7D124E415045}
+                    Id = new System.Guid(0xdf7336b4, 0x248c, 0x416b, 0x8d, 0x3b, 0x7d, 0x12, 0x4e, 0x41, 0x50, 0x45),
+                    Kind = Enumerations.PlaceKind.Library,
+                    Lat = 21.379150,
+                    Long = -77.918808,
+                    Title = "Julio Antonio Mella Provincial Library. Salvador Cisneros Street 177, Camagüey.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.0626-BIBLIOTECA_02.jpg"),
+                    Summary = "The current building was inaugurated in the fourth decade of the 20th century, after the old colonial mansion was demolished.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "The building features a neocolonial style with traditional colonial influences. Its two levels, a hierarchical portal with three semicircular arches, and an interior courtyard with Elizabethan mixed-arches, stained-glass windows, and French shutters are notable. The roof is made of Creole tiles in excellent condition."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "The Puerto Príncipe Philharmonic Society, the Spanish Casino, and the Camagüey Lyceum previously operated here. Since 1963, it has housed the Julio Antonio Mella Provincial Library. The library hosts literary and cultural events such as the Camagüey Writers' Meeting and the Camagüey International Book Fair, promoting local and national culture."
                         }
                     }
                 },
@@ -909,9 +1297,43 @@
                 },
                 new Models.Data.PlaceDataModel
                 {
+                    // {F105B083-7691-4CC3-A613-9644C811D437}
+                    Id = new System.Guid(0xf105b083, 0x7691, 0x4cc3, 0xa6, 0x13, 0x96, 0x44, 0xc8, 0x11, 0xd4, 0x37),
+                    Kind = Enumerations.PlaceKind.Museum,
+                    Lat = 21.378733,
+                    Long = -77.918690,
+                    Title = "House of Cultural Diversity.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.Casa-de-la-Diversidad.jpg"),
+                    Summary = "The House of Cultural Diversity in Camagüey is a vibrant and meaningful space dedicated to preserving, promoting, and celebrating the rich set of identities that make up Cuban culture.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "More than just a museum, it functions as a dynamic center that fosters intercultural dialogue and mutual understanding."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Located in the heart of this historic city, the House of Cultural Diversity stands as a testament to the complex mix of African, European, and indigenous influences that have shaped the ethos of the Cuban people."
+                        },
+                         new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Through its permanent and temporary exhibitions, visitors can delve into the artistic expressions, religious traditions, culinary customs, and historical narratives of the diverse communities that have come together on the island."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "This cultural center not only exhibits artifacts and documents but also organizes workshops, conferences, artistic presentations, and community events. It is a meeting point for researchers, artists, students, and the general public, offering a platform for reflection on diversity as a strength and a driving force for social development."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "At the House of Cultural Diversity, history is intertwined with the present, and heritage is projected into the future, reaffirming the incalculable value of diversity in Cuban identity."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
                     // {CDD68EB6-AE68-458A-97DF-EC41177D740B}
                     Id = new System.Guid(0xcdd68eb6, 0xae68, 0x458a, 0x97, 0xdf, 0xec, 0x41, 0x17, 0x7d, 0x74, 0xb),
-                    Kind = Enumerations.PlaceKind.Monument,
+                    Kind = Enumerations.PlaceKind.Distinguished,
                     Lat = 21.376025,
                     Long = -77.917560,
                     Title = "Complex, Square, Church and Hospital San Juan de Dios.",
@@ -951,79 +1373,157 @@
                 },
                 new Models.Data.PlaceDataModel
                 {
-                    // {82E32A87-5728-4151-9C9E-443AAF5CA363}
-                    Id = new System.Guid(0x82e32a87, 0x5728, 0x4151, 0x9c, 0x9e, 0x44, 0x3a, 0xaf, 0x5c, 0xa3, 0x63),
+                    // {9DBC1AE1-6FC6-485E-94E5-A6F9D7CFFC67}
+                    Id = new System.Guid(0x9dbc1ae1, 0x6fc6, 0x485e, 0x94, 0xe5, 0xa6, 0xf9, 0xd7, 0xcf, 0xfc, 0x67),
                     Kind = Enumerations.PlaceKind.Distinguished,
-                    Lat = 21.380571,
-                    Long = -77.919030,
-                    Title = "Headquarters of the Provincial People's Court. Former Royal Court of Santo Domingo.",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
-                    Summary = "The building was constructed by the Jesuit Order to establish a college for the order. After the order's expulsion, the Spanish government established it as the seat of the Royal Audience of Santo Domingo, considered the oldest in the Americas, starting in 1800.",
+                    Lat = 21.375521,
+                    Long = -77.914508,
+                    Title = "Palace of Marriages.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.Palacio-de-los-Matrimonios.jpg"),
+                    Summary = "It is an institution dedicated to the celebration of civil unions, being the place where many couples formalize their marriage.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "From that moment on, the then-villa experienced a great deal of judicial activity and became a forum for many lawyers."
+                            Text = "This property, located at the beginning of Avenida de la Caridad, an important commercial and cultural artery in the city, is located in the former mansion of one of Camagüey's most prominent and wealthy families in the 19th century."
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "At the time of its transfer to Port-au-Prince, the Audiencia had jurisdiction over the island of Cuba, Louisiana, Florida, and the Captaincy General of Puerto Rico. It remained in Port-au-Prince until 1808, when it moved to Havana, later returning to Port-au-Prince."
+                            Text = "The building not only functions as a registry office but also provides a special setting for wedding ceremonies, making the act of getting married a memorable experience for the bride and groom and their families. It is a symbol of love and commitment to the community."
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "A royal decree of August 18, 1838, limited its jurisdiction to the Eastern and Central departments of the island of Cuba. Suppressed in 1853, the building served as an Artillery Barracks and the Engineering Corps. In 1868, it was reestablished as the Royal Court of Camagüey."
-                        },
-                        new Models.Data.Content.TextContentDataModel
-                        {
-                            Text = "At the beginning of the 20th century, it became the Palace of Justice and today houses the Provincial People's Court, with the same social purpose of administering justice."
-                        },
-                        new Models.Data.Content.TextContentDataModel
-                        {
-                            Text = "The building underwent renovations in 1910, incorporating antique elements and a sober decoration on the façade and interior. Its old colonial arches and columns remain on the ground floor, and ascend to an elegant double-turn marble staircase added at that time."
+                            Text = "The palace often boasts distinctive architecture, with historical elements that lend a touch of solemnity and elegance to the weddings held there."
                         }
                     }
                 },
                 new Models.Data.PlaceDataModel
                 {
-                    // {804EBD54-5ED9-4762-97F1-1D3042469829}
-                    Id = new System.Guid(0x804ebd54, 0x5ed9, 0x4762, 0x97, 0xf1, 0x1d, 0x30, 0x42, 0x46, 0x98, 0x29),
+                    // {E06A57B3-B738-4146-84CB-F02AAC82A5D4}
+                    Id = new System.Guid(0xe06a57b3, 0xb738, 0x4146, 0x84, 0xcb, 0xf0, 0x2a, 0xac, 0x82, 0xa5, 0xd4),
                     Kind = Enumerations.PlaceKind.Distinguished,
-                    Lat = 21.379489,
-                    Long = -77.918885,
-                    Title = "Headquarters of the Municipal Assembly of People's Power in Camagüey.",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg"),
-                    Summary = "Old City Hall. Located on Cisneros Street (formerly Mayor) at the corner of Martí Street (formerly San Diego Street), and adjacent to Agramonte Park.",
+                    Lat = 21.376340,
+                    Long = -77.911804,
+                    Title = "Country Casino.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.casino-campestre1.jpg"),
+                    Summary = "It is the largest urban park in Camagüey and one of the largest in Cuba.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "The building has served similar functions as the seat of local authorities for over 200 years, from the colonial era to the present day: originally the Town Hall, City Council, and during the revolutionary period, the Central Board of Execution and Inspection (JCEI), the Local Authority, and currently the Municipal Assembly of People's Power, were located here.\r\n"
+                            Text = "Located on the banks of the Hatibonico River, where it meets the Juan del Toro Stream, this park dates back to the 1950s. It was conceived as a space for agricultural and industrial fairs and exhibitions, as well as for recreation and social and cultural expansion."
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "Inaugurated in 1775, the building has been remodeled several times, including the eclectic design of its façade at the beginning of the 20th century, with Art Nouveau details on its balconies and window and door trim."
+                            Text = "It borders the Historic Center of Camagüey, declared a World Heritage Site, offering locals and visitors a space for relaxation, sports, and artistic and natural appreciation."
+                        },
+                         new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Throughout its history, the park has undergone various renovations and has become an important green space for the city. In 1916, it was named after Gonzalo de Quesada in honor of the local patriot, although the popular name \"Casino Campestre\" has persisted."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Inside there are several monuments that pay tribute to important figures in local and national history, such as Salvador Cisneros Betancourt, an important figure in the formation of the Cuban nation and its independence struggles, the Unknown Liberator, and the Spanish aviators Barberán and Collar, protagonists of the first non-stop transatlantic flight from Spain (Seville) to Cuba (Camagüey)."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "The park is also notable for having been one of the first places in Cuba where animals were exhibited in the 18th century; today it houses the Camagüey Zoo."
                         }
                     }
                 },
-                 new Models.Data.PlaceDataModel
+                new Models.Data.PlaceDataModel
                 {
-                    // {DF7336B4-248C-416B-8D3B-7D124E415045}
-                    Id = new System.Guid(0xdf7336b4, 0x248c, 0x416b, 0x8d, 0x3b, 0x7d, 0x12, 0x4e, 0x41, 0x50, 0x45),
-                    Kind = Enumerations.PlaceKind.Library,
-                    Lat = 21.379150,
-                    Long = -77.918808,
-                    Title = "Julio Antonio Mella Provincial Library - Camagüey. Salvador Cisneros Street 177, Camagüey.",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.0626-BIBLIOTECA_02.jpg"),
-                    Summary = "The current building was inaugurated in the fourth decade of the 20th century, after the old colonial mansion was demolished.",
+                    // {8EDCCBD2-3DE1-4528-B475-06D6EFA42A84}
+                    Id = new System.Guid(0x8edccbd2, 0x3de1, 0x4528, 0xb4, 0x75, 0x6, 0xd6, 0xef, 0xa4, 0x2a, 0x84),
+                    Kind = Enumerations.PlaceKind.Zoo,
+                    Lat = 21.377194,
+                    Long = -77.912609,
+                    Title = "Camagüey Zoo.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.zoologico-entrada.jpg"),
+                    Summary = "It is a space dedicated to the conservation and exhibition of various animal species, offering visitors the opportunity to learn about local and international fauna.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "The building features a neocolonial style with traditional colonial influences. Its two levels, a hierarchical portal with three semicircular arches, and an interior courtyard with Elizabethan mixed-arches, stained-glass windows, and French shutters are notable. The roof is made of Creole tiles in excellent condition."
+                            Text = "Among the main species on display are lions, tigers, jaguars, several species of monkeys, exotic birds, and reptiles. It is located in a natural setting that seeks to replicate the animals' habitat, providing an environment conducive to their well-being."
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
-                            Text = "The Puerto Príncipe Philharmonic Society, the Spanish Casino, and the Camagüey Lyceum previously operated here. Since 1963, it has housed the Julio Antonio Mella Provincial Library. The library hosts literary and cultural events such as the Camagüey Writers' Meeting and the Camagüey International Book Fair, promoting local and national culture."
+                            Text = "It's a popular spot for families and school groups seeking an educational and recreational experience in close contact with nature. In addition to its educational function, the zoo also plays a role in research and species breeding, contributing to conservation programs."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
+                    // {867B5594-062A-4A96-BDEC-D500DBDEF956}
+                    Id = new System.Guid(0x867b5594, 0x62a, 0x4a96, 0xbd, 0xec, 0xd5, 0x0, 0xdb, 0xde, 0xf9, 0x56),
+                    Kind = Enumerations.PlaceKind.SportCenter,
+                    Lat = 21.378802,
+                    Long = -77.911177,
+                    Title = "Candido Gonzalez Stadium.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.estadio-Camaguey.jpg"),
+                    Summary = "It is a major sports venue in Camagüey, primarily known for being the home of the province's baseball team, the Camagüey Bulls.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "It is the venue for numerous baseball games nationwide, attracting thousands of fans who come to support their team."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "The stadium is not only a center for sports, but also a social and cultural meeting point for the community, especially during baseball season."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
+                    // {29E4AC5F-30D7-4216-BDF8-6AB1273CF0D2}
+                    Id = new System.Guid(0x29e4ac5f, 0x30d7, 0x4216, 0xbd, 0xf8, 0x6a, 0xb1, 0x27, 0x3c, 0xf0, 0xd2),
+                    Kind = Enumerations.PlaceKind.SportCenter,
+                    Lat = 21.377154,
+                    Long = -77.908806,
+                    Title = "Rafael Fortún Multipurpose Room.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.sala-Polivalente.jpg"),
+                    Summary = "An important sports and events complex in Camagüey, designed to host a wide variety of indoor activities.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Its \"multipurpose\" nature is due to the ability of its facilities to adapt to different sports such as basketball, volleyball, handball, among others, as well as to host concerts, fairs, and other mass events. It is a crucial space for the sporting and cultural development of the province."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "This venue not only serves as a venue for sports competitions and training, but is also a meeting point for the community, offering entertainment and leisure options. Its design allows for great flexibility in the configuration of its spaces, making it one of the most versatile facilities in the city."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
+                    // {EEC8965A-FA25-488F-BE14-F3D6C1264FD1}
+                    Id = new System.Guid(0xeec8965a, 0xfa25, 0x488f, 0xbe, 0x14, 0xf3, 0xd6, 0xc1, 0x26, 0x4f, 0xd1),
+                    Kind = Enumerations.PlaceKind.Monument,
+                    Lat = 21.379324,
+                    Long = -77.908776,
+                    Title = "Ignacio Agramonte Revolution Square.",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-revolucion-camaguey.jpg"),
+                    Summary = "Dedicated to Major General Ignacio Agramonte, a key figure in Cuba's independence, the plaza is a civic and political meeting place, hosting important commemorative events, parades, and popular gatherings. Its official inauguration took place in July 1989.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "The brainchild of architects Souto and Balmaseda and artists Reynaldo Miranda and Herminio Escalona, ​​with the advice of historian Gustavo Sed Nieves, its monumental design includes sculptural and architectural elements that pay tribute to the nation's history and heroes."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Its image is internationally known, as it traveled the world on January 23, 1998, when Pope John Paul II celebrated Mass. At the base of the monument, there is also a Protocol Hall, which honors another of Camagüey's and Cuba's greats, the national poet Nicolás Guillén."
+                        },
+                         new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "This space is dedicated to solemn and formal activities. On December 1, 2016, the funeral procession carrying the ashes of the historic leader of the Cuban Revolution, Fidel Castro Ruz, halted its procession, and his remains spent the night in the Jimaguayú Hall, at the base of the Monument to Major General Ignacio Agramonte y Loynaz."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "The square is not only a focal point for official events, but also a place of recreation and reflection for citizens. Surrounding it are interesting buildings, it serves as a starting point for exploring other areas of the city."
                         }
                     }
                 }

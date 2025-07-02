@@ -1,6 +1,7 @@
 ﻿using EasyAR;
 using MOROPO.InfoTur.Camaguey.Rutas.Extensions;
 using MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Components;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Urho;
@@ -220,13 +221,29 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
                     case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_2:
                         targetNode.Position = new Vector3(0.0f, 0.0f, -0.5f);
 
-                        var infoTourPlaceNode = targetNode.CreateChild();
+                       // var infoTourPlaceNode = targetNode.CreateChild();
 
-                        calloutNodes.Add(ConfigureMarkerNode(infoTourPlaceNode, Providers.DataModelProvider.Places[0], 0.275f, 0.1f, false));
+                       // calloutNodes.Add(ConfigureMarkerNode(infoTourPlaceNode, Providers.DataModelProvider.Places[5], 0.275f, 0.1f, false));
 
-                        var natalHouseMuseumPlaceNode = targetNode.CreateChild();
+                       // var natalHouseMuseumPlaceNode = targetNode.CreateChild();
 
-                        calloutNodes.Add(ConfigureMarkerNode(natalHouseMuseumPlaceNode, Providers.DataModelProvider.Places[1], -0.1f, -0.2f, true));
+                       // calloutNodes.Add(ConfigureMarkerNode(natalHouseMuseumPlaceNode, Providers.DataModelProvider.Places[6], -0.09f, -0.15f, false));
+
+                       // var churchConventOurLadyOfMercyPlaceNode = targetNode.CreateChild();
+
+                       // calloutNodes.Add(ConfigureMarkerNode(churchConventOurLadyOfMercyPlaceNode, Providers.DataModelProvider.Places[7], -0.02f, 0.05f, true));
+
+                        var workersSquarePlaceNode = targetNode.CreateChild();
+
+                        calloutNodes.Add(ConfigureMarkerNode(workersSquarePlaceNode, Providers.DataModelProvider.Places[8], -0.25f, 0.03f, true));
+
+                        var churchOurLadyOfSolitudePlaceNode = targetNode.CreateChild();
+
+                        calloutNodes.Add(ConfigureMarkerNode(churchOurLadyOfSolitudePlaceNode, Providers.DataModelProvider.Places[3], 0.570f, 0.17f, false));
+
+                        var ignacioAgramonteStreetPlaceNode = targetNode.CreateChild();
+
+                        calloutNodes.Add(ConfigureMarkerNode(ignacioAgramonteStreetPlaceNode, Providers.DataModelProvider.Places[4], 0.275f, 0.0f, false));
 
                         break;
 
@@ -236,11 +253,15 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
 
                         var railwayMuseumTourPlaceNode = targetNode.CreateChild();
 
-                        calloutNodes.Add(ConfigureMarkerNode(railwayMuseumTourPlaceNode, Providers.DataModelProvider.Places[2], 0.0375f, -0.125f, false));
+                        calloutNodes.Add(ConfigureMarkerNode(railwayMuseumTourPlaceNode, Providers.DataModelProvider.Places[1], 0.0375f, -0.125f, false));
 
                         var stateMuseumMuseumPlaceNode = targetNode.CreateChild();
 
-                        calloutNodes.Add(ConfigureMarkerNode(stateMuseumMuseumPlaceNode, Providers.DataModelProvider.Places[3], -0.125f, 0.25f, true));
+                        calloutNodes.Add(ConfigureMarkerNode(stateMuseumMuseumPlaceNode, Providers.DataModelProvider.Places[0], -0.125f, 0.25f, true));
+
+                        var plazaHotelPlaceNode = targetNode.CreateChild();
+
+                        calloutNodes.Add(ConfigureMarkerNode(plazaHotelPlaceNode, Providers.DataModelProvider.Places[2], 0.0875f, -0.250f, true));
 
                         break;
                 }

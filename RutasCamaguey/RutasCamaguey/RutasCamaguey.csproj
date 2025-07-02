@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.1</TargetFramework>
@@ -21,17 +21,23 @@
 		<None Remove="Resources\Images\76ff2435-636b-4f8f-b829-ee8dd4ab6cb3.jpg" />
 		<None Remove="Resources\Images\ACCD344C_AFF9_4B20_A161_EF7B4FA2D5C3.jpg" />
 		<None Remove="Resources\Images\agramonte-park.jpg" />
+		<None Remove="Resources\Images\AsambleaMunicipal-PoderPopular.jpg" />
 		<None Remove="Resources\Images\C0CE5B94-9B41-46E9-B752-1DC4A208B793.jpg" />
 		<None Remove="Resources\Images\camaguey-Ignacio-Agramonte-Street.jpg" />
+		<None Remove="Resources\Images\Casa-de-la-Diversidad.jpg" />
+		<None Remove="Resources\Images\casino-campestre1.jpg" />
 		<None Remove="Resources\Images\catedral-nuestra-camaguey.jpg" />
+		<None Remove="Resources\Images\estadio-Camaguey.jpg" />
 		<None Remove="Resources\Images\iglesia-merced.jpg" />
-		<None Remove="Resources\Images\ignacio-agramonte-museum.jpg" />
+		<None Remove="Resources\Images\Iglesia-Soledad.jpg" />
 		<None Remove="Resources\Images\museo-ferroviario.jpg" />
-		<None Remove="Resources\Images\museo-san-juan-de-dios.jpg" />
+		<None Remove="Resources\Images\Palacio-de-los-Matrimonios.jpg" />
 		<None Remove="Resources\Images\plaza-carmen.jpg" />
+		<None Remove="Resources\Images\Plaza-Del-Carmen.jpg" />
 		<None Remove="Resources\Images\plaza-gallo.jpg" />
 		<None Remove="Resources\Images\plaza-hotel.jpg" />
 		<None Remove="Resources\Images\plaza-museo-san-juan-de-dios.jpg" />
+		<None Remove="Resources\Images\plaza-revolucion-camaguey.jpg" />
 		<None Remove="Resources\Images\plaza-trabajaaodres.jpg" />
 		<None Remove="Resources\Images\plaza-trabajadores.jpg" />
 		<None Remove="Resources\Images\railway-museum-1.jpg" />
@@ -39,6 +45,7 @@
 		<None Remove="Resources\Images\railway-museum-3.jpg" />
 		<None Remove="Resources\Images\railway-museum-4.jpg" />
 		<None Remove="Resources\Images\railway-museum-5.jpg" />
+		<None Remove="Resources\Images\sala-Polivalente.jpg" />
 		<None Remove="Resources\Images\state-museum-legancy-1.jpg" />
 		<None Remove="Resources\Images\state-museum-legancy-2.jpg" />
 		<None Remove="Resources\Images\state-museum-legancy-3.jpg" />
@@ -49,6 +56,8 @@
 		<None Remove="Resources\Images\state-museum-nature-4.jpg" />
 		<None Remove="Resources\Images\state-museum-nature-5.jpg" />
 		<None Remove="Resources\Images\state-museum-nature-6.jpg" />
+		<None Remove="Resources\Images\Tribunal-Provincial-Popular.jpg" />
+		<None Remove="Resources\Images\zoologico-entrada.jpg" />
 		<None Remove="Resources\Vectors\banner.svg" />
 		<None Remove="Resources\Vectors\footer.svg" />
 		<None Remove="Resources\Vectors\header.svg" />
@@ -73,17 +82,23 @@
 		<EmbeddedResource Include="Resources\Images\219C0EF3_B075_4D76_B348_610B560CCA13.jpg" />
 		<EmbeddedResource Include="Resources\Images\ACCD344C_AFF9_4B20_A161_EF7B4FA2D5C3.jpg" />
 		<EmbeddedResource Include="Resources\Images\agramonte-park.jpg" />
+		<EmbeddedResource Include="Resources\Images\AsambleaMunicipal-PoderPopular.jpg" />
 		<EmbeddedResource Include="Resources\Images\C0CE5B94-9B41-46E9-B752-1DC4A208B793.jpg" />
 		<EmbeddedResource Include="Resources\Images\camaguey-Ignacio-Agramonte-Street.jpg" />
+		<EmbeddedResource Include="Resources\Images\Casa-de-la-Diversidad.jpg" />
+		<EmbeddedResource Include="Resources\Images\casino-campestre1.jpg" />
 		<EmbeddedResource Include="Resources\Images\catedral-nuestra-camaguey.jpg" />
+		<EmbeddedResource Include="Resources\Images\estadio-Camaguey.jpg" />
 		<EmbeddedResource Include="Resources\Images\iglesia-merced.jpg" />
-		<EmbeddedResource Include="Resources\Images\ignacio-agramonte-museum.jpg" />
+		<EmbeddedResource Include="Resources\Images\Iglesia-Soledad.jpg" />
 		<EmbeddedResource Include="Resources\Images\museo-ferroviario.jpg" />
-		<EmbeddedResource Include="Resources\Images\museo-san-juan-de-dios.jpg" />
+		<EmbeddedResource Include="Resources\Images\Palacio-de-los-Matrimonios.jpg" />
 		<EmbeddedResource Include="Resources\Images\plaza-carmen.jpg" />
+		<EmbeddedResource Include="Resources\Images\Plaza-Del-Carmen.jpg" />
 		<EmbeddedResource Include="Resources\Images\plaza-gallo.jpg" />
 		<EmbeddedResource Include="Resources\Images\plaza-hotel.jpg" />
 		<EmbeddedResource Include="Resources\Images\plaza-museo-san-juan-de-dios.jpg" />
+		<EmbeddedResource Include="Resources\Images\plaza-revolucion-camaguey.jpg" />
 		<EmbeddedResource Include="Resources\Images\plaza-trabajaaodres.jpg" />
 		<EmbeddedResource Include="Resources\Images\plaza-trabajadores.jpg" />
 		<EmbeddedResource Include="Resources\Images\railway-museum-1.jpg" />
@@ -91,6 +106,7 @@
 		<EmbeddedResource Include="Resources\Images\railway-museum-3.jpg" />
 		<EmbeddedResource Include="Resources\Images\railway-museum-4.jpg" />
 		<EmbeddedResource Include="Resources\Images\railway-museum-5.jpg" />
+		<EmbeddedResource Include="Resources\Images\sala-Polivalente.jpg" />
 		<EmbeddedResource Include="Resources\Images\state-museum-legancy-1.jpg" />
 		<EmbeddedResource Include="Resources\Images\state-museum-legancy-2.jpg" />
 		<EmbeddedResource Include="Resources\Images\state-museum-legancy-3.jpg" />
@@ -101,6 +117,8 @@
 		<EmbeddedResource Include="Resources\Images\state-museum-nature-4.jpg" />
 		<EmbeddedResource Include="Resources\Images\state-museum-nature-5.jpg" />
 		<EmbeddedResource Include="Resources\Images\state-museum-nature-6.jpg" />
+		<EmbeddedResource Include="Resources\Images\Tribunal-Provincial-Popular.jpg" />
+		<EmbeddedResource Include="Resources\Images\zoologico-entrada.jpg" />
 		<EmbeddedResource Include="Resources\Vectors\footer.svg" />
 		<EmbeddedResource Include="Resources\Vectors\header.svg" />
 		<EmbeddedResource Include="Resources\Vectors\logo.svg" />
