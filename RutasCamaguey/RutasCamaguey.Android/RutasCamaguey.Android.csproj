@@ -170,7 +170,7 @@
     <AndroidAsset Include="Assets\UrhoData\Sprites\CDD68EB6-AE68-458A-97DF-EC41177D740B.jpg" />
     <AndroidAsset Include="Assets\UrhoData\Sprites\DF7336B4-248C-416B-8D3B-7D124E415045.jpg" />
     <AndroidAsset Include="Assets\UrhoData\Sprites\E06A57B3-B738-4146-84CB-F02AAC82A5D4.jpg" />
-    <AndroidAsset Include="Assets\UrhoData\Sprites\F7FC16C5-AF3A-43FA-B31A-C25ED9DA5D3.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Sprites\F7FC16C5-AF3A-43FA-B31A-C25ED9DA5D3C.jpg" />
     <AndroidAsset Include="Assets\UrhoData\Sprites\FD858121-66B5-4841-A044-79A8349BB903.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -180,6 +180,15 @@
     <AndroidAsset Include="Assets\UrhoData\Sprites\9DBC1AE1-6FC6-485E-94E5-A6F9D7CFFC67.jpg" />
     <AndroidAsset Include="Assets\UrhoData\Sprites\EEC8965A-FA25-488F-BE14-F3D6C1264FD1.jpg" />
     <AndroidAsset Include="Assets\UrhoData\Sprites\F105B083-7691-4CC3-A613-9644C811D437.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AR\Targets\guide-target-5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AR\Targets\guide-target-6.jpg" />
+    <AndroidAsset Include="Assets\AR\Targets\guide-target-7.jpg" />
+    <AndroidAsset Include="Assets\AR\Targets\guide-target-8.jpg" />
+    <AndroidAsset Include="Assets\AR\Targets\guide-target-9.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

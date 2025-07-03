@@ -64,6 +64,11 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.Helpers
             LoadFromImage(tracker, "AR/Targets/guide-target-2.jpg", Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_2);
             LoadFromImage(tracker, "AR/Targets/guide-target-3.jpg", Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_3);
             LoadFromImage(tracker, "AR/Targets/guide-target-4.jpg", Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_4);
+            LoadFromImage(tracker, "AR/Targets/guide-target-5.jpg", Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_5);
+            LoadFromImage(tracker, "AR/Targets/guide-target-6.jpg", Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_6);
+            LoadFromImage(tracker, "AR/Targets/guide-target-7.jpg", Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_7);
+            LoadFromImage(tracker, "AR/Targets/guide-target-8.jpg", Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_8);
+            LoadFromImage(tracker, "AR/Targets/guide-target-9.jpg", Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_9);
 
             using (var ar = new AutoRelease())
             {

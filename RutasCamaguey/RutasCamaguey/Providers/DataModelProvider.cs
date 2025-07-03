@@ -368,9 +368,9 @@
                     Kind = Enumerations.PlaceKind.Distinguished,
                     Lat = 21.380571,
                     Long = -77.919030,
-                    Title = "Sede del Tribunal Provincial Popular. Antigua Real Audiencia de Santo Domingo.",
+                    Title = "Sede del Tribunal Provincial Popular.",
                     FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.Tribunal-Provincial-Popular.jpg"),
-                    Summary = "El edificio fue construido por la Orden de los Jesuitas con el propósito de establecer un colegio de la orden. Luego de la expulsión de la orden el estado español dispuso,a partir del 1800, como sede de la Real Audiencia de Santo Domingo, considerada la más antigua de América",
+                    Summary = "Antigua Real Audiencia de Santo Domingo. El edificio fue construido por la Orden de los Jesuitas con el propósito de establecer un colegio de la orden. Luego de la expulsión de la orden el estado español dispuso,a partir del 1800, como sede de la Real Audiencia de Santo Domingo, considerada la más antigua de América",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
                         new Models.Data.Content.TextContentDataModel
@@ -436,7 +436,7 @@
                     Kind = Enumerations.PlaceKind.Distinguished,
                     Lat = 21.379489,
                     Long = -77.918885,
-                    Title = "Sede de la Asamblea municipal del Poder Popular en Camagüey.",
+                    Title = "Asamblea Municipal del Poder Popular.",
                     FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.AsambleaMunicipal-PoderPopular.jpg"),
                     Summary = "Antiguo Ayuntamiento de la ciudad.Situado en la calle Cisneros (antigua Mayor) esquina a Martí (antigua San Diego), y colindante con el parque Agramonte.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
@@ -458,9 +458,9 @@
                     Kind = Enumerations.PlaceKind.Library,
                     Lat = 21.379150,
                     Long = -77.918808,
-                    Title = "Biblioteca Provincial Julio Antonio Mella. Calle Salvador Cisneros 177, Camagüey.",
+                    Title = "Biblioteca Provincial Julio Antonio Mella. ",
                     FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.0626-BIBLIOTECA_02.jpg"),
-                    Summary = "El edificio actual fue inaugurado en la cuarta década del siglo XX, tras demolerse la antigua casona colonial.",
+                    Summary = "El edificio actual fue inaugurado en la cuarta década del siglo XX, tras demolerse la antigua casona colonial. Sito en Calle Salvador Cisneros 177, Camagüey.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
                         new Models.Data.Content.TextContentDataModel
@@ -518,9 +518,9 @@
                     Kind = Enumerations.PlaceKind.Church,
                     Lat = 21.378678,
                     Long = -77.918258,
-                    Title = "Catedral Metropolitana (antigua Parroquial Mayor)",
+                    Title = "Catedral Metropolitana.",
                     FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.catedral-nuestra-camaguey.jpg"),
-                    Summary = "Ubicada a un costado del Parque Agramonte desde su construcción hasta la actualidad, esta iglesia ha sido notablemente modificada.",
+                    Summary = "La antigua Parroquial Mayor, ubicada a un costado del Parque Agramonte desde su construcción hasta la actualidad, esta iglesia ha sido notablemente modificada.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
                         new Models.Data.Content.TextContentDataModel
@@ -1122,9 +1122,9 @@
                     Kind = Enumerations.PlaceKind.Distinguished,
                     Lat = 21.380571,
                     Long = -77.919030,
-                    Title = "Headquarters of the Provincial People's Court. Former Royal Court of Santo Domingo.",
+                    Title = "Headquarters of the Provincial People's Court.",
                     FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.Tribunal-Provincial-Popular.jpg"),
-                    Summary = "The building was constructed by the Jesuit Order to establish a college for the order. After the order's expulsion, the Spanish government established it as the seat of the Royal Audience of Santo Domingo, considered the oldest in the Americas, starting in 1800.",
+                    Summary = "Former Royal Court of Santo Domingo. The building was constructed by the Jesuit Order to establish a college for the order. After the order's expulsion, the Spanish government established it as the seat of the Royal Audience of Santo Domingo, considered the oldest in the Americas, starting in 1800.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
                         new Models.Data.Content.TextContentDataModel
@@ -1190,7 +1190,7 @@
                     Kind = Enumerations.PlaceKind.Distinguished,
                     Lat = 21.379489,
                     Long = -77.918885,
-                    Title = "Headquarters of the Municipal Assembly of People's Power in Camagüey.",
+                    Title = "Municipal Assembly of People's Power.",
                     FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.AsambleaMunicipal-PoderPopular.jpg"),
                     Summary = "Old City Hall. Located on Cisneros Street (formerly Mayor) at the corner of Martí Street (formerly San Diego Street), and adjacent to Agramonte Park.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
@@ -1212,9 +1212,9 @@
                     Kind = Enumerations.PlaceKind.Library,
                     Lat = 21.379150,
                     Long = -77.918808,
-                    Title = "Julio Antonio Mella Provincial Library. Salvador Cisneros Street 177, Camagüey.",
+                    Title = "Julio Antonio Mella Provincial Library. ",
                     FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.0626-BIBLIOTECA_02.jpg"),
-                    Summary = "The current building was inaugurated in the fourth decade of the 20th century, after the old colonial mansion was demolished.",
+                    Summary = "The current building was inaugurated in the fourth decade of the 20th century, after the old colonial mansion was demolished. Located at 177 Salvador Cisneros Street, Camagüey.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
                         new Models.Data.Content.TextContentDataModel
@@ -1272,9 +1272,9 @@
                     Kind = Enumerations.PlaceKind.Church,
                     Lat = 21.378678,
                     Long = -77.918258,
-                    Title = "Metropolitan Cathedral (formerly the Major Parish)",
+                    Title = "Metropolitan Cathedral.",
                     FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.catedral-nuestra-camaguey.jpg"),
-                    Summary = "Located next to Agramonte Park since its construction until today, this church has been significantly modified.",
+                    Summary = "The former Major Parish Church, located next to Agramonte Park, has been significantly modified since its construction.\r\n",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
                         new Models.Data.Content.TextContentDataModel

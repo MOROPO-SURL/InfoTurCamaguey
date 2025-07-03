@@ -221,17 +221,17 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
                     case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_2:
                         targetNode.Position = new Vector3(0.0f, 0.0f, -0.5f);
 
-                       // var infoTourPlaceNode = targetNode.CreateChild();
+                        var infoTourPlaceNode = targetNode.CreateChild();
 
-                       // calloutNodes.Add(ConfigureMarkerNode(infoTourPlaceNode, Providers.DataModelProvider.Places[5], 0.275f, 0.1f, false));
+                        calloutNodes.Add(ConfigureMarkerNode(infoTourPlaceNode, Providers.DataModelProvider.Places[5], 0.275f, 0.1f, false));
 
-                       // var natalHouseMuseumPlaceNode = targetNode.CreateChild();
+                        var natalHouseMuseumPlaceNode = targetNode.CreateChild();
 
-                       // calloutNodes.Add(ConfigureMarkerNode(natalHouseMuseumPlaceNode, Providers.DataModelProvider.Places[6], -0.09f, -0.15f, false));
+                        calloutNodes.Add(ConfigureMarkerNode(natalHouseMuseumPlaceNode, Providers.DataModelProvider.Places[6], -0.09f, -0.15f, false));
 
-                       // var churchConventOurLadyOfMercyPlaceNode = targetNode.CreateChild();
+                        var churchConventOurLadyOfMercyPlaceNode = targetNode.CreateChild();
 
-                       // calloutNodes.Add(ConfigureMarkerNode(churchConventOurLadyOfMercyPlaceNode, Providers.DataModelProvider.Places[7], -0.02f, 0.05f, true));
+                        calloutNodes.Add(ConfigureMarkerNode(churchConventOurLadyOfMercyPlaceNode, Providers.DataModelProvider.Places[7], -0.02f, 0.05f, true));
 
                         var workersSquarePlaceNode = targetNode.CreateChild();
 
@@ -262,6 +262,35 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
                         var plazaHotelPlaceNode = targetNode.CreateChild();
 
                         calloutNodes.Add(ConfigureMarkerNode(plazaHotelPlaceNode, Providers.DataModelProvider.Places[2], 0.0875f, -0.250f, true));
+
+                        break;
+
+                    case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_5:
+                        targetNode.Position = new Vector3(0.0f, 0.0f, -0.5f);
+
+                        var headquartersProvincialPeoplesCourtPlaceNode = targetNode.CreateChild();
+
+                        calloutNodes.Add(ConfigureMarkerNode(headquartersProvincialPeoplesCourtPlaceNode, Providers.DataModelProvider.Places[9], -0.25f, 0.33f, true));
+
+                        var headquartersMunicipalAssemblyPeoplesPowerPlaceNode = targetNode.CreateChild();
+
+                        calloutNodes.Add(ConfigureMarkerNode(headquartersMunicipalAssemblyPeoplesPowerPlaceNode, Providers.DataModelProvider.Places[11], -0.20f, -0.08f, true));
+
+                        var provincialLibraryPlaceNode = targetNode.CreateChild();
+
+                        calloutNodes.Add(ConfigureMarkerNode(provincialLibraryPlaceNode, Providers.DataModelProvider.Places[12], -0.19f, -0.2f, true));
+
+                        //var houseCulturalDiversityPlaceNode = targetNode.CreateChild();
+
+                        //calloutNodes.Add(ConfigureMarkerNode(houseCulturalDiversityPlaceNode, Providers.DataModelProvider.Places[15], -0.19f, -0.275f, false));
+
+                        var metropolitanCathedralPlaceNode = targetNode.CreateChild();
+
+                        calloutNodes.Add(ConfigureMarkerNode(metropolitanCathedralPlaceNode, Providers.DataModelProvider.Places[14], -0.5f, -0.280f, false));
+
+                        var ignacioAgramonteParkPlaceNode = targetNode.CreateChild();
+
+                        calloutNodes.Add(ConfigureMarkerNode(ignacioAgramonteParkPlaceNode, Providers.DataModelProvider.Places[13], -0.5f, -0.25f, false));
 
                         break;
                 }
