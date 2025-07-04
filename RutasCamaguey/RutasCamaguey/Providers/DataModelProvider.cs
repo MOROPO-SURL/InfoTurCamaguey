@@ -170,7 +170,7 @@
                     Kind = Enumerations.PlaceKind.Distinguished,
                     Lat = 21.382359,
                     Long = -77.917110,
-                    Title = "Calle Mayor General Ignacio Agramonte y Loynaz.",
+                    Title = "Calle Ignacio Agramonte y Loynaz.",
                     FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.camaguey-Ignacio-Agramonte-Street.jpg"),
                     Summary = "Desde la Plaza de la Soledad, siguiendo por la calle Ignacio Agramonte (antiguamente Soledad) hasta Independencia, se ubica un paseo temático conocido por “Calle de los Cines” donde los establecimientos comerciales han sido nombrados con el título de clásicos de la filmografía mundial.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
@@ -355,6 +355,11 @@
                         {
                             Text = "En su entorno se ubican la emisora provincial Radio Cadena Agramonte; el Centro de Convenciones Santa Cecilia; la oficina central de Correos de Cuba y dos instalaciones del Banco de Crédito y Comercio."
                         },
+                        new Models.Data.Content.VirtualVisitContentDataModel
+                        {
+                            PreviewImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-trabajaaodres.jpg"),
+                            VirtualVisitContentPage = new UI.Pages.WorkersSquareVirtualTourPage()
+                        },
                         new Models.Data.Content.TextContentDataModel
                         {
                             Text = "Cerrando un extremo de la plaza, y a continuación del convento, se encuentra la Asociación Cubana de Artesanos Artistas (ACAA), recinto que ofrece un espacio para exposiciones, simposios y talleres donde participan los artesanos locales."
@@ -496,6 +501,11 @@
                         new Models.Data.Content.TextContentDataModel
                         {
                             Text = "Actualmente se encuentran a su alrededor un grupo de edificaciones que albergan instituciones importantes como la Biblioteca Provincial Julio Antonio Mella, la Casa de la Trova, la Casa de la Diversidad cultural y el Centro de Interpretación del Patrimonio, lugar donde se ubica la maqueta del Centro Histórico. Les acompañan instalaciones de servicios y gastronomía."
+                        },
+                        new Models.Data.Content.VirtualVisitContentDataModel
+                        {
+                            PreviewImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.agramonte-park.jpg"),
+                            VirtualVisitContentPage = new UI.Pages.IgnacioAgramonteParkVirtualTourPage()
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
@@ -924,7 +934,7 @@
                     Kind = Enumerations.PlaceKind.Distinguished,
                     Lat = 21.382359,
                     Long = -77.917110,
-                    Title = "General Ignacio Agramonte and Loynaz Street.",
+                    Title = "Ignacio Agramonte and Loynaz Street.",
                     FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.camaguey-Ignacio-Agramonte-Street.jpg"),
                     Summary = "From Plaza de la Soledad, continuing along Ignacio Agramonte Street (formerly Soledad) to Independencia, there is a themed promenade known as “Cinema Street”, where commercial establishments have been named after world film classics.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
@@ -1109,6 +1119,11 @@
                         {
                             Text = "The provincial radio station Radio Cadena Agramonte is located nearby; the Santa Cecilia Convention Center; the Cuban Post Office headquarters; and two Banco de Crédito y Comercio facilities."
                         },
+                        new Models.Data.Content.VirtualVisitContentDataModel
+                        {
+                            PreviewImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-trabajaaodres.jpg"),
+                            VirtualVisitContentPage = new UI.Pages.WorkersSquareVirtualTourPage()
+                        },
                         new Models.Data.Content.TextContentDataModel
                         {
                             Text = "Closing one end of the plaza, and adjacent to the convent, is the Cuban Association of Artisan Artists (ACAA), a venue that offers space for exhibitions, symposiums, and workshops featuring local artisans."
@@ -1250,6 +1265,11 @@
                         new Models.Data.Content.TextContentDataModel
                         {
                             Text = "Currently, a group of buildings surround it, housing important institutions such as the Julio Antonio Mella Provincial Library, the Casa de la Trova, the Casa de la Diversidad Cultural (House of Cultural Diversity), and the Heritage Interpretation Center, which houses a model of the Historic Center. These are also accompanied by service and dining facilities."
+                        },
+                        new Models.Data.Content.VirtualVisitContentDataModel
+                        {
+                            PreviewImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.agramonte-park.jpg"),
+                            VirtualVisitContentPage = new UI.Pages.IgnacioAgramonteParkVirtualTourPage()
                         },
                         new Models.Data.Content.TextContentDataModel
                         {

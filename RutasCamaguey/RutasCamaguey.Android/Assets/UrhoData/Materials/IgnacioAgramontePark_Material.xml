@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<material>
+	<technique name="Techniques/DiffSkybox.xml" />
+	<texture unit="diffuse" name="Textures/IgnacioAgramontePark_CubeMap.xml" />
+	<cull value="none" />
+</material>

@@ -181,5 +181,29 @@
     <AndroidAsset Include="Assets\UrhoData\Sprites\EEC8965A-FA25-488F-BE14-F3D6C1264FD1.jpg" />
     <AndroidAsset Include="Assets\UrhoData\Sprites\F105B083-7691-4CC3-A613-9644C811D437.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UrhoData\Textures\WorkersSquare_nx.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\WorkersSquare_ny.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\WorkersSquare_nz.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\WorkersSquare_px.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\WorkersSquare_py.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\WorkersSquare_pz.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\WorkersSquare_CubeMap.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UrhoData\Materials\WorkersSquare_Material.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UrhoData\Textures\IgnacioAgramontePark_nx.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\IgnacioAgramontePark_ny.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\IgnacioAgramontePark_nz.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\IgnacioAgramontePark_CubeMap.xml" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\IgnacioAgramontePark_px.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\IgnacioAgramontePark_py.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\IgnacioAgramontePark_pz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UrhoData\Materials\IgnacioAgramontePark_Material.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

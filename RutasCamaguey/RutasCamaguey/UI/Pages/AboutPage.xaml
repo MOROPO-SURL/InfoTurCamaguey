@@ -68,6 +68,10 @@
                         <Label Text="-" />
                         <Label Text="{Static root:AppResources.AboutCollaborator4}" />
                     </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="-" />
+                        <Label Text="{Static root:AppResources.AboutCollaborator5}" />
+                    </StackLayout>
                 </StackLayout>
             </StackLayout>
         </ScrollView>

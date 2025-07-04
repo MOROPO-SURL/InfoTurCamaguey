@@ -1,7 +1,6 @@
 ﻿using EasyAR;
 using MOROPO.InfoTur.Camaguey.Rutas.Extensions;
 using MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Components;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using Urho;
@@ -15,12 +14,12 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
         private Camera urhoCameraComponent;
         private EasyARUrhoComponent easyARUrhoComponent;
 
-        private readonly System.Collections.Generic.Dictionary<string, Node> targetIdentitficationNodes;
+        private readonly Dictionary<string, Node> targetIdentitficationNodes;
 
         [Preserve]
         public GuideARPresenter(ApplicationOptions options) : base(options)
         {
-            targetIdentitficationNodes = new System.Collections.Generic.Dictionary<string, Node>();
+            targetIdentitficationNodes = new Dictionary<string, Node>();
         }
 
         public System.EventHandler<GuideARPresenterPlaceTargetEventArg> PlaceTarget;
@@ -125,8 +124,6 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
 
                         var targetInstances = result.targetInstances();
 
-                        System.Diagnostics.Debug.WriteLine($"XXXXXXXX>>>> Target Count: {targetInstances.Count}");
-
                         var targetKeys = new List<string>();
 
                         foreach (TargetInstance targetInstance in targetInstances)
@@ -213,37 +210,35 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
 
                 var targetNode = rootNode.CreateChild();
 
-                System.Diagnostics.Debug.WriteLine($"YYYYYYYY>>>> targetName: {targetName}");
-
                 switch (targetName)
                 {
                     case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_1:
                     case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_2:
                         targetNode.Position = new Vector3(0.0f, 0.0f, -0.5f);
 
-                       // var infoTourPlaceNode = targetNode.CreateChild();
+                        var infoTourPlaceNode = targetNode.CreateChild();
 
-                       // calloutNodes.Add(ConfigureMarkerNode(infoTourPlaceNode, Providers.DataModelProvider.Places[5], 0.275f, 0.1f, false));
+                        calloutNodes.Add(ConfigureMarkerNode(infoTourPlaceNode, Providers.DataModelProvider.Places[5], 0.275f, 0.1f, false, 1.75f));
 
-                       // var natalHouseMuseumPlaceNode = targetNode.CreateChild();
+                        var natalHouseMuseumPlaceNode = targetNode.CreateChild();
 
-                       // calloutNodes.Add(ConfigureMarkerNode(natalHouseMuseumPlaceNode, Providers.DataModelProvider.Places[6], -0.09f, -0.15f, false));
+                        calloutNodes.Add(ConfigureMarkerNode(natalHouseMuseumPlaceNode, Providers.DataModelProvider.Places[6], -0.09f, -0.25f, false));
 
-                       // var churchConventOurLadyOfMercyPlaceNode = targetNode.CreateChild();
+                        var churchConventOurLadyOfMercyPlaceNode = targetNode.CreateChild();
 
-                       // calloutNodes.Add(ConfigureMarkerNode(churchConventOurLadyOfMercyPlaceNode, Providers.DataModelProvider.Places[7], -0.02f, 0.05f, true));
+                        calloutNodes.Add(ConfigureMarkerNode(churchConventOurLadyOfMercyPlaceNode, Providers.DataModelProvider.Places[7], -0.02f, 0.05f, true));
 
                         var workersSquarePlaceNode = targetNode.CreateChild();
 
-                        calloutNodes.Add(ConfigureMarkerNode(workersSquarePlaceNode, Providers.DataModelProvider.Places[8], -0.25f, 0.03f, true));
+                        calloutNodes.Add(ConfigureMarkerNode(workersSquarePlaceNode, Providers.DataModelProvider.Places[8], -0.25f, 0.03f, true, 0.375f));
 
                         var churchOurLadyOfSolitudePlaceNode = targetNode.CreateChild();
 
-                        calloutNodes.Add(ConfigureMarkerNode(churchOurLadyOfSolitudePlaceNode, Providers.DataModelProvider.Places[3], 0.570f, 0.17f, false));
+                        calloutNodes.Add(ConfigureMarkerNode(churchOurLadyOfSolitudePlaceNode, Providers.DataModelProvider.Places[3], 0.570f, 0.225f, false));
 
                         var ignacioAgramonteStreetPlaceNode = targetNode.CreateChild();
 
-                        calloutNodes.Add(ConfigureMarkerNode(ignacioAgramonteStreetPlaceNode, Providers.DataModelProvider.Places[4], 0.275f, 0.0f, false));
+                        calloutNodes.Add(ConfigureMarkerNode(ignacioAgramonteStreetPlaceNode, Providers.DataModelProvider.Places[4], 0.275f, 0.0f, false, 0.25f));
 
                         break;
 
@@ -261,7 +256,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
 
                         var plazaHotelPlaceNode = targetNode.CreateChild();
 
-                        calloutNodes.Add(ConfigureMarkerNode(plazaHotelPlaceNode, Providers.DataModelProvider.Places[2], 0.0875f, -0.250f, true));
+                        calloutNodes.Add(ConfigureMarkerNode(plazaHotelPlaceNode, Providers.DataModelProvider.Places[2], 0.0875f, -0.250f, true, 0.75f));
 
                         break;
                 }
@@ -290,7 +285,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
             //}
         }
 
-        private Node ConfigureMarkerNode(Node markerNode, Models.Data.PlaceDataModel dataModel, float traslationX, float traslationY, bool calloutLeftSide)
+        private Node ConfigureMarkerNode(Node markerNode, Models.Data.PlaceDataModel dataModel, float traslationX, float traslationY, bool calloutLeftSide, float heightFactor = 1.0f)
         {
             var primaryColor = Color.FromHex("1D184B");
             var secoundarColor = Color.FromHex("FDE443");
@@ -299,7 +294,8 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
 
             var pinBodyNode = markerNode.CreateChild();
 
-            pinBodyNode.Scale = new Vector3(0.05f, 1.0f, 0.05f);
+            pinBodyNode.Position = new Vector3(0, 0, 0 - (heightFactor - 1.0f) / 2.0f);
+            pinBodyNode.Scale = new Vector3(0.05f, 1.0f * heightFactor, 0.05f);
             pinBodyNode.Rotation = new Quaternion(90.0f, 0.0f, 0.0f);
 
             var pinBodyComponent = pinBodyNode.CreateComponent<Urho.Shapes.Cylinder>();
@@ -308,7 +304,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
 
             var pinHeadNode = markerNode.CreateChild();
 
-            pinHeadNode.Position = new Vector3(0, 0, -0.5f);
+            pinHeadNode.Position = new Vector3(0, 0, heightFactor <= 1.0f ? -0.5f * heightFactor - (heightFactor - 1.0f) / 2.0f : -0.5f * heightFactor - (heightFactor - 1.0f) / 2.0f);
             pinHeadNode.Scale = new Vector3(0.125f, 0.125f, 0.125f);
 
             var pinHeadComponent = pinHeadNode.CreateComponent<Urho.Shapes.Sphere>();

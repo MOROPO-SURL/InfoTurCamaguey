@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cubemap>
+	<face name="IgnacioAgramontePark_px.jpg" />
+	<face name="IgnacioAgramontePark_nx.jpg" />
+	<face name="IgnacioAgramontePark_py.jpg" />
+	<face name="IgnacioAgramontePark_ny.jpg" />
+	<face name="IgnacioAgramontePark_pz.jpg" />
+	<face name="IgnacioAgramontePark_nz.jpg" />
+	<quality low="0" />
+</cubemap>

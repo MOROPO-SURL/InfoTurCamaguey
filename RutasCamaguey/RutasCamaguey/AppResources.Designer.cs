@@ -124,6 +124,15 @@ namespace MOROPO.InfoTur.Camaguey.Rutas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Universidad de Camagüey &quot;Ignacio Agramonte&quot;.
+        /// </summary>
+        internal static string AboutCollaborator5 {
+            get {
+                return ResourceManager.GetString("AboutCollaborator5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Con herramientas avanzadas, información detallada y una experiencia visual innovadora, la aplicación promete ser un amigo digital para conocer y disfrutar del Camagüey..
         /// </summary>
         internal static string AboutDescriptionParagraph1 {

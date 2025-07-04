@@ -154,6 +154,12 @@
 			<AutoGen>True</AutoGen>
 			<DependentUpon>AppResources.resx</DependentUpon>
 		</Compile>
+		<Compile Update="UI\Pages\IgnacioAgramonteParkVirtualTourPage.xaml.cs">
+		  <DependentUpon>IgnacioAgramonteParkVirtualTourPage.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="UI\Pages\WorkersSquareVirtualTourPage.xaml.cs">
+		  <DependentUpon>WorkersSquareVirtualTourPage.xaml</DependentUpon>
+		</Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -182,7 +188,13 @@
 		<EmbeddedResource Update="UI\Pages\PlaceDetailPage.xaml">
 		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 		</EmbeddedResource>
+		<EmbeddedResource Update="UI\Pages\IgnacioAgramonteParkVirtualTourPage.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
 		<EmbeddedResource Update="UI\Pages\VirtualTour1Page.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="UI\Pages\WorkersSquareVirtualTourPage.xaml">
 		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 		</EmbeddedResource>
 		<EmbeddedResource Update="UI\Views\BusyView.xaml">
