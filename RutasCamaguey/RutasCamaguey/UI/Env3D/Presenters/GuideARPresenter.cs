@@ -261,6 +261,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
                         break;
 
                     case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_5:
+                    case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_10:
                         targetNode.Position = new Vector3(0.0f, 0.0f, -0.5f);
 
                         var headquartersProvincialPeoplesCourtPlaceNode = targetNode.CreateChild();
