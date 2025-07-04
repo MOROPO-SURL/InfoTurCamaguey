@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cubemap>
+	<face name="SanJuanDiosSquare_px.jpg" />
+	<face name="SanJuanDiosSquare_nx.jpg" />
+	<face name="SanJuanDiosSquare_py.jpg" />
+	<face name="SanJuanDiosSquare_ny.jpg" />
+	<face name="SanJuanDiosSquare_pz.jpg" />
+	<face name="SanJuanDiosSquare_nz.jpg" />
+	<quality low="0" />
+</cubemap>

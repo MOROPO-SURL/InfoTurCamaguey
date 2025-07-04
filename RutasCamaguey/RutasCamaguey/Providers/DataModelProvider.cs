@@ -304,8 +304,8 @@
                     {
                         new Models.Data.Content.VirtualVisitContentDataModel
                         {
-                            PreviewImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-gallo.jpg"),
-                            VirtualVisitContentPage = new UI.Pages.VirtualTour1Page()
+                            PreviewImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.219C0EF3_B075_4D76_B348_610B560CCA13.jpg"),
+                            VirtualVisitContentPage = new UI.Pages.BirthplaceMuseumVirtualTourPage()
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
@@ -415,6 +415,11 @@
                         new Models.Data.Content.TextContentDataModel
                         {
                             Text = "La Plaza del Carmen es un espacio de gran valor histórico y arquitectónico. Su creación data de las primeras décadas del siglo XIX, y, a diferencia de otras plazas, se distingue por su arquitectura popular, irregulares y de fachadas sencillas, lo que le confiere un encanto singular. Tras una importante restauración, la plaza fue embellecida con tinajones de arcilla, faroles encantadores y esculturas de tamaño real que representan escenas de la vida cotidiana camagüeyana, convirtiéndola en una de las plazas más bellas de la ciudad."
+                        },
+                        new Models.Data.Content.VirtualVisitContentDataModel
+                        {
+                            PreviewImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.Plaza-Del-Carmen.jpg"),
+                            VirtualVisitContentPage = new UI.Pages.CarmenSquareVirtualTourPage()
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
@@ -612,6 +617,11 @@
                         new Models.Data.Content.TextContentDataModel
                         {
                             Text = "En la parte posterior del edificio de la iglesia-convento se inauguró hace unos años el hotel San Juan de Dios, un encantador establecimiento que fusiona la tradición de la arquitectura colonial con las comodidades contemporáneas."
+                        },
+                        new Models.Data.Content.VirtualVisitContentDataModel
+                        {
+                            PreviewImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-museo-san-juan-de-dios.jpg"),
+                            VirtualVisitContentPage = new UI.Pages.SanJuanDiosSquareVirtualTourPage()
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
@@ -1068,8 +1078,8 @@
                     {
                         new Models.Data.Content.VirtualVisitContentDataModel
                         {
-                            PreviewImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-gallo.jpg"),
-                            VirtualVisitContentPage = new UI.Pages.VirtualTour1Page()
+                            PreviewImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.219C0EF3_B075_4D76_B348_610B560CCA13.jpg"),
+                            VirtualVisitContentPage = new UI.Pages.BirthplaceMuseumVirtualTourPage()
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
@@ -1179,6 +1189,11 @@
                         new Models.Data.Content.TextContentDataModel
                         {
                             Text = "The Plaza del Carmen is a space of great historical and architectural value. Its creation dates back to the early decades of the 19th century, and, unlike other squares, it is distinguished by its popular architecture, irregular shapes, and simple facades, giving it a unique charm. After a major restoration, the square was embellished with clay jars, charming lanterns, and life-size sculptures depicting scenes from everyday life in Camagüey, making it one of the city's most beautiful squares."
+                        },
+                        new Models.Data.Content.VirtualVisitContentDataModel
+                        {
+                            PreviewImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.Plaza-Del-Carmen.jpg"),
+                            VirtualVisitContentPage = new UI.Pages.CarmenSquareVirtualTourPage()
                         },
                         new Models.Data.Content.TextContentDataModel
                         {
@@ -1376,6 +1391,11 @@
                         new Models.Data.Content.TextContentDataModel
                         {
                             Text = "A few years ago, the San Juan de Dios Hotel opened at the rear of the church-convent building. It is a charming establishment that blends traditional colonial architecture with contemporary comforts."
+                        },
+                        new Models.Data.Content.VirtualVisitContentDataModel
+                        {
+                            PreviewImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-museo-san-juan-de-dios.jpg"),
+                            VirtualVisitContentPage = new UI.Pages.SanJuanDiosSquareVirtualTourPage()
                         },
                         new Models.Data.Content.TextContentDataModel
                         {

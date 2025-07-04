@@ -1,8 +1,8 @@
 ﻿namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
 {
-    public partial class VirtualTour1Page : Xamarin.Forms.ContentPage
+    public partial class SanJuanDiosSquareVirtualTourPage : Xamarin.Forms.ContentPage
     {
-        public VirtualTour1Page()
+        public SanJuanDiosSquareVirtualTourPage()
         {
             InitializeComponent();
         }
@@ -19,7 +19,7 @@
 
             (Content as Xamarin.Forms.Grid).Children.Insert(0, urhoSurface);
 
-            await urhoSurface.Show<Env3D.Presenters.VirtualTourPresenter>(urhoApplicationOptions);
+            await urhoSurface.Show<Env3D.Presenters.SanJuanDiosSquareVirtualTourPresenter>(urhoApplicationOptions);
         }
 
         protected override void OnDisappearing()

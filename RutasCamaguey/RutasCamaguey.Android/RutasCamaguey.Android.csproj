@@ -125,18 +125,6 @@
     <AndroidAsset Include="Assets\UrhoData\Sprites\C0CE5B94-9B41-46E9-B752-1DC4A208B793.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\UrhoData\Textures\VirtualTour1_CubeMap.xml" />
-    <AndroidAsset Include="Assets\UrhoData\Textures\VirtualTour1_nx.png" />
-    <AndroidAsset Include="Assets\UrhoData\Textures\VirtualTour1_ny.png" />
-    <AndroidAsset Include="Assets\UrhoData\Textures\VirtualTour1_nz.png" />
-    <AndroidAsset Include="Assets\UrhoData\Textures\VirtualTour1_px.png" />
-    <AndroidAsset Include="Assets\UrhoData\Textures\VirtualTour1_py.png" />
-    <AndroidAsset Include="Assets\UrhoData\Textures\VirtualTour1_pz.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\UrhoData\Materials\VirtualTour1_Material.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidAsset Include="Assets\AR\Targets\guide-target-1.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -213,6 +201,46 @@
     <AndroidAsset Include="Assets\AR\Targets\guide-target-7.jpg" />
     <AndroidAsset Include="Assets\AR\Targets\guide-target-8.jpg" />
     <AndroidAsset Include="Assets\AR\Targets\guide-target-9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UrhoData\Textures\BirthplaceMuseum_nx.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\BirthplaceMuseum_ny.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\BirthplaceMuseum_nz.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\BirthplaceMuseum_px.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\BirthplaceMuseum_py.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\BirthplaceMuseum_pz.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\BirthplaceMuseum_CubeMap.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UrhoData\Materials\BirthplaceMuseum_Material.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UrhoData\Textures\CarmenSquare_nx.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\CarmenSquare_ny.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\CarmenSquare_nz.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\CarmenSquare_px.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\CarmenSquare_py.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\CarmenSquare_pz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UrhoData\Textures\CarmenSquare_CubeMap.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UrhoData\Materials\CarmenSquare_Material.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UrhoData\Textures\SanJuanDiosSquare_nx.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\SanJuanDiosSquare_ny.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\SanJuanDiosSquare_nz.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\SanJuanDiosSquare_px.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\SanJuanDiosSquare_py.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Textures\SanJuanDiosSquare_pz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UrhoData\Textures\SanJuanDiosSquare_CubeMap.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UrhoData\Materials\SanJuanDiosSquare_Material.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

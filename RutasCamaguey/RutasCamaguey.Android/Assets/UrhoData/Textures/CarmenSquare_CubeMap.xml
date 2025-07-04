@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cubemap>
+	<face name="CarmenSquare_px.jpg" />
+	<face name="CarmenSquare_nx.jpg" />
+	<face name="CarmenSquare_py.jpg" />
+	<face name="CarmenSquare_ny.jpg" />
+	<face name="CarmenSquare_pz.jpg" />
+	<face name="CarmenSquare_nz.jpg" />
+	<quality low="0" />
+</cubemap>

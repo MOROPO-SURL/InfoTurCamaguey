@@ -11,7 +11,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Shells
 
         private void MenuItem_Clicked(object sender, System.EventArgs e)
         {
-            Shell.Current.Navigation.PushAsync(new Pages.VirtualTour1Page());
+            Shell.Current.Navigation.PushAsync(new Pages.BirthplaceMuseumVirtualTourPage());
             Shell.Current.FlyoutIsPresented = false;
         }
     }

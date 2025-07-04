@@ -157,6 +157,9 @@
 		<Compile Update="UI\Pages\IgnacioAgramonteParkVirtualTourPage.xaml.cs">
 		  <DependentUpon>IgnacioAgramonteParkVirtualTourPage.xaml</DependentUpon>
 		</Compile>
+		<Compile Update="UI\Pages\BirthplaceMuseumVirtualTourPage.xaml.cs">
+		  <DependentUpon>BirthplaceMuseumVirtualTourPage.xaml</DependentUpon>
+		</Compile>
 		<Compile Update="UI\Pages\WorkersSquareVirtualTourPage.xaml.cs">
 		  <DependentUpon>WorkersSquareVirtualTourPage.xaml</DependentUpon>
 		</Compile>
@@ -169,6 +172,9 @@
 		</EmbeddedResource>
 		<EmbeddedResource Update="UI\Pages\AboutPage.xaml">
 			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="UI\Pages\CarmenSquareVirtualTourPage.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 		</EmbeddedResource>
 		<EmbeddedResource Update="UI\Pages\CatalogPage.xaml">
 			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -191,7 +197,10 @@
 		<EmbeddedResource Update="UI\Pages\IgnacioAgramonteParkVirtualTourPage.xaml">
 		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 		</EmbeddedResource>
-		<EmbeddedResource Update="UI\Pages\VirtualTour1Page.xaml">
+		<EmbeddedResource Update="UI\Pages\BirthplaceMuseumVirtualTourPage.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="UI\Pages\SanJuanDiosSquareVirtualTourPage.xaml">
 		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 		</EmbeddedResource>
 		<EmbeddedResource Update="UI\Pages\WorkersSquareVirtualTourPage.xaml">
