@@ -289,6 +289,58 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
                         calloutNodes.Add(ConfigureMarkerNode(ignacioAgramonteParkPlaceNode, Providers.DataModelProvider.Places[13], 0.015f, -0.15f, false, 0.5f));
 
                         break;
+
+                    case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_6:
+                        targetNode.Position = new Vector3(0.0f, 0.0f, -0.5f);
+
+                        var carmenSquarePlaceNode = targetNode.CreateChild();
+
+                        calloutNodes.Add(ConfigureMarkerNode(carmenSquarePlaceNode, Providers.DataModelProvider.Places[10], -0.075f, -0.05f, true, 0.5f));
+
+                        break;
+
+                    case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_7:
+                        targetNode.Position = new Vector3(0.0f, 0.0f, -0.5f);
+
+                        var sanJuanDiosSquarePlaceNode = targetNode.CreateChild();
+
+                        calloutNodes.Add(ConfigureMarkerNode(sanJuanDiosSquarePlaceNode, Providers.DataModelProvider.Places[16], 0, 0, true, 0.5f));
+
+                        break;
+
+                    case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_8:
+                        targetNode.Position = new Vector3(0.0f, 0.0f, -0.5f);
+
+                        var marriagePalacePlaceNode = targetNode.CreateChild();
+
+                        calloutNodes.Add(ConfigureMarkerNode(marriagePalacePlaceNode, Providers.DataModelProvider.Places[17], -0.175f, -0.175f, false, 0.2f));
+
+                        var zooPlaceNode = targetNode.CreateChild();
+
+                        calloutNodes.Add(ConfigureMarkerNode(zooPlaceNode, Providers.DataModelProvider.Places[19], 0.275f, 0.25f, true, 0.25f));
+
+                        var casinoCountyPlaceNode = targetNode.CreateChild();
+
+                        calloutNodes.Add(ConfigureMarkerNode(casinoCountyPlaceNode, Providers.DataModelProvider.Places[18], 0.75f, 0.15f, false, 0.5f));
+
+                        break;
+
+                    case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_9:
+                        targetNode.Position = new Vector3(0.0f, 0.0f, -0.5f);
+
+                        var baseballStadiumPlaceNode = targetNode.CreateChild();
+
+                        calloutNodes.Add(ConfigureMarkerNode(baseballStadiumPlaceNode, Providers.DataModelProvider.Places[20], -0.275f, -0.025f, true, 0.25f));
+
+                        var ignacioAgramonteMonumentPlaceNode = targetNode.CreateChild();
+
+                        calloutNodes.Add(ConfigureMarkerNode(ignacioAgramonteMonumentPlaceNode, Providers.DataModelProvider.Places[22], 0.25f, 0.25f, false, 1.0f));
+
+                        var sportCenterPlaceNode = targetNode.CreateChild();
+
+                        calloutNodes.Add(ConfigureMarkerNode(sportCenterPlaceNode, Providers.DataModelProvider.Places[21], 0.275f, -0.225f, false, 0.75f));
+
+                        break;
                 }
 
                 targetIdentitficationNodes.Add(targetName, rootNode);
@@ -408,7 +460,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
             calloutTextComponent.HorizontalAlignment = Urho.Gui.HorizontalAlignment.Left;
             calloutTextComponent.VerticalAlignment = Urho.Gui.VerticalAlignment.Center;
 
-            calloutTextComponent.SetFont(ResourceCache.GetFont("Fonts/OpenSans-Regular.ttf"), 8);
+            calloutTextComponent.SetFont(ResourceCache.GetFont("Fonts/OpenSans-Regular.ttf"), 7.85f);
             calloutTextComponent.SetColor(Color.White);
 
             return calloutNode;

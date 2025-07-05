@@ -407,7 +407,7 @@
                     Kind = Enumerations.PlaceKind.Distinguished,
                     Lat = 21.379911,
                     Long = -77.923515,
-                    Title = "Plaza e Iglesia del Carmen. Monasterio de las Ursulinas.",
+                    Title = "Plaza e Iglesia del Carmen. Monasterio de las Ursulinas",
                     FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.Plaza-Del-Carmen.jpg"),
                     Summary = "Este conjunto, conformado por la Plaza del Carmen, la Iglesia del Carmen y el antiguo Convento de las Ursulinas, representa uno de los núcleos coloniales mejor conservados y más significativos de Camagüey, ofreciendo un testimonio vivo de la historia y la arquitectura de la ciudad.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
