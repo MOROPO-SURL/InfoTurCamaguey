@@ -37,7 +37,10 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
                 var (minX, minY) = SphericalMercator.FromLonLat(-77.907921107860716, 21.395448941431319);
                 var (maxX, maxY) = SphericalMercator.FromLonLat(-77.927111107679508, 21.369581009197852);
                 
-                var mapView = new Mapsui.UI.Forms.MapView();
+                var mapView = new Mapsui.UI.Forms.MapView
+                {
+                    IsMyLocationButtonVisible = false
+                };
 
                 mapView.Info += MapView_Info;
 

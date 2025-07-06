@@ -291,6 +291,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
                         break;
 
                     case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_6:
+                    case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_11:
                         targetNode.Position = new Vector3(0.0f, 0.0f, -0.5f);
 
                         var carmenSquarePlaceNode = targetNode.CreateChild();
@@ -300,6 +301,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
                         break;
 
                     case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_7:
+                    case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_12:
                         targetNode.Position = new Vector3(0.0f, 0.0f, -0.5f);
 
                         var sanJuanDiosSquarePlaceNode = targetNode.CreateChild();
@@ -309,6 +311,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
                         break;
 
                     case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_8:
+                    case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_13:
                         targetNode.Position = new Vector3(0.0f, 0.0f, -0.5f);
 
                         var marriagePalacePlaceNode = targetNode.CreateChild();
@@ -326,6 +329,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Env3D.Presenters
                         break;
 
                     case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_9:
+                    case Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_14:
                         targetNode.Position = new Vector3(0.0f, 0.0f, -0.5f);
 
                         var baseballStadiumPlaceNode = targetNode.CreateChild();

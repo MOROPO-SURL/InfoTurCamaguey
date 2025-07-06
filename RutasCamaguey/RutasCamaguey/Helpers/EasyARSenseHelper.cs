@@ -58,7 +58,7 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.Helpers
 
             tracker = ImageTracker.create();
 
-            tracker.setSimultaneousNum(5);
+            tracker.setSimultaneousNum(8);
 
             LoadFromImage(tracker, "AR/Targets/guide-target-1.jpg", Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_1);
             LoadFromImage(tracker, "AR/Targets/guide-target-2.jpg", Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_2);
@@ -70,6 +70,10 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.Helpers
             LoadFromImage(tracker, "AR/Targets/guide-target-8.jpg", Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_8);
             LoadFromImage(tracker, "AR/Targets/guide-target-9.jpg", Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_9);
             LoadFromImage(tracker, "AR/Targets/guide-target-10.jpg", Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_10);
+            LoadFromImage(tracker, "AR/Targets/guide-target-11.jpg", Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_11);
+            LoadFromImage(tracker, "AR/Targets/guide-target-12.jpg", Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_12);
+            LoadFromImage(tracker, "AR/Targets/guide-target-13.jpg", Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_13);
+            LoadFromImage(tracker, "AR/Targets/guide-target-14.jpg", Providers.ConstantProvider.GUIDE_SEGMENT_TARGET_14);
 
             using (var ar = new AutoRelease())
             {
