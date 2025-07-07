@@ -251,5 +251,13 @@
     <AndroidAsset Include="Assets\AR\Targets\guide-target-13.jpg" />
     <AndroidAsset Include="Assets\AR\Targets\guide-target-14.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UrhoData\Sprites\52A423A8-ABF1-4BA1-8BA4-B91DF209C820.jpg" />
+    <AndroidAsset Include="Assets\UrhoData\Sprites\81318423-46AC-4ACA-ABCC-6A99799B6D1C.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AR\Targets\guide-target-15.jpg" />
+    <AndroidAsset Include="Assets\AR\Targets\guide-target-16.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

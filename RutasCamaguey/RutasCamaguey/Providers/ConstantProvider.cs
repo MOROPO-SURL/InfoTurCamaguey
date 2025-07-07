@@ -18,6 +18,8 @@
         public const string GUIDE_SEGMENT_TARGET_12 = "476F4170-F1D2-49EB-AE29-ACA2F2838C91";
         public const string GUIDE_SEGMENT_TARGET_13 = "2357BFB5-5234-40BC-9114-ED9E94AFB46D";
         public const string GUIDE_SEGMENT_TARGET_14 = "0F7BD2A4-8748-4C5E-851E-3D9B93E7554F";
+        public const string GUIDE_SEGMENT_TARGET_15 = "4BCAD940-AFF3-422E-A5D8-C6D784634F25";
+        public const string GUIDE_SEGMENT_TARGET_16 = "B2EE6916-12E9-47F0-BE9D-B8127AE7D106";
 
         public const string CONFIGURATION_MAPBASE_KEY = "map-base";
         public const string CONFIGURATION_AR_MODE_KEY = "ar-mode";
