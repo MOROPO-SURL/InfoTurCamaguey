@@ -171,6 +171,9 @@
   <data name="ARIntro" xml:space="preserve">
     <value>Focus your camera on the map to expand the information. This section will give you an extended experience when interacting with Infotur maps on posters and guides about the city of Camagüey.</value>
   </data>
+  <data name="ButtonConfigurationApplyText" xml:space="preserve">
+    <value>Save Changes</value>
+  </data>
   <data name="ButtonPickLanguage" xml:space="preserve">
     <value>Language</value>
   </data>

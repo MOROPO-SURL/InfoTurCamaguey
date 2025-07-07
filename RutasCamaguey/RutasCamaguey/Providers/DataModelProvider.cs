@@ -792,6 +792,58 @@
                             Text = "La plaza no solo es un punto de referencia para eventos oficiales, sino que también es un lugar de esparcimiento y reflexión para los ciudadanos. A su alrededor se encuentran edificios de interés y es un punto de partida para explorar otras zonas de la ciudad."
                         }
                     }
+                },
+                new Models.Data.PlaceDataModel
+                {
+                    // {81318423-46AC-4ACA-ABCC-6A99799B6D1C}
+                    Id = new System.Guid(0x81318423, 0x46ac, 0x4aca, 0xab, 0xcc, 0x6a, 0x99, 0x79, 0x9b, 0x6d, 0x1c),
+                    Kind = Enumerations.PlaceKind.Distinguished,
+                    Lat = 21.379477,
+                    Long = -77.915251,
+                    Title = "Parque José Martí",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.81318423-46AC-4ACA-ABCC-6A99799B6D1C.jpg"),
+                    Summary = "En torno al parque existen edificios de diversas épocas y estilos arquitectónicos: barroco, colonial, neoclásico, ecléctico, art-noveau y racionalista.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Entre las edificaciones sobresalen el Convento de San Francisco con un patio central y sus arcadas de origen colonial. Encontramos también el edificio que en la actualidad ocupa una institución de salud conocida como policlínico centro. En este inmueble con grado de protección uno, debido a su alto valor patrimonial, radicó la casa de Tomás Pío Betancourt, primer historiador de la ciudad, y en otro momento fue el colegio de las Salesianas para niñas pobres."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "En las cercanías del parque se encuentra el Callejón de Funda del Catre, considerado entre los más estrechos del país. Hoy es sólo vía para ciclos."
+                        },
+                         new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "También está cerca la Plazuela de Triana, barriada que ha conservado las tradiciones populares afrocubanas de raíz conga; y en cuyas inmediaciones se encuentra la esquinera casa de Pobres y Triana (por las calles), representativa de nuestra arquitectura."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Por la calle Avellaneda, que nace frente al parque, se encuentra la estatua dedicada a la poetisa Gertrudis Gómez de Avellaneda, la Divina Tula, una de las grandes mujeres de letras de la lengua castellana. En la misma calle y un poco más adelante su casa natal."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
+                    // {52A423A8-ABF1-4BA1-8BA4-B91DF209C820}
+                    Id = new System.Guid(0x52a423a8, 0xabf1, 0x4ba1, 0x8b, 0xa4, 0xb9, 0x1d, 0xf2, 0x9, 0xc8, 0x20),
+                    Kind = Enumerations.PlaceKind.Church,
+                    Lat = 21.379075,
+                    Long = -77.915154,
+                    Title = "Iglesia del Sagrado Corazón de Jesús",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.52A423A8-ABF1-4BA1-8BA4-B91DF209C820.jpg"),
+                    Summary = "Se erige a un costado del parque Martí. Fue edificada en las primeras décadas del pasado siglo luego de ser demolida la anterior iglesia franciscana.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "De estilo neogótico catalán constituye uno de los más hermosos templos religiosos de la ciudad."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Consta de una planta rectangular de tres naves terminada en un ábside poligonal, la fachada principal está conformada por un portal de tres arcos apuntados y tres torres octogonales rematadas por pináculos piramidales."
+                        }
+                    }
                 }
             };
         }
@@ -1564,6 +1616,58 @@
                         new Models.Data.Content.TextContentDataModel
                         {
                             Text = "The square is not only a focal point for official events, but also a place of recreation and reflection for citizens. Surrounding it are interesting buildings, it serves as a starting point for exploring other areas of the city."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
+                    // {81318423-46AC-4ACA-ABCC-6A99799B6D1C}
+                    Id = new System.Guid(0x81318423, 0x46ac, 0x4aca, 0xab, 0xcc, 0x6a, 0x99, 0x79, 0x9b, 0x6d, 0x1c),
+                    Kind = Enumerations.PlaceKind.Distinguished,
+                    Lat = 21.379477,
+                    Long = -77.915251,
+                    Title = "José Martí Park",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-revolucion-camaguey.jpg"),
+                    Summary = "Around the park there are buildings from various periods and architectural styles: baroque, colonial, neoclassical, eclectic, art nouveau, and rationalist.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Among the buildings, the Convent of San Francisco stands out, with its central courtyard and arcades of colonial origin. We also find the building that currently houses a health institution known as the Polyclinic Center. This building, with protection class one due to its high heritage value, was the home of Tomás Pío Betancourt, the city's first historian, and at one time served as the Salesian school for poor girls."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Near the park is Funda del Catre Alley, considered one of the narrowest in the country. Today, it is used only for bicycles."
+                        },
+                         new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Also nearby is the Plazuela de Triana, a neighborhood that has preserved Afro-Cuban folk traditions rooted in conga music; and nearby is the corner house of Pobres y Triana (for the streets), representative of our architecture."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "On Avellaneda Street, which begins opposite the park, stands a statue dedicated to the poet Gertrudis Gómez de Avellaneda, known as the Divine Tula, one of the great literary figures of the Spanish language. Her birthplace is located on the same street and a little further on."
+                        }
+                    }
+                },
+                new Models.Data.PlaceDataModel
+                {
+                    // {52A423A8-ABF1-4BA1-8BA4-B91DF209C820}
+                    Id = new System.Guid(0x52a423a8, 0xabf1, 0x4ba1, 0x8b, 0xa4, 0xb9, 0x1d, 0xf2, 0x9, 0xc8, 0x20),
+                    Kind = Enumerations.PlaceKind.Church,
+                    Lat = 21.379075,
+                    Long = -77.915154,
+                    Title = "Church of the Sacred Heart of Jesus",
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-revolucion-camaguey.jpg"),
+                    Summary = "It stands next to Martí Park. It was built in the early decades of the last century after the demolition of the previous Franciscan church.",
+                    Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
+                    {
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "Built in Catalan neo-Gothic style, it is one of the most beautiful religious temples in the city."
+                        },
+                        new Models.Data.Content.TextContentDataModel
+                        {
+                            Text = "It consists of a rectangular floor plan with three naves ending in a polygonal apse. The main façade is made up of a portal with three pointed arches and three octagonal towers topped by pyramidal pinnacles."
                         }
                     }
                 }

@@ -18,5 +18,14 @@
         public const string GUIDE_SEGMENT_TARGET_12 = "476F4170-F1D2-49EB-AE29-ACA2F2838C91";
         public const string GUIDE_SEGMENT_TARGET_13 = "2357BFB5-5234-40BC-9114-ED9E94AFB46D";
         public const string GUIDE_SEGMENT_TARGET_14 = "0F7BD2A4-8748-4C5E-851E-3D9B93E7554F";
+
+        public const string CONFIGURATION_MAPBASE_KEY = "map-base";
+        public const string CONFIGURATION_AR_MODE_KEY = "ar-mode";
+
+        public static System.Guid CONFIGURATION_MAPBASE_BUILDIN = new System.Guid(0x9d45acee, 0x7e7a, 0x4493, 0xb5, 0x19, 0x7d, 0x95, 0x36, 0x9, 0x1a, 0x47);
+        public static System.Guid CONFIGURATION_MAPBASE_BING_SATELLITAL = new System.Guid(0x1c929e4d, 0x5ad6, 0x478f, 0x89, 0x12, 0xf2, 0x23, 0x30, 0x4d, 0x5b, 0xb6);
+        public static System.Guid CONFIGURATION_AR_ESSENTIAL = new System.Guid(0xbac59657, 0x9d0c, 0x48d3, 0xb2, 0xe9, 0xc5, 0x76, 0xed, 0x63, 0x18, 0x9c);
+        public static System.Guid CONFIGURATION_AR_EXTENDED = new System.Guid(0xb887dfaa, 0x97e, 0x42d7, 0xb3, 0x78, 0x6f, 0x15, 0x97, 0x48, 0x9d, 0xde);
+        public static System.Guid CONFIGURATION_AR_FULL = new System.Guid(0x5baa0a57, 0x7f06, 0x408a, 0xb3, 0x78, 0x86, 0x65, 0xcb, 0xf4, 0x12, 0x6b);
     }
 }

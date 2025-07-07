@@ -223,6 +223,15 @@ namespace MOROPO.InfoTur.Camaguey.Rutas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Guardar Cambios.
+        /// </summary>
+        internal static string ButtonConfigurationApplyText {
+            get {
+                return ResourceManager.GetString("ButtonConfigurationApplyText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Lenguaje.
         /// </summary>
         internal static string ButtonPickLanguage {

@@ -16,9 +16,11 @@
 		<None Remove="Resources\Images\06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg" />
 		<None Remove="Resources\Images\0f76b63b-8659-4587-bf54-1cb136f03fda.jpg" />
 		<None Remove="Resources\Images\219C0EF3_B075_4D76_B348_610B560CCA13.jpg" />
+		<None Remove="Resources\Images\52A423A8-ABF1-4BA1-8BA4-B91DF209C820.jpg" />
 		<None Remove="Resources\Images\6c7ad3d7-2ef6-4a0a-a3d3-7572877cff42.jpg" />
 		<None Remove="Resources\Images\76fc82ec-468e-4209-a483-4a873a0e1703.jpg" />
 		<None Remove="Resources\Images\76ff2435-636b-4f8f-b829-ee8dd4ab6cb3.jpg" />
+		<None Remove="Resources\Images\81318423-46AC-4ACA-ABCC-6A99799B6D1C.jpg" />
 		<None Remove="Resources\Images\ACCD344C_AFF9_4B20_A161_EF7B4FA2D5C3.jpg" />
 		<None Remove="Resources\Images\agramonte-park.jpg" />
 		<None Remove="Resources\Images\AsambleaMunicipal-PoderPopular.jpg" />
@@ -80,6 +82,8 @@
 		<EmbeddedResource Include="Resources\Images\0626-BIBLIOTECA_02.jpg" />
 		<EmbeddedResource Include="Resources\Images\06C3FEBB_04EC_4B5F_8939_2CCFA4C5E7E7.jpg" />
 		<EmbeddedResource Include="Resources\Images\219C0EF3_B075_4D76_B348_610B560CCA13.jpg" />
+		<EmbeddedResource Include="Resources\Images\52A423A8-ABF1-4BA1-8BA4-B91DF209C820.jpg" />
+		<EmbeddedResource Include="Resources\Images\81318423-46AC-4ACA-ABCC-6A99799B6D1C.jpg" />
 		<EmbeddedResource Include="Resources\Images\ACCD344C_AFF9_4B20_A161_EF7B4FA2D5C3.jpg" />
 		<EmbeddedResource Include="Resources\Images\agramonte-park.jpg" />
 		<EmbeddedResource Include="Resources\Images\AsambleaMunicipal-PoderPopular.jpg" />

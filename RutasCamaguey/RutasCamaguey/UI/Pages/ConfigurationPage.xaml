@@ -3,13 +3,109 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:root="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas"
+    xmlns:sscxftoolkit_presentation_converters="clr-namespace:SmartSolucionesCuba.XFToolKit.Presentation.Converters;assembly=SmartSolucionesCuba.XFToolKit.Presentation"
     x:Class="MOROPO.InfoTur.Camaguey.Rutas.UI.Pages.ConfigurationPage"
-    Title="{Static root:AppResources.CommonConfiguration}">
+    Title="{Static root:AppResources.CommonConfiguration}"
+    x:Name="RootView">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <sscxftoolkit_presentation_converters:BoolToStringConverter x:Key="BoolToStringConverter" TrueString="&#xF135;" FalseString="&#xF131;" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Aplicación Rutas Camagüey v0.3-alfa3 (En construcción)"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ScrollView 
+                VerticalOptions="FillAndExpand"
+                Orientation="Vertical">
+                <StackLayout>                    
+                    <Label
+                        Padding="20,15,20,0"
+                        Text="Base del mapa"
+                        FontSize="21"
+                        FontAttributes="Bold" />
+                    <BoxView
+                        Margin="20,0"
+                        HeightRequest="2"
+                        Color="Black" />
+                    <StackLayout 
+                        BindableLayout.ItemsSource="{Binding MapBaseConfigurationItems}"
+                        Spacing="0">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <Grid 
+                                    Padding="20, 15"
+                                    BackgroundColor="Transparent">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="24" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label  
+                                        FontSize="16"
+                                        VerticalOptions="Center"
+                                        Text="{Binding Title}"/>
+                                    <Label 
+                                        Grid.Column="1"
+                                        VerticalOptions="Center"
+                                        Text="{Binding Selected, Converter={StaticResource BoolToStringConverter}}"
+                                        FontFamily="Material Design Icons"
+                                        FontSize="24" />
+                                    <Grid.GestureRecognizers>
+                                        <TapGestureRecognizer 
+                                            Command="{Binding Source={Reference RootView}, Path=BindingContext.SelectMapBaseCommand}"
+                                            CommandParameter="{Binding .}" />
+                                    </Grid.GestureRecognizers>
+                                </Grid>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </StackLayout>
+                    <Label
+                        Padding="20,15,20,0"
+                        Text="Modo de mapa extendido"
+                        FontSize="21"
+                        FontAttributes="Bold" />
+                    <BoxView
+                        Margin="20,0"
+                        HeightRequest="2"
+                        Color="Black" />
+                    <StackLayout 
+                        BindableLayout.ItemsSource="{Binding ARModeConfigurationItems}"
+                        Spacing="0">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <Grid 
+                                    Padding="20, 15"
+                                    BackgroundColor="Transparent">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label
+                                        VerticalOptions="Center" 
+                                        Text="{Binding Title}" 
+                                        FontSize="16" />
+                                    <Label 
+                                        Grid.Column="1"
+                                        VerticalOptions="Center"
+                                        Text="{Binding Selected, Converter={StaticResource BoolToStringConverter}}"
+                                        FontFamily="Material Design Icons"
+                                        FontSize="24" />
+                                    <Grid.GestureRecognizers>
+                                        <TapGestureRecognizer 
+                                            Command="{Binding Source={Reference RootView}, Path=BindingContext.SelectARModeCommand}"
+                                            CommandParameter="{Binding .}" />
+                                    </Grid.GestureRecognizers>
+                                </Grid>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+            <Button 
+                Text="{Static root:AppResources.ButtonConfigurationApplyText}"
+                Margin="20"
+                HeightRequest="50"
+                CornerRadius="10"
+                Clicked="SaveButton_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

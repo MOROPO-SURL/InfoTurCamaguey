@@ -13,13 +13,13 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
 {
     public partial class MapPage : Xamarin.Forms.ContentPage
     {
+        private System.Guid currentMapBaseConfigOptionId = default;
+
         public MapPage()
         {
             InitializeComponent();
 
             BindingContext = new SmartSolucionesCuba.XFToolKit.Mvvm.Models.Page.BasePageModel();
-
-            IsEnabled = false;
         }
 
         private SmartSolucionesCuba.XFToolKit.Mvvm.Models.Page.BasePageModel ConcreteBindingContext => BindingContext as SmartSolucionesCuba.XFToolKit.Mvvm.Models.Page.BasePageModel;
@@ -28,7 +28,11 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
         {
             base.OnAppearing();
 
-            if (IsEnabled) return;
+            var mapBaseConfigOptionId = (System.Guid)Xamarin.Forms.Application.Current.Properties[Providers.ConstantProvider.CONFIGURATION_MAPBASE_KEY];
+
+            if (mapBaseConfigOptionId == currentMapBaseConfigOptionId) return;
+
+            currentMapBaseConfigOptionId = mapBaseConfigOptionId;
 
             ConcreteBindingContext.IsBusy = true;
 
@@ -44,7 +48,17 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
 
                 mapView.Info += MapView_Info;
 
-                mapView.Map.Layers.Add(new Mapsui.Tiling.Layers.TileLayer(new BruTile.MbTiles.MbTilesTileSource(new SQLite.SQLiteConnectionString(System.IO.Path.Combine(Xamarin.Essentials.FileSystem.AppDataDirectory, "map.mbtiles"), true))));
+                if (currentMapBaseConfigOptionId == Providers.ConstantProvider.CONFIGURATION_MAPBASE_BUILDIN)
+                {
+                    mapView.Map.Layers.Add(new Mapsui.Tiling.Layers.TileLayer(new BruTile.MbTiles.MbTilesTileSource(new SQLite.SQLiteConnectionString(System.IO.Path.Combine(Xamarin.Essentials.FileSystem.AppDataDirectory, "map.mbtiles"), true))));
+                }
+                else
+                {
+                    mapView.Map.Layers.Add(new Mapsui.Tiling.Layers.TileLayer(BruTile.Predefined.KnownTileSources.Create(BruTile.Predefined.KnownTileSource.BingAerial))
+                    {
+                        Name = "Bing Aerial"
+                    });
+                }
                 mapView.Map.Layers.Add(BuildPathLayer());
                 mapView.Map.Layers.Add(BuildPlacesLayer());
 
@@ -62,6 +76,11 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
 
                 Dispatcher.BeginInvokeOnMainThread(() =>
                 {
+                    if ((Content as Xamarin.Forms.Grid).Children.Count > 1)
+                    {
+                        (Content as Xamarin.Forms.Grid).Children.RemoveAt(0);
+                    }
+
                     (Content as Xamarin.Forms.Grid).Children.Insert(0, mapView);
 
                     ConcreteBindingContext.IsBusy = false;
