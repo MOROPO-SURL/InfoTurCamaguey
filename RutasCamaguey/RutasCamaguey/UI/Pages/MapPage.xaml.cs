@@ -90,6 +90,11 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
             IsEnabled = true;
         }
 
+        private void ConfigurationToolbarItem_Clicked(object sender, System.EventArgs eventArgs)
+        {
+            Xamarin.Forms.Shell.Current.GoToAsync("//ConfigPage");
+        }
+
         private void MapView_Info(object sender, MapInfoEventArgs e)
         {
             var model = e.MapInfo.Feature[nameof(Models.Data.PlaceDataModel)] as Models.Data.PlaceDataModel;

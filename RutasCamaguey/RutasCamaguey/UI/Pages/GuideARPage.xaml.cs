@@ -88,6 +88,11 @@ namespace MOROPO.InfoTur.Camaguey.Rutas.UI.Pages
             return true;
         }
 
+        private void ConfigurationToolbarItem_Clicked(object sender, System.EventArgs eventArgs)
+        {
+            Xamarin.Forms.Shell.Current.GoToAsync("//ConfigPage");
+        }
+
         private void GuideARPresenter_PlaceTarget(object sender, Env3D.Presenters.GuideARPresenterPlaceTargetEventArg eventArg)
         {
             Content.BackgroundColor = Xamarin.Forms.Color.Black;

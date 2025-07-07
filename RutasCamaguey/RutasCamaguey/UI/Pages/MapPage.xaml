@@ -6,6 +6,16 @@
     xmlns:ui_views="clr-namespace:MOROPO.InfoTur.Camaguey.Rutas.UI.Views"
     x:Class="MOROPO.InfoTur.Camaguey.Rutas.UI.Pages.MapPage"
     Title="{Static root:AppResources.CommonRoutes}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+            Text="{Static root:AppResources.CommonConfiguration}"
+            Order="Primary"
+            Clicked="ConfigurationToolbarItem_Clicked">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource FontFamily="Material Design Icons" Glyph="&#xF8BA;" Color="{StaticResource Secoundary}" />
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <Grid>
             <ui_views:BusyView />

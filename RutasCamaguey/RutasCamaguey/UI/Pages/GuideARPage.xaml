@@ -12,6 +12,16 @@
             <sscxftoolkit_presentation_converters:FactorConverter x:Key="FactorConverter" />
         </ResourceDictionary>
     </ContentPage.Resources>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+            Text="{Static root:AppResources.CommonConfiguration}"
+            Order="Primary"
+            Clicked="ConfigurationToolbarItem_Clicked">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource FontFamily="Material Design Icons" Glyph="&#xF8BA;" Color="{StaticResource Secoundary}" />
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <Grid>
             <ui_views:BusyView />
