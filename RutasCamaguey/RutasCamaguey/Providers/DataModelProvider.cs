@@ -813,7 +813,12 @@
                         {
                             Text = "En las cercanías del parque se encuentra el Callejón de Funda del Catre, considerado entre los más estrechos del país. Hoy es sólo vía para ciclos."
                         },
-                         new Models.Data.Content.TextContentDataModel
+                        new Models.Data.Content.VirtualVisitContentDataModel
+                        {
+                            PreviewImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.81318423-46AC-4ACA-ABCC-6A99799B6D1C.jpg"),
+                            VirtualVisitContentPage = new UI.Pages.MartiParkVirtualTourPage()
+                        },
+                        new Models.Data.Content.TextContentDataModel
                         {
                             Text = "También está cerca la Plazuela de Triana, barriada que ha conservado las tradiciones populares afrocubanas de raíz conga; y en cuyas inmediaciones se encuentra la esquinera casa de Pobres y Triana (por las calles), representativa de nuestra arquitectura."
                         },
@@ -1627,7 +1632,7 @@
                     Lat = 21.379477,
                     Long = -77.915251,
                     Title = "José Martí Park",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-revolucion-camaguey.jpg"),
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.81318423-46AC-4ACA-ABCC-6A99799B6D1C.jpg"),
                     Summary = "Around the park there are buildings from various periods and architectural styles: baroque, colonial, neoclassical, eclectic, art nouveau, and rationalist.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
@@ -1638,6 +1643,11 @@
                         new Models.Data.Content.TextContentDataModel
                         {
                             Text = "Near the park is Funda del Catre Alley, considered one of the narrowest in the country. Today, it is used only for bicycles."
+                        },
+                        new Models.Data.Content.VirtualVisitContentDataModel
+                        {
+                            PreviewImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.81318423-46AC-4ACA-ABCC-6A99799B6D1C.jpg"),
+                            VirtualVisitContentPage = new UI.Pages.MartiParkVirtualTourPage()
                         },
                          new Models.Data.Content.TextContentDataModel
                         {
@@ -1657,7 +1667,7 @@
                     Lat = 21.379075,
                     Long = -77.915154,
                     Title = "Church of the Sacred Heart of Jesus",
-                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.plaza-revolucion-camaguey.jpg"),
+                    FeatureImageSource = Xamarin.Forms.ImageSource.FromResource("MOROPO.InfoTur.Camaguey.Rutas.Resources.Images.52A423A8-ABF1-4BA1-8BA4-B91DF209C820.jpg"),
                     Summary = "It stands next to Martí Park. It was built in the early decades of the last century after the demolition of the previous Franciscan church.",
                     Content = new Models.Data.Content.Contract.AbstractContentDataModel[]
                     {
